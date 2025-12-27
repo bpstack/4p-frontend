@@ -1,70 +1,25 @@
 // app/components/search/GlobalSearch.tsx
 'use client'
 
-import { useState, useRef, useEffect, useCallback } from 'react'
-import { useRouter } from 'next/navigation'
-import { useTranslations } from 'next-intl'
+import { useRef, useEffect, useState } from 'react'
 import { FiSearch, FiLoader, FiTruck, FiTool, FiUsers, FiAlertCircle, FiX } from 'react-icons/fi'
-import { apiClient } from '@/app/lib/apiClient'
-import { API_BASE_URL } from '@/app/lib/env'
-
-// Types
-interface ParkingResult {
-  id: number
-  booking_code: string
-  plate_number: string | null
-  owner_name: string | null
-  status: string
-}
-
-interface MaintenanceResult {
-  id: string
-  title: string
-  room_number: string | null
-  status: string
-  priority: string
-}
-
-interface GroupResult {
-  id: number
-  name: string
-  agency: string | null
-  status: string
-}
-
-interface BlacklistResult {
-  id: number
-  guest_name: string
-  document_number: string
-  severity: string
-}
-
-interface SearchResults {
-  parking: ParkingResult[]
-  maintenance: MaintenanceResult[]
-  groups: GroupResult[]
-  blacklist: BlacklistResult[]
-}
-
-interface SearchResponse {
-  success: boolean
-  query: string
-  totalResults: number
-  results: SearchResults
-}
-
-// Helper functions (outside component to avoid re-creation)
-const isParkingCode = (q: string) => q.toLowerCase().startsWith('pk-')
-const getMinChars = (q: string) => (isParkingCode(q) ? 11 : 4)
+import { useGlobalSearch, getMinChars } from './useGlobalSearch'
 
 export function GlobalSearch() {
-  const t = useTranslations('common')
-  const router = useRouter()
-  const [query, setQuery] = useState('')
-  const [results, setResults] = useState<SearchResults | null>(null)
+  const {
+    query,
+    setQuery,
+    results,
+    isLoading,
+    error,
+    totalResults,
+    handleSearch,
+    clearSearch,
+    navigateTo,
+    t,
+  } = useGlobalSearch()
+
   const [isOpen, setIsOpen] = useState(false)
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -79,45 +34,13 @@ export function GlobalSearch() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  // Perform search
-  const performSearch = useCallback(async () => {
-    const minChars = getMinChars(query.trim())
-    if (query.trim().length < minChars) {
-      setError(isParkingCode(query.trim()) ? t('search.minCharsParking') : t('search.minChars'))
-      return
+  // Open dropdown when results arrive
+  useEffect(() => {
+    if (results) {
+      setIsOpen(true)
     }
+  }, [results])
 
-    setIsLoading(true)
-    setError(null)
-
-    try {
-      const response = await apiClient.get<SearchResponse>(
-        `${API_BASE_URL}/api/search?q=${encodeURIComponent(query.trim())}`
-      )
-
-      if (response.success) {
-        setResults(response.results)
-        setIsOpen(true)
-      } else {
-        setError(t('search.error'))
-      }
-    } catch (err) {
-      console.error('[GlobalSearch] Error:', err)
-      setError(t('search.error'))
-    } finally {
-      setIsLoading(false)
-    }
-  }, [query, t])
-
-  // Handle Enter key or search button click
-  const handleSearch = () => {
-    const minChars = getMinChars(query.trim())
-    if (query.trim().length >= minChars) {
-      performSearch()
-    }
-  }
-
-  // Handle key press
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -127,21 +50,16 @@ export function GlobalSearch() {
     }
   }
 
-  // Navigate to result
-  const navigateTo = (path: string) => {
+  const handleClear = () => {
+    clearSearch()
     setIsOpen(false)
-    setQuery('')
-    setResults(null)
-    router.push(path)
+    inputRef.current?.focus()
   }
 
-  // Count total results
-  const totalResults = results
-    ? results.parking.length +
-      results.maintenance.length +
-      results.groups.length +
-      results.blacklist.length
-    : 0
+  const handleNavigate = (path: string) => {
+    setIsOpen(false)
+    navigateTo(path)
+  }
 
   return (
     <div ref={containerRef} className="relative">
@@ -157,16 +75,10 @@ export function GlobalSearch() {
           placeholder={t('search.placeholder')}
           className="w-48 lg:w-64 pl-9 pr-16 py-1.5 text-sm bg-gray-100 dark:bg-[#010409] border border-gray-200 dark:border-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all"
         />
-        {/* Clear button (X) - shown when there's text */}
+        {/* Clear button (X) */}
         {query.length > 0 && (
           <button
-            onClick={() => {
-              setQuery('')
-              setResults(null)
-              setIsOpen(false)
-              setError(null)
-              inputRef.current?.focus()
-            }}
+            onClick={handleClear}
             className="absolute right-8 top-1/2 -translate-y-1/2 p-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
             title={t('actions.close')}
           >
@@ -218,7 +130,7 @@ export function GlobalSearch() {
               {results.parking.map((item) => (
                 <button
                   key={`parking-${item.id}`}
-                  onClick={() => navigateTo(`/dashboard/parking/bookings/${item.booking_code}`)}
+                  onClick={() => handleNavigate(`/dashboard/parking/bookings/${item.booking_code}`)}
                   className="w-full px-4 py-2 text-left hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                 >
                   <p className="text-sm font-medium text-gray-900 dark:text-white">
@@ -245,7 +157,7 @@ export function GlobalSearch() {
               {results.maintenance.map((item) => (
                 <button
                   key={`maintenance-${item.id}`}
-                  onClick={() => navigateTo(`/dashboard/maintenance/${item.id}`)}
+                  onClick={() => handleNavigate(`/dashboard/maintenance/${item.id}`)}
                   className="w-full px-4 py-2 text-left hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                 >
                   <p className="text-sm font-medium text-gray-900 dark:text-white">{item.title}</p>
@@ -280,7 +192,7 @@ export function GlobalSearch() {
               {results.groups.map((item) => (
                 <button
                   key={`group-${item.id}`}
-                  onClick={() => navigateTo(`/dashboard/groups/${item.id}`)}
+                  onClick={() => handleNavigate(`/dashboard/groups/${item.id}`)}
                   className="w-full px-4 py-2 text-left hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                 >
                   <p className="text-sm font-medium text-gray-900 dark:text-white">{item.name}</p>
@@ -304,7 +216,7 @@ export function GlobalSearch() {
               {results.blacklist.map((item) => (
                 <button
                   key={`blacklist-${item.id}`}
-                  onClick={() => navigateTo(`/dashboard/blacklist/${item.id}`)}
+                  onClick={() => handleNavigate(`/dashboard/blacklist/${item.id}`)}
                   className="w-full px-4 py-2 text-left hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                 >
                   <p className="text-sm font-medium text-gray-900 dark:text-white">
