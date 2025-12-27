@@ -121,5 +121,26 @@
     "serverStarting": "Iniciando servidor...",
     "serverMessage": "El backend de esta aplicación está alojado en Render (plan gratuito para demo), el cual entra en modo de reposo tras periodos de inactividad. La primera conexión puede demorar aproximadamente 60 segundos.",
     "connecting": "Conectando..."
+  },
+  "search": {
+    "placeholder": "Buscar...",
+    "searchButton": "Buscar",
+    "minChars": "Ingrese al menos 4 caracteres",
+    "minCharsParking": "Ingrese al menos 11 caracteres para reservas (ej. PK-20251226)",
+    "error": "Error en la búsqueda",
+    "resultsFor": "Resultados para \"{query}\"",
+    "results": "resultados",
+    "noResults": "No se encontraron resultados",
+    "hint": "Presione Enter para buscar",
+    "categories": {
+      "parking": "Parking",
+      "maintenance": "Mantenimiento",
+      "groups": "Grupos",
+      "blacklist": "Lista negra"
+    },
+    "noPlate": "Sin placa",
+    "noOwner": "Sin propietario",
+    "noAgency": "Sin agencia",
+    "room": "Habitación"
   }
 }

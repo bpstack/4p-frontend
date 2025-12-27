@@ -121,5 +121,26 @@
     "serverStarting": "Starting server...",
     "serverMessage": "The backend of this application is hosted on Render (free tier for demo), which goes into sleep mode after periods of inactivity. The first connection may take approximately 60 seconds.",
     "connecting": "Connecting..."
+  },
+  "search": {
+    "placeholder": "Search...",
+    "searchButton": "Search",
+    "minChars": "Enter at least 4 characters",
+    "minCharsParking": "Enter at least 11 characters for booking codes (e.g. PK-20251226)",
+    "error": "Search error",
+    "resultsFor": "Results for \"{query}\"",
+    "results": "results",
+    "noResults": "No results found",
+    "hint": "Press Enter to search",
+    "categories": {
+      "parking": "Parking",
+      "maintenance": "Maintenance",
+      "groups": "Groups",
+      "blacklist": "Blacklist"
+    },
+    "noPlate": "No plate",
+    "noOwner": "No owner",
+    "noAgency": "No agency",
+    "room": "Room"
   }
 }
