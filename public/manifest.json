@@ -1,0 +1,81 @@
+{
+  "name": "Four Points - Hotel PMS",
+  "short_name": "Four Points",
+  "description": "Sistema de gestión hotelera Four Points - Property Management System",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#010409",
+  "theme_color": "#6366f1",
+  "orientation": "any",
+  "scope": "/",
+  "lang": "es",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/icons/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "sizes": "1948x1101",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Dashboard de Four Points en escritorio"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "sizes": "361x739",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Dashboard de Four Points en móvil"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Ir al dashboard principal",
+      "url": "/dashboard",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Parking",
+      "short_name": "Parking",
+      "description": "Gestión de parking",
+      "url": "/dashboard/parking",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Logbooks",
+      "short_name": "Consigna",
+      "description": "Libro de consigna",
+      "url": "/dashboard/logbooks",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

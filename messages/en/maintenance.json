@@ -1,0 +1,234 @@
+{
+  "title": "Maintenance",
+  "subtitle": "Maintenance reports management",
+  "newReport": "New Report",
+  "loading": "Loading reports...",
+  "loadingReport": "Loading report...",
+  "reportNotFound": "Report not found",
+  "backToList": "Back to list",
+  "status": {
+    "reported": "Reported",
+    "assigned": "Assigned",
+    "inProgress": "In Progress",
+    "waiting": "On Hold",
+    "completed": "Completed",
+    "closed": "Closed",
+    "canceled": "Canceled"
+  },
+  "priority": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "urgent": "Urgent"
+  },
+  "locationType": {
+    "room": "Room",
+    "commonArea": "Common Area",
+    "exterior": "Exterior",
+    "facilities": "Facilities",
+    "other": "Other"
+  },
+  "filters": {
+    "searchPlaceholder": "Search by title, description, location, room...",
+    "search": "Search",
+    "searching": "Searching...",
+    "allStatuses": "All statuses",
+    "allPriorities": "All priorities",
+    "allLocations": "All locations",
+    "clearFilters": "Clear Filters"
+  },
+  "table": {
+    "date": "Date",
+    "title": "Title",
+    "location": "Location",
+    "priority": "Priority",
+    "status": "Status",
+    "assigned": "Assigned",
+    "noReportsFound": "No reports found with those criteria",
+    "noReports": "No reports registered",
+    "roomOutOfService": "Room out of service",
+    "assignedUser": "Assigned user"
+  },
+  "pagination": {
+    "showing": "Showing {from} to {to} of {total} results",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "stats": {
+    "summary": "Summary",
+    "totalReports": "Total Reports",
+    "urgent": "Urgent",
+    "inProgress": "In Progress",
+    "roomsOutOfService": "Rooms Out of Service"
+  },
+  "panels": {
+    "create": {
+      "title": "New Maintenance Report",
+      "subtitle": "Complete the maintenance report details",
+      "submitText": "Create Report",
+      "fields": {
+        "locationType": "Location Type",
+        "roomNumber": "Room Number",
+        "locationDescription": "Location Description",
+        "reportTitle": "Report Title",
+        "description": "Detailed Description",
+        "priority": "Priority",
+        "roomOutOfService": "Room out of service",
+        "assignment": "Assignment",
+        "companyName": "Company Name",
+        "companyContact": "Company Contact",
+        "images": "Images (max. 5, 5MB each)"
+      },
+      "placeholders": {
+        "roomNumber": "E.g.: 305",
+        "locationDescription": "E.g.: Main bathroom, sink faucet",
+        "reportTitle": "E.g.: Water leak in faucet",
+        "description": "Describe the problem in detail...",
+        "companyName": "E.g.: Garcia Plumbing LLC",
+        "companyContact": "E.g.: +1 555 123 4567 - John Smith"
+      },
+      "assignment": {
+        "unassigned": "Unassigned",
+        "internal": "Internal staff",
+        "external": "External company"
+      },
+      "images": {
+        "clickToUpload": "Click to upload",
+        "dragImages": "or drag images",
+        "formats": "PNG, JPG, WEBP up to 5MB"
+      },
+      "toast": {
+        "maxImages": "Maximum 5 images allowed",
+        "fileTooLarge": "{fileName} exceeds 5MB",
+        "uploadingImages": "Uploading images...",
+        "imagesUploaded": "Images uploaded successfully",
+        "imagesUploadError": "Report created but there was an error uploading images",
+        "reportCreated": "Report created successfully",
+        "createError": "Error creating the report"
+      }
+    },
+    "edit": {
+      "title": "Edit Report",
+      "submitText": "Save Changes",
+      "currentImages": "Current images ({count})",
+      "addImages": "Add images ({current}/{max})",
+      "newImages": "New images ({count})",
+      "newBadge": "New",
+      "imageLimitReached": "Image limit reached",
+      "deleteImageTooltip": "Delete image",
+      "toast": {
+        "maxImages": "Maximum {max} images allowed",
+        "fileTooLarge": "{fileName} exceeds 5MB",
+        "uploadingImages": "Uploading images...",
+        "imagesUploaded": "Images uploaded successfully",
+        "imagesUploadError": "Report updated but there was an error uploading images",
+        "imageDeleted": "Image deleted",
+        "imageDeleteError": "Error deleting the image",
+        "reportUpdated": "Report updated successfully",
+        "updateError": "Error updating the report"
+      }
+    }
+  },
+  "error": {
+    "loadingReport": "Error loading the report",
+    "unknown": "Unknown error",
+    "title": "Error"
+  },
+  "detail": {
+    "backToList": "Back to list",
+    "edit": "Edit",
+    "delete": "Delete",
+    "reported": "Reported:",
+    "room": "Room",
+    "roomOutOfServiceWarning": "Room out of service",
+    "loadingDetails": "Loading details...",
+    "loadError": "Could not load the report",
+    "loadErrorDescription": "Try reloading the page",
+    "sections": {
+      "status": "Status",
+      "priority": "Priority",
+      "reportInfo": "Report Information",
+      "location": "Location",
+      "assignment": "Assignment",
+      "dates": "Dates",
+      "resolutionNotes": "Resolution Notes",
+      "systemInfo": "System Information",
+      "images": "Images"
+    },
+    "labels": {
+      "title": "Title",
+      "description": "Description",
+      "type": "Type",
+      "room": "Room",
+      "roomOutOfService": "Room out of service",
+      "internalStaff": "Internal Staff",
+      "externalCompany": "External Company",
+      "contact": "Contact",
+      "notAssigned": "Not assigned",
+      "assignedUser": "Assigned user",
+      "reported": "Reported",
+      "started": "Started",
+      "resolved": "Resolved",
+      "closed": "Closed",
+      "createdBy": "Created by",
+      "createdAt": "Created at",
+      "reportId": "Report ID",
+      "lastUpdate": "Last update"
+    },
+    "resolutionNotes": {
+      "placeholder": "Describe how the problem was resolved...",
+      "save": "Save",
+      "cancel": "Cancel",
+      "add": "Add Resolution Notes",
+      "emptyError": "Write the resolution notes"
+    },
+    "images": {
+      "title": "Images ({count})",
+      "titleNoCount": "Images",
+      "noImages": "No attached images",
+      "expanded": "Expanded image"
+    },
+    "toast": {
+      "statusUpdated": "Status updated",
+      "statusError": "Error updating status",
+      "priorityUpdated": "Priority updated",
+      "priorityError": "Error updating priority",
+      "notesSaved": "Notes saved",
+      "notesError": "Error saving notes",
+      "reportDeleted": "Report deleted successfully",
+      "deleteError": "Error deleting the report"
+    },
+    "loadingReport": "Loading report..."
+  },
+  "history": {
+    "title": "Change History",
+    "loading": "Loading history...",
+    "empty": "No history",
+    "emptyDescription": "No changes recorded for this report yet",
+    "system": "System",
+    "previous": "Previous:",
+    "new": "New:",
+    "actions": {
+      "created": "Created",
+      "statusChanged": "Status Changed",
+      "priorityChanged": "Priority Changed",
+      "updated": "Updated",
+      "assigned": "Assigned",
+      "resolved": "Resolved",
+      "closed": "Closed",
+      "deleted": "Deleted"
+    }
+  },
+  "tabs": {
+    "detail": "Detail",
+    "history": "History"
+  },
+  "confirm": {
+    "deleteTitle": "Delete Report",
+    "deleteMessage": "Are you sure you want to delete the report \"{title}\"? This action cannot be undone.",
+    "deleteButton": "Delete",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "processing": "Processing..."
+  }
+}

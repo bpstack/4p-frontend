@@ -1,0 +1,131 @@
+{
+  "wizard": {
+    "title": "Nueva Reserva",
+    "subtitle": "Completa los datos para crear una reserva",
+    "spotSubtitle": "Plaza {level} · Nº {spot}",
+    "step": "Paso {current} de {total}",
+    "steps": {
+      "vehicle": "Vehículo",
+      "dates": "Fechas",
+      "confirm": "Confirmar"
+    }
+  },
+  "success": {
+    "title": "¡Reserva Creada!",
+    "message": "La reserva se ha creado exitosamente y está lista para su uso.",
+    "alertMessage": "¡Reserva creada exitosamente!",
+    "viewAll": "Ver Todas las Reservas",
+    "createAnother": "Crear Otra Reserva",
+    "goToParking": "Ir al Control de Parking"
+  },
+  "vehicle": {
+    "title": "Datos del Vehículo",
+    "searchTitle": "Buscar vehículo existente",
+    "searchLabel": "Buscar Vehículo Existente",
+    "searchPlaceholder": "Buscar por matrícula o propietario...",
+    "searchHint": "O crea uno nuevo a continuación",
+    "newVehicle": "Nuevo vehículo",
+    "newVehicleTitle": "Nuevo Vehículo",
+    "dataTitle": "Datos del vehículo",
+    "plateNumber": "Matrícula",
+    "platePlaceholder": "1234ABC",
+    "owner": "Propietario",
+    "ownerPlaceholder": "Nombre del propietario",
+    "model": "Modelo",
+    "modelOptional": "Modelo (opcional)",
+    "modelPlaceholder": "BMW X5, Tesla Model 3...",
+    "infoAlert": "Tienes que crear la reserva con un vehículo asociado, puedes modificarlo después.",
+    "selected": "Vehículo {plate} seleccionado",
+    "created": "Vehículo creado",
+    "noVehicle": "Sin vehículo asociado"
+  },
+  "dates": {
+    "title": "Fechas y Plaza",
+    "sectionTitle": "Fechas de la reserva",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "checkinDate": "Fecha de entrada",
+    "checkoutDate": "Fecha de salida",
+    "checkinTime": "Hora de entrada",
+    "checkoutTime": "Hora de salida",
+    "entryTime": "Hora Entrada",
+    "exitTime": "Hora Salida",
+    "selectDate": "Seleccionar fecha",
+    "duration": "Duración de la estancia:",
+    "durationDays": "{count} día(s)",
+    "daysStay": "día(s) de estancia",
+    "searchAvailability": "Buscar disponibilidad",
+    "searchingSpots": "Buscando...",
+    "searchSpotsButton": "Buscar Plazas Disponibles",
+    "availableSpots": "Plazas disponibles ({count})",
+    "floor": "Planta {level}",
+    "spotNumber": "Nº {number}"
+  },
+  "details": {
+    "title": "Detalles de la reserva",
+    "priceManual": "Precio Manual (opcional)",
+    "priceTotal": "Precio total (€)",
+    "totalAmount": "Importe Total (€)",
+    "totalAmountHint": "Opcional, se calcula automáticamente",
+    "pricePlaceholder": "Dejar vacío = auto",
+    "priceAutoPlaceholder": "Dejar vacío para cálculo automático",
+    "source": "Fuente",
+    "bookingSource": "Origen de Reserva",
+    "externalCode": "Código Externo (opcional)",
+    "externalCodePlaceholder": "BK123456, AIR789...",
+    "notes": "Notas",
+    "notesOptional": "Notas (opcional)",
+    "notesPlaceholder": "Información adicional sobre la reserva...",
+    "notesAltPlaceholder": "Notas adicionales sobre la reserva...",
+    "orEnterData": "o introduce los datos"
+  },
+  "sources": {
+    "direct": "Directo",
+    "booking_com": "Booking.com",
+    "airbnb": "Airbnb",
+    "expedia": "Expedia",
+    "agency_other": "Otra Agencia",
+    "phone": "Teléfono",
+    "email": "Email",
+    "walkin": "Walk-in"
+  },
+  "confirmation": {
+    "title": "Confirmar Reserva",
+    "subtitle": "Revisa los detalles antes de confirmar",
+    "vehicle": "Vehículo",
+    "vehicleLabel": "Vehículo:",
+    "owner": "Propietario:",
+    "plate": "Matrícula:",
+    "spot": "Plaza:",
+    "spotLabel": "Plaza",
+    "booking": "Reserva",
+    "days": "Días:",
+    "daysLabel": "Días",
+    "entry": "Entrada:",
+    "exit": "Salida:",
+    "price": "Precio:",
+    "priceTotal": "Precio Total:",
+    "priceAuto": "Precio se calculará automáticamente"
+  },
+  "actions": {
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "back": "Atrás",
+    "creating": "Creando...",
+    "createAndContinue": "Crear y Continuar",
+    "confirmBooking": "Confirmar Reserva",
+    "createBooking": "Crear Reserva"
+  },
+  "errors": {
+    "plateOwnerRequired": "Matrícula y propietario son obligatorios",
+    "noSpotSelected": "No hay plaza seleccionada",
+    "datesRequired": "Las fechas de entrada y salida son obligatorias",
+    "checkoutBeforeCheckin": "La fecha de salida debe ser posterior a la entrada",
+    "createError": "Error al crear la reserva"
+  },
+  "toast": {
+    "vehicleSelected": "Vehículo {plate} seleccionado",
+    "vehicleCreated": "Vehículo creado",
+    "bookingCreated": "¡Reserva creada correctamente!"
+  }
+}

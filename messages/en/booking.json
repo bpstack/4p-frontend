@@ -1,0 +1,131 @@
+{
+  "wizard": {
+    "title": "New Booking",
+    "subtitle": "Complete the details to create a booking",
+    "spotSubtitle": "Spot {level} · Nº {spot}",
+    "step": "Step {current} of {total}",
+    "steps": {
+      "vehicle": "Vehicle",
+      "dates": "Dates",
+      "confirm": "Confirm"
+    }
+  },
+  "success": {
+    "title": "Booking Created!",
+    "message": "The booking has been created successfully and is ready for use.",
+    "alertMessage": "Booking created successfully!",
+    "viewAll": "View All Bookings",
+    "createAnother": "Create Another Booking",
+    "goToParking": "Go to Parking Control"
+  },
+  "vehicle": {
+    "title": "Vehicle Data",
+    "searchTitle": "Search existing vehicle",
+    "searchLabel": "Search Existing Vehicle",
+    "searchPlaceholder": "Search by plate number or owner...",
+    "searchHint": "Or create a new one below",
+    "newVehicle": "New vehicle",
+    "newVehicleTitle": "New Vehicle",
+    "dataTitle": "Vehicle data",
+    "plateNumber": "Plate Number",
+    "platePlaceholder": "1234ABC",
+    "owner": "Owner",
+    "ownerPlaceholder": "Owner name",
+    "model": "Model",
+    "modelOptional": "Model (optional)",
+    "modelPlaceholder": "BMW X5, Tesla Model 3...",
+    "infoAlert": "You need to create the booking with an associated vehicle, you can modify it later.",
+    "selected": "Vehicle {plate} selected",
+    "created": "Vehicle created",
+    "noVehicle": "No associated vehicle"
+  },
+  "dates": {
+    "title": "Dates and Spot",
+    "sectionTitle": "Booking dates",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "checkinDate": "Check-in date",
+    "checkoutDate": "Check-out date",
+    "checkinTime": "Check-in time",
+    "checkoutTime": "Check-out time",
+    "entryTime": "Entry Time",
+    "exitTime": "Exit Time",
+    "selectDate": "Select date",
+    "duration": "Duration of stay:",
+    "durationDays": "{count} day(s)",
+    "daysStay": "day(s) of stay",
+    "searchAvailability": "Search availability",
+    "searchingSpots": "Searching...",
+    "searchSpotsButton": "Search Available Spots",
+    "availableSpots": "Available spots ({count})",
+    "floor": "Floor {level}",
+    "spotNumber": "Nº {number}"
+  },
+  "details": {
+    "title": "Booking details",
+    "priceManual": "Manual Price (optional)",
+    "priceTotal": "Total price (€)",
+    "totalAmount": "Total Amount (€)",
+    "totalAmountHint": "Optional, calculated automatically",
+    "pricePlaceholder": "Leave empty = auto",
+    "priceAutoPlaceholder": "Leave empty for automatic calculation",
+    "source": "Source",
+    "bookingSource": "Booking Source",
+    "externalCode": "External Code (optional)",
+    "externalCodePlaceholder": "BK123456, AIR789...",
+    "notes": "Notes",
+    "notesOptional": "Notes (optional)",
+    "notesPlaceholder": "Additional information about the booking...",
+    "notesAltPlaceholder": "Additional notes about the booking...",
+    "orEnterData": "or enter the data"
+  },
+  "sources": {
+    "direct": "Direct",
+    "booking_com": "Booking.com",
+    "airbnb": "Airbnb",
+    "expedia": "Expedia",
+    "agency_other": "Other Agency",
+    "phone": "Phone",
+    "email": "Email",
+    "walkin": "Walk-in"
+  },
+  "confirmation": {
+    "title": "Confirm Booking",
+    "subtitle": "Review the details before confirming",
+    "vehicle": "Vehicle",
+    "vehicleLabel": "Vehicle:",
+    "owner": "Owner:",
+    "plate": "Plate:",
+    "spot": "Spot:",
+    "spotLabel": "Spot",
+    "booking": "Booking",
+    "days": "Days:",
+    "daysLabel": "Days",
+    "entry": "Entry:",
+    "exit": "Exit:",
+    "price": "Price:",
+    "priceTotal": "Total Price:",
+    "priceAuto": "Price will be calculated automatically"
+  },
+  "actions": {
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "back": "Back",
+    "creating": "Creating...",
+    "createAndContinue": "Create and Continue",
+    "confirmBooking": "Confirm Booking",
+    "createBooking": "Create Booking"
+  },
+  "errors": {
+    "plateOwnerRequired": "Plate number and owner are required",
+    "noSpotSelected": "No spot selected",
+    "datesRequired": "Check-in and check-out dates are required",
+    "checkoutBeforeCheckin": "Check-out date must be after check-in date",
+    "createError": "Error creating booking"
+  },
+  "toast": {
+    "vehicleSelected": "Vehicle {plate} selected",
+    "vehicleCreated": "Vehicle created",
+    "bookingCreated": "Booking created successfully!"
+  }
+}

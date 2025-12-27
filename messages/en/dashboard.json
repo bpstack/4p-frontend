@@ -1,0 +1,154 @@
+{
+  "header": {
+    "title": "Dashboard",
+    "periods": {
+      "today": "Today",
+      "week": "Week",
+      "month": "Month"
+    },
+    "dateFormat": {
+      "weekRange": "{startDay} - {endDay} {month} {year}",
+      "weekRangeDiffMonth": "{startDay} {startMonth} - {endDay} {endMonth} {year}",
+      "monthRange": "1 - {lastDay} {month} {year}"
+    }
+  },
+  "quickActions": {
+    "title": "Quick Actions",
+    "newLogbook": "New Logbook Entry",
+    "newLogbookShort": "Logbook",
+    "newParking": "Book Parking Spot",
+    "newParkingShort": "Parking",
+    "maintenance": "Maintenance",
+    "maintenanceShort": "Maintenance",
+    "newGroup": "Book New Group",
+    "newGroupShort": "Group"
+  },
+  "globalStatus": {
+    "title": "Global Status",
+    "parking": "Parking Control",
+    "groups": "Group Management",
+    "blacklist": "Blacklist",
+    "restaurant": "Restaurant",
+    "conciliation": "Conciliation",
+    "cashier": "Hotel Cashier",
+    "messages": "Messages",
+    "backoffice": "Back Office"
+  },
+  "contextualHelp": {
+    "title": "Contextual Help",
+    "importantFor": "Important for {period}!",
+    "periodLabels": {
+      "today": "Today",
+      "week": "This Week",
+      "month": "This Month"
+    },
+    "periodText": {
+      "today": "from today",
+      "week": "from the last 7 days",
+      "month": "from the last 30 days"
+    },
+    "description": "High-priority logbook entries {periodText}. Shows urgent pending tasks, priority maintenance requests, customer complaints and other items requiring immediate attention.",
+    "scrollHint": "Scroll to see all entries.",
+    "periodChange": {
+      "title": "Period Change",
+      "description": "Use the buttons at the top (Today, Week, Month) to filter critical entries by the period you need to review."
+    }
+  },
+  "importantLogbooks": {
+    "title": "Important for {period}!",
+    "viewAll": "View all",
+    "refresh": "Refresh",
+    "entriesCount": "{count} entry",
+    "entriesCountPlural": "{count} entries",
+    "emptyMessage": {
+      "today": "for today",
+      "week": "this week",
+      "month": "this month"
+    },
+    "noItems": "No critical or high-priority items {period}",
+    "status": {
+      "resolved": "Resolved",
+      "pending": "Pending"
+    },
+    "priority": {
+      "critical": "Critical",
+      "high": "High",
+      "normal": "Normal"
+    },
+    "by": "By {author}"
+  },
+  "recentActivity": {
+    "title": "Recent Activity",
+    "refresh": "Refresh",
+    "noActivity": "No recent activity",
+    "time": {
+      "today": "Today",
+      "yesterday": "Yesterday"
+    },
+    "sources": {
+      "cashier": "Cashier",
+      "groups": "Groups",
+      "logbook": "Logbook",
+      "maintenance": "Maintenance"
+    },
+    "actions": {
+      "cashier": {
+        "create": "Shift created",
+        "created": "Shift created",
+        "updated": "Shift updated",
+        "shift_opened": "Shift opened",
+        "shift_closed": "Shift closed",
+        "status_changed": "Status changed",
+        "day_initialized": "Day initialized",
+        "day_closed": "Day closed",
+        "payment_added": "Payment added",
+        "payment_deleted": "Payment deleted",
+        "voucher_created": "Voucher created",
+        "voucher_deleted": "Voucher deleted",
+        "denomination_updated": "Denomination updated",
+        "default": "Cashier action"
+      },
+      "groups": {
+        "create": "Group created",
+        "created": "Group created",
+        "updated": "Group updated",
+        "deleted": "Group deleted",
+        "status_changed": "Status changed",
+        "contact_added": "Contact added",
+        "room_added": "Room added",
+        "payment_added": "Payment recorded",
+        "default": "Groups action"
+      },
+      "logbook": {
+        "create": "Entry created",
+        "created": "Entry created",
+        "edited": "Entry edited",
+        "updated": "Entry edited",
+        "deleted": "Entry deleted",
+        "solved": "Marked resolved",
+        "solve": "Marked resolved",
+        "unsolved": "Marked pending",
+        "unsolve": "Marked pending",
+        "read": "Marked as read",
+        "unread": "Marked as unread",
+        "reopen": "Entry reopened",
+        "comment_added": "Comment added",
+        "comment_edited": "Comment edited",
+        "default": "Logbook action"
+      },
+      "maintenance": {
+        "create": "Report created",
+        "created": "Report created",
+        "updated": "Report updated",
+        "status_changed": "Status changed",
+        "assigned": "Assignment changed",
+        "resolved": "Report resolved",
+        "closed": "Report closed",
+        "deleted": "Report deleted",
+        "restored": "Report restored",
+        "priority_changed": "Priority changed",
+        "default": "Maintenance action"
+      }
+    }
+  }
+}

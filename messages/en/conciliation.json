@@ -1,0 +1,94 @@
+{
+  "page": {
+    "loading": "Loading...",
+    "selectDay": "Select a day",
+    "noConciliation": "No conciliation for this day.",
+    "errorLoading": "Error loading conciliation.",
+    "alreadyExists": "A conciliation already exists for this date",
+    "errorCreating": "Error creating conciliation"
+  },
+  "header": {
+    "today": "Today",
+    "status": "Status",
+    "newConciliation": "New Conciliation",
+    "newMobile": "New"
+  },
+  "status": {
+    "draft": "Draft",
+    "confirmed": "Confirmed",
+    "closed": "Closed"
+  },
+  "actions": {
+    "saveDraft": "Save draft",
+    "saving": "Saving...",
+    "submit": "Submit/Sign",
+    "reopen": "Reopen",
+    "closeDefinitely": "Close definitively",
+    "closedReadOnly": "Conciliation closed - Read only"
+  },
+  "alerts": {
+    "maxRooms": "Maximum 15 rooms",
+    "maxNoteLength": "Note cannot exceed 200 characters",
+    "maxNotes": "Maximum 10 notes",
+    "onlyAuthorCanDelete": "Only the author can delete this note",
+    "errorSaving": "Error saving",
+    "errorConfirming": "Error confirming",
+    "errorReopening": "Error reopening",
+    "errorClosing": "Error closing",
+    "confirmClose": "Close conciliation? It cannot be modified afterwards."
+  },
+  "table": {
+    "concept": "Concept",
+    "value": "Value",
+    "roomNumber": "Room #",
+    "notes": "Notes",
+    "result": "Result",
+    "total": "Total",
+    "reception": "Reception",
+    "housekeeping": "Housekeeping",
+    "add": "Add",
+    "rooms": "rooms"
+  },
+  "totals": {
+    "title": "Totals",
+    "reception": "Reception",
+    "housekeeping": "Housekeeping",
+    "discrepancy": "Discrepancy"
+  },
+  "generalNotes": {
+    "title": "General Notes",
+    "placeholder": "Add general observation...",
+    "addNote": "Add note",
+    "deleteNote": "Delete note",
+    "noNotes": "No general notes"
+  },
+  "roomPopover": {
+    "title": "Rooms",
+    "placeholder": "Add room (e.g.: 107)",
+    "pressEnter": "Press Enter to add",
+    "noRooms": "No rooms"
+  },
+  "notePopover": {
+    "title": "Notes",
+    "placeholder": "Add note (max. 200 characters)",
+    "pressEnter": "Press Enter to add",
+    "noNotes": "No notes"
+  },
+  "daySummary": {
+    "dayInfo": "Day Information",
+    "monthlySummary": "Monthly Summary",
+    "signatureReception": "Reception Signature",
+    "date": "Date",
+    "billingDay": "BILLING DAY",
+    "totalRooms": "Total {count} rooms",
+    "loadingSummary": "Loading summary...",
+    "couldNotLoad": "Could not load monthly summary",
+    "period": "Period",
+    "days": "Days",
+    "missingDays": "{count} day(s) missing",
+    "totalReception": "Total Reception",
+    "totalHousekeeping": "Total Housekeeping",
+    "totalDiscrepancy": "Total Discrepancy",
+    "cannotCloseMonth": "Cannot close the month:"
+  }
+}

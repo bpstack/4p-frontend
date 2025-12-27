@@ -1,0 +1,124 @@
+{
+  "language": {
+    "label": "Language",
+    "spanish": "Español",
+    "english": "English",
+    "switchTo": "Switch to {language}"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "parking": "Parking",
+    "logbooks": "Logbooks",
+    "groups": "Groups",
+    "cashier": "Cashier",
+    "maintenance": "Maintenance",
+    "blacklist": "Blacklist",
+    "backoffice": "Backoffice",
+    "messages": "Messages",
+    "profile": "Profile",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "logout": "Log Out",
+    "restaurant": "Restaurant",
+    "conciliation": "Conciliation",
+    "backofficeTasks": "Back office tasks",
+    "hotelCashier": "Hotel Cashier",
+    "cashierReports": "Cashier Reports",
+    "cashierLogs": "Cashier Logs"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "searchPlaceholder": "Search...",
+    "filter": "Filter",
+    "export": "Export",
+    "import": "Import",
+    "refresh": "Refresh",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "view": "View",
+    "download": "Download",
+    "print": "Print",
+    "update": "Update",
+    "saving": "Saving...",
+    "processing": "Processing...",
+    "deleting": "Deleting...",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "error": "Error",
+    "success": "Success"
+  },
+  "table": {
+    "noResults": "No results found",
+    "showing": "Showing",
+    "of": "of",
+    "entries": "entries",
+    "rowsPerPage": "Rows per page"
+  },
+  "profile": {
+    "myProfile": "My Profile",
+    "messages": "Messages",
+    "notifications": "Notifications",
+    "settings": "Settings",
+    "logout": "Log Out"
+  },
+  "time": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "now": "Now",
+    "minutes": "minutes",
+    "hours": "hours",
+    "days": "days"
+  },
+  "calendar": {
+    "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    "monthsShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "weekdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "weekdaysShort": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    "selectDate": "Select date",
+    "close": "Close"
+  },
+  "panels": {
+    "closePanel": "Close panel",
+    "deleteConfirm": "Are you sure you want to delete?"
+  },
+  "errors": {
+    "operationError": "Operation error",
+    "loadError": "Error loading data",
+    "saveError": "Error saving",
+    "deleteError": "Error deleting",
+    "networkError": "Connection error"
+  },
+  "pagination": {
+    "showing": "Showing",
+    "to": "to",
+    "of": "of",
+    "records": "records",
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "pageOf": "of"
+  },
+  "skeleton": {
+    "serverStarting": "Starting server...",
+    "serverMessage": "The backend of this application is hosted on Render (free tier for demo), which goes into sleep mode after periods of inactivity. The first connection may take approximately 60 seconds.",
+    "connecting": "Connecting..."
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "title": "Restaurant",
+  "page": {
+    "title": "Restaurant",
+    "subtitle": "Inventory, orders and statistics management",
+    "loading": "Loading..."
+  },
+  "tabs": {
+    "inventory": "Inventory",
+    "orders": "Orders",
+    "stats": "Statistics"
+  },
+  "stats": {
+    "totalProducts": "Total Products",
+    "lowStock": "Low Stock",
+    "pendingOrders": "Pending Orders",
+    "monthlyExpenses": "Monthly Expenses"
+  },
+  "orders": {
+    "searchPlaceholder": "Search by supplier or order number...",
+    "allStatuses": "All statuses",
+    "newOrder": "New Order",
+    "noOrders": "No orders found",
+    "delivery": "Delivery:",
+    "product": "product",
+    "products": "products",
+    "andMore": "and {count} more",
+    "notes": "Notes:",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "markDelivered": "Mark Delivered",
+    "viewDetail": "View Detail",
+    "table": {
+      "product": "Product",
+      "quantity": "Quantity",
+      "unitPrice": "Unit Price",
+      "subtotal": "Subtotal",
+      "total": "Total:"
+    },
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "inTransit": "In Transit",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    },
+    "summary": {
+      "pending": "Pending",
+      "inTransit": "In Transit",
+      "pendingValue": "Pending Value"
+    }
+  },
+  "inventory": {
+    "searchPlaceholder": "Search products...",
+    "lowStockFilter": "Low Stock",
+    "addProduct": "Add Product",
+    "noProducts": "No products found",
+    "stock": "Stock:",
+    "table": {
+      "product": "Product",
+      "category": "Category",
+      "stock": "Stock",
+      "status": "Status",
+      "price": "Price",
+      "supplier": "Supplier",
+      "updated": "Updated",
+      "actions": "Actions"
+    },
+    "stockStatus": {
+      "low": "Low",
+      "medium": "Medium",
+      "ok": "OK"
+    },
+    "categories": {
+      "all": "All",
+      "beverages": "Beverages",
+      "meats": "Meats",
+      "dairy": "Dairy",
+      "produce": "Fruits & Vegetables",
+      "bakery": "Bakery",
+      "cleaning": "Cleaning"
+    }
+  },
+  "statsTab": {
+    "financialSummary": "Financial Summary",
+    "periods": {
+      "week": "Week",
+      "month": "Month",
+      "quarter": "Quarter"
+    },
+    "revenue": "Revenue",
+    "expenses": "Expenses",
+    "profit": "Profit",
+    "margin": "Margin",
+    "ofProfit": "of profit",
+    "revenueVsExpenses": "Revenue vs Expenses (last 6 months)",
+    "expensesByCategory": "Expenses by Category",
+    "topProducts": "Top Selling Products",
+    "topSuppliers": "Top Suppliers",
+    "table": {
+      "product": "Product",
+      "quantity": "Qty.",
+      "revenue": "Revenue",
+      "supplier": "Supplier",
+      "orders": "Orders",
+      "total": "Total"
+    }
+  }
+}

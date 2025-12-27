@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1.5; /* Mejor espaciado para Roboto */
+}
+
+.text-sm {
+  font-size: 0.8rem;
+  line-height: 1.375;
+}
+
+#__next,
+main,
+[data-theme] {
+  @apply dark:bg-[#010409];
+}

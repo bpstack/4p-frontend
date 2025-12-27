@@ -1,0 +1,251 @@
+{
+  "title": "Blacklist",
+  "page": {
+    "title": "Guest Blacklist",
+    "subtitle": "Management of guests with bad conduct",
+    "newEntry": "New Entry",
+    "loading": "Loading entries..."
+  },
+  "stats": {
+    "summary": "Summary",
+    "totalEntries": "Total Entries",
+    "critical": "Critical",
+    "highRisk": "High Risk",
+    "active": "Active"
+  },
+  "filters": {
+    "searchPlaceholder": "Search by name, document...",
+    "severity": "Severity",
+    "allStatuses": "All",
+    "active": "Active",
+    "deleted": "Deleted",
+    "filters": "Filters",
+    "clear": "Clear",
+    "applyFilters": "Apply filters",
+    "document": "Document",
+    "documentPlaceholder": "ID, Passport...",
+    "status": "Status",
+    "dateFrom": "Date from",
+    "dateTo": "Date to",
+    "all": "All",
+    "noResults": "No results found",
+    "resultsSingle": "{count} result found",
+    "resultsPlural": "{count} results found"
+  },
+  "table": {
+    "guest": "Guest",
+    "document": "Document",
+    "dates": "Dates",
+    "severity": "Severity",
+    "status": "Status",
+    "registeredBy": "Registered",
+    "actions": "Actions",
+    "noResultsSearch": "No entries found with those criteria",
+    "noEntries": "No entries in the blacklist"
+  },
+  "severity": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "critical": "Critical"
+  },
+  "status": {
+    "active": "Active",
+    "deleted": "Deleted"
+  },
+  "detail": {
+    "backToList": "Back to list",
+    "edit": "Edit",
+    "summaryTitle": "Entry Summary",
+    "severityLevel": "Severity Level",
+    "checkInDate": "Check-in Date",
+    "checkOutDate": "Check-out Date",
+    "stay": "Stay",
+    "day": "day",
+    "days": "days",
+    "registeredBy": "Registered by",
+    "unknown": "Unknown",
+    "registrationDate": "Registration date",
+    "lastModification": "Last modification",
+    "deletionDate": "Deletion date",
+    "recordStatus": "Record Status",
+    "documentInfo": "Document information",
+    "documentType": "Document type",
+    "documentNumber": "Document number",
+    "stayDates": "Stay dates",
+    "entry": "Entry",
+    "exit": "Exit",
+    "incidentReason": "Incident reason",
+    "additionalComments": "Additional comments",
+    "photoEvidence": "Photo evidence",
+    "recordInfo": "Record information",
+    "changeHistory": "Change history"
+  },
+  "form": {
+    "guestInfo": "Guest information",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "Guest full name",
+    "documentType": "Document type",
+    "documentNumber": "Document number",
+    "documentPlaceholder": "12345678A",
+    "stayDates": "Stay dates",
+    "checkInDate": "Check-in date",
+    "checkOutDate": "Check-out date",
+    "selectDate": "Select date",
+    "incidentDetails": "Incident details",
+    "severityLevel": "Severity level",
+    "inclusionReason": "Inclusion reason",
+    "inclusionReasonFull": "Reason for blacklist inclusion",
+    "inclusionReasonPlaceholder": "Describe the reason why the guest is being added to the blacklist...",
+    "additionalComments": "Additional comments",
+    "additionalCommentsReceptionist": "Additional receptionist comments",
+    "additionalCommentsPlaceholder": "Add any relevant additional information...",
+    "photoEvidence": "Photo evidence",
+    "uploadImages": "Upload images",
+    "addNewImages": "Add new images",
+    "uploadHint": "Upload 1 to 5 images as incident evidence (max 5MB each)",
+    "uploadHintEdit": "You can add more images to the existing record",
+    "currentImages": "Current images",
+    "maxImages": "Maximum 5 images allowed",
+    "maxImagesEdit": "Maximum 5 images total. You already have {count} images.",
+    "imageHint": "Maximum 5 images (PNG, JPG, WEBP - max 5MB each)",
+    "imageHintEdit": "Maximum {count} more (PNG, JPG, WEBP - max 5MB each)",
+    "clickToUpload": "Click to upload",
+    "dragImages": "or drag images",
+    "imagesSelected": "{count} image(s) selected:",
+    "newImagesSelected": "{count} new image(s):",
+    "cancel": "Cancel",
+    "cancelConfirm": "Are you sure you want to cancel? Unsaved changes will be lost.",
+    "createEntry": "Create entry",
+    "saveChanges": "Save changes",
+    "uploadingImages": "Uploading images...",
+    "saving": "Saving..."
+  },
+  "panels": {
+    "createTitle": "New Blacklist Entry",
+    "createSubtitle": "Register a new guest in the blacklist",
+    "createButton": "Create Entry",
+    "editTitle": "Edit Blacklist Entry",
+    "editSubtitle": "Update entry information",
+    "updateButton": "Update Entry",
+    "updating": "Updating..."
+  },
+  "delete": {
+    "button": "Delete",
+    "deleteEntry": "Delete entry",
+    "confirmTitle": "Are you sure you want to delete this entry?",
+    "confirmMessage": "Are you sure you want to delete this entry? This action will mark the entry as deleted but it can be restored later.",
+    "deleting": "Deleting entry...",
+    "success": "Entry deleted successfully",
+    "error": "Error deleting entry",
+    "genericError": "Error deleting",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "restore": {
+    "confirm": "Do you want to restore this entry?",
+    "restoring": "Restoring entry...",
+    "success": "Entry restored successfully",
+    "error": "Error restoring entry",
+    "genericError": "Error restoring"
+  },
+  "audit": {
+    "noHistory": "No change history available",
+    "by": "By:",
+    "fieldsModified": "Fields modified:",
+    "before": "Before:",
+    "after": "After:",
+    "actions": {
+      "create": "Entry created",
+      "update": "Entry updated",
+      "delete": "Entry deleted",
+      "restore": "Entry restored",
+      "unknown": "Unknown action"
+    },
+    "fields": {
+      "guest_name": "Guest name",
+      "document_type": "Document type",
+      "document_number": "Document number",
+      "check_in_date": "Check-in date",
+      "check_out_date": "Check-out date",
+      "reason": "Reason",
+      "severity": "Severity",
+      "comments": "Comments",
+      "images": "Images",
+      "status": "Status"
+    },
+    "values": {
+      "empty": "(empty)",
+      "yes": "Yes",
+      "no": "No",
+      "elements": "{count} elements"
+    }
+  },
+  "messages": {
+    "uploadingImages": "Uploading images...",
+    "imagesUploaded": "{count} images uploaded successfully",
+    "newImagesUploaded": "{count} new images uploaded",
+    "creatingEntry": "Creating entry...",
+    "updatingEntry": "Updating entry...",
+    "createSuccess": "Entry created successfully",
+    "updateSuccess": "Entry updated successfully",
+    "saveError": "Error saving entry",
+    "formError": "Error processing form"
+  },
+  "notFound": {
+    "pageTitle": "Page not found",
+    "pageDescription": "The page you are looking for does not exist or has been moved. Check the URL or go back to the entries list.",
+    "error404": "Error 404",
+    "backToBlacklist": "Back to Blacklist",
+    "goToDashboard": "Go to dashboard",
+    "entryTitle": "Entry not found",
+    "entryDescription": "The entry you are looking for does not exist, was permanently deleted, or you do not have permission to view it.",
+    "needHelp": "Need help?",
+    "contactSupport": "Contact support"
+  },
+  "newPage": {
+    "backToList": "Back to list",
+    "title": "New Blacklist Entry",
+    "subtitle": "Complete all fields to register a guest with bad conduct"
+  },
+  "editPage": {
+    "backToDetail": "Back to detail",
+    "title": "Edit Entry"
+  },
+  "documentTypes": {
+    "DNI": "DNI",
+    "PASSPORT": "Passport",
+    "NIE": "NIE",
+    "OTHER": "Other"
+  },
+  "modal": {
+    "title": "Entry details",
+    "tabs": {
+      "details": "Details",
+      "images": "Images",
+      "history": "History"
+    },
+    "close": "Close",
+    "edit": "Edit",
+    "restore": "Restore"
+  },
+  "ui": {
+    "loading": "Loading...",
+    "noImages": "No images available",
+    "imageOf": "Image {current} of {total}",
+    "downloadImage": "Download image",
+    "closeEsc": "Close (ESC)",
+    "previousArrow": "Previous",
+    "nextArrow": "Next",
+    "keyboardNav": "Use arrow keys to navigate - ESC to close",
+    "imageUploader": {
+      "formatNotAllowed": "{fileName}: Format not allowed. Only JPG, PNG or WebP.",
+      "exceedsMaxSize": "{fileName}: Exceeds maximum size of {maxSize}MB ({actualSize}MB).",
+      "maxImagesError": "You can only upload a maximum of {maxFiles} images.",
+      "dropImagesHere": "Drop images here",
+      "dragOrClick": "Drag images or click to select",
+      "maxPerFile": "Max. {maxSize}MB per file",
+      "imagesCount": "{current} of {max} images"
+    }
+  }
+}

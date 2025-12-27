@@ -1,0 +1,88 @@
+{
+  "required": {
+    "field": "Este campo es requerido",
+    "email": "El correo es requerido",
+    "password": "La contraseña es requerida",
+    "username": "El nombre de usuario es requerido",
+    "name": "El nombre es requerido",
+    "phone": "El teléfono es requerido",
+    "date": "La fecha es requerida",
+    "amount": "El monto es requerido",
+    "description": "La descripción es requerida",
+    "selection": "Por favor selecciona una opción"
+  },
+  "format": {
+    "email": "Por favor ingresa un correo válido",
+    "phone": "Por favor ingresa un teléfono válido",
+    "url": "Por favor ingresa una URL válida",
+    "date": "Por favor ingresa una fecha válida",
+    "time": "Por favor ingresa una hora válida",
+    "number": "Por favor ingresa un número válido",
+    "integer": "Por favor ingresa un número entero",
+    "decimal": "Por favor ingresa un número decimal válido",
+    "currency": "Por favor ingresa un monto válido",
+    "postalCode": "Por favor ingresa un código postal válido",
+    "creditCard": "Por favor ingresa un número de tarjeta válido"
+  },
+  "length": {
+    "min": "Debe tener al menos {min} caracteres",
+    "max": "Debe tener máximo {max} caracteres",
+    "exact": "Debe tener exactamente {length} caracteres",
+    "between": "Debe tener entre {min} y {max} caracteres"
+  },
+  "range": {
+    "min": "Debe ser al menos {min}",
+    "max": "Debe ser máximo {max}",
+    "between": "Debe estar entre {min} y {max}",
+    "positive": "Debe ser un número positivo",
+    "negative": "Debe ser un número negativo",
+    "nonZero": "No puede ser cero"
+  },
+  "date": {
+    "past": "La fecha debe ser en el pasado",
+    "future": "La fecha debe ser en el futuro",
+    "after": "La fecha debe ser después de {date}",
+    "before": "La fecha debe ser antes de {date}",
+    "between": "La fecha debe estar entre {start} y {end}",
+    "today": "La fecha debe ser hoy",
+    "notWeekend": "La fecha no puede ser fin de semana"
+  },
+  "password": {
+    "tooShort": "La contraseña debe tener al menos {min} caracteres",
+    "tooWeak": "La contraseña es muy débil",
+    "needsUppercase": "La contraseña debe contener una mayúscula",
+    "needsLowercase": "La contraseña debe contener una minúscula",
+    "needsNumber": "La contraseña debe contener un número",
+    "needsSpecial": "La contraseña debe contener un carácter especial",
+    "noSpaces": "La contraseña no puede contener espacios",
+    "mismatch": "Las contraseñas no coinciden"
+  },
+  "username": {
+    "tooShort": "El usuario debe tener al menos {min} caracteres",
+    "tooLong": "El usuario debe tener máximo {max} caracteres",
+    "invalidChars": "El usuario solo puede contener letras, números y guiones bajos",
+    "startWithLetter": "El usuario debe comenzar con una letra",
+    "alreadyTaken": "Este nombre de usuario ya está en uso"
+  },
+  "file": {
+    "required": "Por favor selecciona un archivo",
+    "tooLarge": "El archivo excede {maxSize}",
+    "tooSmall": "El archivo es menor al mínimo {minSize}",
+    "invalidType": "Tipo de archivo no permitido. Aceptados: {types}",
+    "tooMany": "Demasiados archivos. Máximo: {max}",
+    "dimensions": "Las dimensiones de la imagen deben ser {width}x{height}",
+    "minDimensions": "La imagen debe ser al menos {width}x{height} píxeles",
+    "maxDimensions": "La imagen no debe ser mayor a {width}x{height} píxeles"
+  },
+  "array": {
+    "minItems": "Debe seleccionar al menos {min} elementos",
+    "maxItems": "No puede seleccionar más de {max} elementos",
+    "unique": "Todos los elementos deben ser únicos"
+  },
+  "custom": {
+    "plateFormat": "Formato de matrícula inválido",
+    "roomNumber": "Formato de número de habitación inválido",
+    "bookingCode": "Formato de código de reserva inválido",
+    "invoiceNumber": "Formato de número de factura inválido"
+  }
+}

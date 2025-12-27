@@ -1,0 +1,458 @@
+{
+  "page": {
+    "unableToLoad": "Unable to load profile",
+    "selectOption": "Select an option",
+    "useLeftMenu": "Use the left menu to navigate"
+  },
+  "sidebar": {
+    "username": {
+      "label": "Username",
+      "editTitle": "Edit username",
+      "newUsername": "New username",
+      "currentPasswordConfirm": "Current password (to confirm)",
+      "placeholder": "New username",
+      "passwordPlaceholder": "Your current password"
+    },
+    "password": {
+      "label": "Password",
+      "changeTitle": "Change password",
+      "current": "Current password",
+      "new": "New password",
+      "confirm": "Confirm new password",
+      "minChars": "Minimum 6 characters",
+      "repeatPlaceholder": "Repeat new password",
+      "currentPlaceholder": "Current password",
+      "warning": "When changing your password, you will be logged out and need to sign in again."
+    },
+    "avatar": {
+      "changePhoto": "Change photo",
+      "uploadPhoto": "Upload photo",
+      "deletePhoto": "Delete photo",
+      "allowedTypes": "Only JPEG, PNG, WebP or GIF images are allowed",
+      "maxSize": "Image cannot exceed 2MB"
+    },
+    "navigation": {
+      "messages": "Messages",
+      "messagesDesc": "Internal communications",
+      "notifications": "Notifications",
+      "notificationsDesc": "View your notifications",
+      "settings": "Settings",
+      "settingsDesc": "Account settings"
+    },
+    "validation": {
+      "usernameRequired": "Username is required",
+      "usernameMinLength": "Username must be at least 3 characters",
+      "usernameChars": "Only letters, numbers and underscores are allowed",
+      "enterCurrentPassword": "Enter your current password to confirm",
+      "enterPassword": "Enter your current password",
+      "enterNewPassword": "Enter new password",
+      "passwordMinLength": "New password must be at least 6 characters",
+      "passwordsNoMatch": "Passwords do not match",
+      "passwordMustDiffer": "New password must be different from current"
+    },
+    "success": {
+      "usernameUpdated": "Username updated successfully"
+    },
+    "errors": {
+      "updateUsername": "Error updating username",
+      "updatePassword": "Error updating password",
+      "uploadImage": "Error uploading image",
+      "deleteImage": "Error deleting image"
+    },
+    "buttons": {
+      "save": "Save",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "update": "Update",
+      "updating": "Updating..."
+    },
+    "noEmail": "No email"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account and system preferences",
+    "selectSection": "Select section",
+    "tabs": {
+      "users": "Users",
+      "departments": "Departments",
+      "notifications": "Notifications",
+      "security": "Security",
+      "reports": "Reports"
+    },
+    "users": {
+      "title": "User Management",
+      "subtitle": "Manage users and system roles",
+      "new": "New",
+      "noUsers": "No users",
+      "confirmDelete": "Are you sure you want to delete this user?",
+      "allFieldsRequired": "All fields are required",
+      "errorDeleting": "Error deleting user",
+      "errorUpdating": "Error updating user",
+      "errorLoading": "Error loading users"
+    },
+    "departments": {
+      "title": "Department Management",
+      "subtitle": "Manage hotel departments",
+      "total": "total",
+      "new": "New",
+      "noDepartments": "No departments",
+      "confirmDelete": "Delete department \"{name}\"?",
+      "deleted": "Department deleted",
+      "created": "Department created",
+      "updated": "Department updated",
+      "errorLoading": "Error loading departments",
+      "errorDeleting": "Error deleting",
+      "errorCreating": "Error creating department",
+      "errorUpdating": "Error updating",
+      "newDepartment": "New Department",
+      "editDepartment": "Edit Department",
+      "departmentName": "Department Name",
+      "nameMinLength": "Name must be at least 2 characters",
+      "saveHint": "Will be saved in lowercase. Example: \"backoffice\" will display as \"Back Office\"",
+      "editHint": "Will be saved in lowercase for consistency",
+      "placeholder": "E.g.: Human Resources",
+      "create": "Create"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "Configure how you receive notifications",
+      "createNotification": "Create Notification",
+      "emailNotifications": "Email notifications",
+      "emailDesc": "Receive updates via email",
+      "pushNotifications": "Push notifications",
+      "pushDesc": "Check and send pending",
+      "checking": "Checking...",
+      "systemAlerts": "System alerts",
+      "systemAlertsDesc": "Important updates",
+      "verified": "Verified",
+      "sent": "Sent",
+      "failed": "Failed",
+      "errorChecking": "Error checking notifications"
+    },
+    "security": {
+      "title": "Security",
+      "subtitle": "Manage your account security",
+      "twoFactor": "Two-factor authentication",
+      "twoFactorDesc": "Add an extra layer of security",
+      "passwordRotation": "Password rotation",
+      "passwordRotationDesc": "Require change every 90 days",
+      "loginAlerts": "Login alerts",
+      "loginAlertsDesc": "Notify on new devices",
+      "activeSessions": "Active sessions",
+      "active": "Active"
+    },
+    "roles": {
+      "admin": "Administrator",
+      "groupAdmin": "Group Admin",
+      "receptionist": "Receptionist",
+      "maintenance": "Maintenance"
+    }
+  },
+  "messages": {
+    "header": {
+      "title": "Messages",
+      "unread": "unread",
+      "allRead": "All conversations read",
+      "new": "New",
+      "backToProfile": "Back to profile"
+    },
+    "conversations": {
+      "noConversations": "No conversations",
+      "startNew": "Start a new one",
+      "searchPlaceholder": "Search conversation...",
+      "noMessages": "No messages",
+      "groupNoName": "Group without name"
+    },
+    "chat": {
+      "selectConversation": "Select a conversation",
+      "chooseContact": "Choose a contact to view messages",
+      "loadPrevious": "Load previous messages",
+      "loading": "Loading...",
+      "edited": "edited",
+      "participants": "participants",
+      "writeMessage": "Write a message...",
+      "urgentNotification": "Recipients will receive an urgent notification",
+      "notificationActive": "Notification activated",
+      "activateNotification": "Activate urgent notification"
+    },
+    "newConversation": {
+      "title": "New conversation",
+      "searchUsers": "Search users...",
+      "noUsersFound": "No users found",
+      "groupName": "Group name...",
+      "groupNeedsName": "Groups need a name",
+      "createGroup": "Create group",
+      "startChat": "Start chat",
+      "creating": "Creating...",
+      "existingChat": "Existing chat"
+    },
+    "participants": {
+      "title": "Participants",
+      "you": "you",
+      "admin": "Admin"
+    },
+    "actions": {
+      "deleteMessage": "Delete this message?",
+      "deleteConversation": "Delete this conversation? All messages will be permanently deleted.",
+      "noPermission": "You don't have permission to delete this conversation",
+      "leaveGroup": "Leave this conversation?",
+      "leaveGroupButton": "Leave group",
+      "deleteConversationButton": "Delete conversation"
+    },
+    "time": {
+      "now": "Now"
+    }
+  },
+  "reports": {
+    "title": "System Reports",
+    "subtitle": "Logs and system activity",
+    "adminOnly": "Only visible to admins",
+    "refresh": "Refresh",
+    "loadingSection": "Loading section...",
+    "sections": {
+      "overview": "General Activity",
+      "overviewDesc": "Unified view of all activity",
+      "logbooks": "Logbooks",
+      "logbooksDesc": "Parts and comments history",
+      "maintenance": "Maintenance",
+      "maintenanceDesc": "Reports and incident history",
+      "groups": "Groups",
+      "groupsDesc": "Groups and payments history",
+      "cashier": "Cashier",
+      "cashierDesc": "Shifts, vouchers and daily closings"
+    },
+    "overview": {
+      "title": "System Activity",
+      "description": "Unified view of the last {count} system activity records.",
+      "loadActivity": "Load Activity",
+      "sources": {
+        "all": "All sources",
+        "cashier": "Cashier",
+        "groups": "Groups",
+        "logbook": "Logbook",
+        "maintenance": "Maintenance"
+      },
+      "actions": {
+        "created": "Created",
+        "updated": "Updated",
+        "deleted": "Deleted",
+        "statusChanged": "Status changed",
+        "paymentUpdated": "Payment updated",
+        "read": "Read",
+        "unread": "Marked unread",
+        "solve": "Solved",
+        "reopen": "Reopened",
+        "adjustment": "Adjustment",
+        "voucherCreated": "Voucher created",
+        "voucherRepaid": "Voucher repaid",
+        "dailyClosed": "Daily closing",
+        "dailyReopened": "Daily reopened",
+        "assigned": "Assigned",
+        "resolved": "Resolved",
+        "closed": "Closed",
+        "restored": "Restored",
+        "create": "Created",
+        "update": "Updated",
+        "delete": "Deleted"
+      },
+      "table": {
+        "source": "Source",
+        "action": "Action",
+        "user": "User",
+        "record": "Record",
+        "date": "Date"
+      },
+      "dateFilter": "Activity date",
+      "noActivity": "No activity recorded",
+      "showing": "Showing {count} records (max. {max})",
+      "errorLoading": "Error loading activity"
+    },
+    "logbooks": {
+      "title": "Logbooks History",
+      "description": "Query historical logbooks including deleted ones.",
+      "loadHistory": "Load History",
+      "priority": {
+        "all": "All priorities",
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "urgent": "Urgent"
+      },
+      "status": {
+        "all": "All",
+        "resolved": "Resolved",
+        "deleted": "Deleted"
+      },
+      "filters": {
+        "deleted": "Deleted"
+      },
+      "table": {
+        "id": "ID",
+        "guest": "Guest",
+        "issue": "Issue",
+        "priority": "Priority",
+        "status": "Status",
+        "createdBy": "Created by",
+        "date": "Date"
+      },
+      "noData": "No logbooks found",
+      "showing": "Showing {count} records"
+    },
+    "maintenance": {
+      "title": "Maintenance History",
+      "description": "Query historical maintenance tickets including deleted ones.",
+      "loadHistory": "Load History",
+      "priority": {
+        "all": "All priorities",
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "urgent": "Urgent"
+      },
+      "status": {
+        "all": "All statuses",
+        "reported": "Reported",
+        "pending": "Pending",
+        "in_progress": "In Progress",
+        "resolved": "Resolved",
+        "closed": "Closed"
+      },
+      "filters": {
+        "deleted": "Deleted"
+      },
+      "table": {
+        "id": "ID",
+        "location": "Location",
+        "issue": "Issue",
+        "priority": "Priority",
+        "status": "Status",
+        "reportedBy": "Reported by",
+        "date": "Date"
+      },
+      "noData": "No maintenance tickets found",
+      "showing": "Showing {count} records"
+    },
+    "groups": {
+      "title": "Groups History",
+      "description": "Query the last {count} groups or filter by arrival date.",
+      "loadHistory": "Load Groups",
+      "errorLoading": "Error loading groups",
+      "notFound": "Group #{id} not found",
+      "arrivalDate": "Arrival date",
+      "status": {
+        "all": "All statuses",
+        "confirmed": "Confirmed",
+        "pending": "Pending",
+        "tentative": "Tentative",
+        "cancelled": "Cancelled",
+        "completed": "Completed"
+      },
+      "stats": {
+        "total": "Total Groups",
+        "confirmed": "Confirmed",
+        "pending": "Pending",
+        "shown": "Shown"
+      },
+      "viewAll": "View all",
+      "searchId": "Search ID...",
+      "table": {
+        "id": "ID",
+        "name": "Name",
+        "dates": "Dates",
+        "rooms": "Rooms",
+        "status": "Status",
+        "total": "Total"
+      },
+      "history": {
+        "title": "History",
+        "changes": "Change history",
+        "by": "by",
+        "noHistory": "No history available"
+      },
+      "noData": "No groups found",
+      "showing": "Showing {count} groups"
+    },
+    "cashier": {
+      "title": "Cashier Reports",
+      "description": "View cashier dashboard, voucher history and system activity.",
+      "loadDashboard": "Load Dashboard",
+      "views": {
+        "dashboard": "Dashboard",
+        "vouchers": "Vouchers",
+        "history": "History"
+      },
+      "dateFilter": "Report date",
+      "historyDateFilter": "Filter by date",
+      "voucherStatus": {
+        "all": "All vouchers",
+        "pending": "Pending",
+        "justified": "Justified",
+        "cancelled": "Cancelled"
+      },
+      "shiftTypes": {
+        "morning": "Morning",
+        "afternoon": "Afternoon",
+        "night": "Night",
+        "audit": "Audit"
+      },
+      "dashboard": {
+        "today": "Today",
+        "closed": "Closed",
+        "totalIncome": "Total Income",
+        "cash": "Cash",
+        "otherPayments": "Other Payments",
+        "openShifts": "Open Shifts",
+        "totalShifts": "Total Shifts",
+        "shifts": "Shifts",
+        "shiftsClosed": "{count} closed",
+        "vouchers": "Vouchers"
+      },
+      "vouchersSummary": {
+        "title": "Vouchers Summary",
+        "activeVouchers": "Active Vouchers",
+        "pendingAmount": "Pending Amount",
+        "totalJustified": "Total Justified",
+        "pendingAlert": "{count} pending vouchers",
+        "viewVouchers": "View vouchers"
+      },
+      "difference": {
+        "title": "Difference",
+        "surplus": "Surplus in cashier",
+        "shortage": "Shortage in cashier"
+      },
+      "shiftDetail": {
+        "title": "Shift Detail",
+        "shift": "Shift",
+        "income": "Income",
+        "inBox": "In Box",
+        "status": "Status",
+        "balanced": "Balanced",
+        "unbalanced": "Unbalanced"
+      },
+      "voucher": {
+        "for": "For",
+        "shift": "Shift",
+        "justified": "Justified"
+      },
+      "historyTable": {
+        "action": "Action",
+        "table": "Table",
+        "field": "Field",
+        "user": "User",
+        "date": "Date"
+      },
+      "empty": {
+        "noVouchers": "No vouchers",
+        "noVouchersWithStatus": "No vouchers with status \"{status}\"",
+        "noHistory": "No history available"
+      },
+      "showing": "Showing {count} {type} (max. {max})",
+      "voucher_plural": "vouchers",
+      "record_plural": "records",
+      "errorLoading": "Error loading cashier data"
+    },
+    "common": {
+      "filterByDate": "Filter by date"
+    }
+  }
+}

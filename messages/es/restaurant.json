@@ -1,0 +1,109 @@
+{
+  "title": "Restaurante",
+  "page": {
+    "title": "Restaurante",
+    "subtitle": "Gestión de inventario, pedidos y estadísticas",
+    "loading": "Cargando..."
+  },
+  "tabs": {
+    "inventory": "Inventario",
+    "orders": "Pedidos",
+    "stats": "Estadísticas"
+  },
+  "stats": {
+    "totalProducts": "Total Productos",
+    "lowStock": "Stock Bajo",
+    "pendingOrders": "Pedidos Pendientes",
+    "monthlyExpenses": "Gastos Mensuales"
+  },
+  "orders": {
+    "searchPlaceholder": "Buscar por proveedor o número de pedido...",
+    "allStatuses": "Todos los estados",
+    "newOrder": "Nuevo Pedido",
+    "noOrders": "No se encontraron pedidos",
+    "delivery": "Entrega:",
+    "product": "producto",
+    "products": "productos",
+    "andMore": "y {count} más",
+    "notes": "Notas:",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "markDelivered": "Marcar Entregado",
+    "viewDetail": "Ver Detalle",
+    "table": {
+      "product": "Producto",
+      "quantity": "Cantidad",
+      "unitPrice": "Precio Unitario",
+      "subtotal": "Subtotal",
+      "total": "Total:"
+    },
+    "status": {
+      "pending": "Pendiente",
+      "confirmed": "Confirmado",
+      "inTransit": "En Tránsito",
+      "delivered": "Entregado",
+      "cancelled": "Cancelado"
+    },
+    "summary": {
+      "pending": "Pendientes",
+      "inTransit": "En Tránsito",
+      "pendingValue": "Valor Pendiente"
+    }
+  },
+  "inventory": {
+    "searchPlaceholder": "Buscar productos...",
+    "lowStockFilter": "Stock Bajo",
+    "addProduct": "Agregar Producto",
+    "noProducts": "No se encontraron productos",
+    "stock": "Stock:",
+    "table": {
+      "product": "Producto",
+      "category": "Categoría",
+      "stock": "Stock",
+      "status": "Estado",
+      "price": "Precio",
+      "supplier": "Proveedor",
+      "updated": "Actualizado",
+      "actions": "Acciones"
+    },
+    "stockStatus": {
+      "low": "Bajo",
+      "medium": "Medio",
+      "ok": "OK"
+    },
+    "categories": {
+      "all": "Todos",
+      "beverages": "Bebidas",
+      "meats": "Carnes",
+      "dairy": "Lácteos",
+      "produce": "Frutas y Verduras",
+      "bakery": "Panadería",
+      "cleaning": "Limpieza"
+    }
+  },
+  "statsTab": {
+    "financialSummary": "Resumen Financiero",
+    "periods": {
+      "week": "Semana",
+      "month": "Mes",
+      "quarter": "Trimestre"
+    },
+    "revenue": "Ingresos",
+    "expenses": "Gastos",
+    "profit": "Beneficio",
+    "margin": "Margen",
+    "ofProfit": "de beneficio",
+    "revenueVsExpenses": "Ingresos vs Gastos (últimos 6 meses)",
+    "expensesByCategory": "Gastos por Categoría",
+    "topProducts": "Productos Más Vendidos",
+    "topSuppliers": "Principales Proveedores",
+    "table": {
+      "product": "Producto",
+      "quantity": "Cant.",
+      "revenue": "Ingresos",
+      "supplier": "Proveedor",
+      "orders": "Pedidos",
+      "total": "Total"
+    }
+  }
+}

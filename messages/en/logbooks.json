@@ -1,0 +1,190 @@
+{
+  "title": "Logbooks",
+  "container": {
+    "today": "Today",
+    "dailyEntries": "Daily entries: {count}",
+    "newEntry": "New entry",
+    "lastUpdate": "Updated"
+  },
+  "list": {
+    "loading": "Loading...",
+    "empty": "No records for this day.",
+    "emptyState": "No entries yet for this day.",
+    "unknownUser": "Unknown",
+    "headerTitle": "Logbook",
+    "lastUpdate": "Last update: {date}",
+    "columns": {
+      "timeAuthor": "Time/Author",
+      "entries": "Entries",
+      "department": "Department",
+      "priority": "Priority",
+      "readBy": "Read by",
+      "actions": "Actions"
+    },
+    "readers": {
+      "label": "Read by:",
+      "none": "No readers yet",
+      "moreTemplate": "+__count__ more",
+      "mark": "Mark",
+      "unmark": "Unmark"
+    },
+    "comment": {
+      "byAuthor": "By {author}",
+      "edited": "edited",
+      "editedTooltip": "Edited on {date}"
+    },
+    "actions": {
+      "edit": "Edit",
+      "comment": "Comment",
+      "delete": "Delete",
+      "resolved": "Resolved",
+      "pending": "Pending",
+      "mark": "Mark",
+      "unmark": "Unmark"
+    },
+    "confirm": {
+      "deleteEntry": "Are you sure you want to delete this entry?",
+      "deleteComment": "Are you sure you want to delete this comment?",
+      "toggleStatus": {
+        "toResolved": "Mark as resolved",
+        "toPending": "Mark as pending"
+      }
+    },
+    "alerts": {
+      "entryAuthorOnly": "Only the author can edit this entry",
+      "commentAuthorOnly": "Only the author can edit this comment",
+      "unauthenticated": "User not authenticated"
+    },
+    "badges": {
+      "lastEdited": "Edited: {date}",
+      "lastEditedTooltip": "Edited on {date}"
+    },
+    "tooltips": {
+      "editComment": "Edit comment",
+      "deleteComment": "Delete comment",
+      "deleteEntry": "Delete entry",
+      "editEntry": "Edit entry"
+    }
+  },
+  "modals": {
+    "common": {
+      "loading": "Loading...",
+      "noDepartments": "No departments"
+    },
+    "newEntry": {
+      "title": "New logbook entry",
+      "subtitle": "Create a new entry for the logbook",
+      "errors": {
+        "requiredMessage": "Message is required",
+        "minChars": "Message must be at least 3 characters",
+        "department": "You must select a department",
+        "generic": "Error creating entry"
+      },
+      "fields": {
+        "message": "Message",
+        "date": "Date",
+        "priority": "Priority",
+        "department": "Department",
+        "today": "Today"
+      },
+      "placeholders": {
+        "message": "Describe the incident or event...",
+        "date": "Select a date..."
+      },
+      "departmentPlaceholder": "Choose department...",
+      "footer": {
+        "cancel": "Cancel",
+        "submit": "Save entry"
+      }
+    },
+    "newComment": {
+      "title": "Add comment",
+      "subtitle": "Add a comment to this entry",
+      "fields": {
+        "comment": "Comment",
+        "priority": "Priority",
+        "department": "Department"
+      },
+      "placeholders": {
+        "comment": "Write your comment..."
+      },
+      "departmentPlaceholder": "Choose department...",
+      "footer": {
+        "cancel": "Cancel",
+        "submit": "Add comment"
+      }
+    },
+    "editEntry": {
+      "title": "Edit logbook entry",
+      "fields": {
+        "message": "Message",
+        "priority": "Priority",
+        "department": "Department"
+      },
+      "placeholders": {
+        "message": "Edit your message..."
+      },
+      "hint": "Minimum 3 characters",
+      "footer": {
+        "cancel": "Cancel",
+        "submit": "Save changes"
+      }
+    },
+    "editComment": {
+      "title": "Edit comment",
+      "fields": {
+        "comment": "Comment",
+        "priority": "Priority",
+        "department": "Department"
+      },
+      "placeholders": {
+        "comment": "Edit your comment..."
+      },
+      "hint": "Minimum 3 characters",
+      "footer": {
+        "cancel": "Cancel",
+        "submit": "Save changes"
+      }
+    }
+  },
+  "priorities": {
+    "critical": "Critical",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "departments": {
+    "reception": "Reception",
+    "housekeeping": "Housekeeping",
+    "maintenance": "Maintenance"
+  },
+  "dashboardCard": {
+    "title": "Important for {period}!",
+    "refresh": "Refresh",
+    "viewAll": "View all",
+    "entryCount": "{count, plural, one {# entry {periodRange}} other {# entries {periodRange}}}",
+    "empty": "No critical or high-priority items {periodRange}",
+    "status": {
+      "resolved": "Resolved",
+      "pending": "Pending"
+    },
+    "priority": {
+      "critical": "Critical",
+      "high": "High",
+      "normal": "Normal"
+    },
+    "byAuthor": "By {author}",
+    "period": {
+      "label": {
+        "today": "Today",
+        "week": "This week",
+        "month": "This month"
+      },
+      "range": {
+        "today": "for today",
+        "week": "this week",
+        "month": "this month"
+      }
+    }
+  }
+}
