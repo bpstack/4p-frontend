@@ -1,13 +1,17 @@
 // app/components/cashier/layout/DaySummarySidebar.tsx
 'use client'
 
+import { useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { FiDollarSign, FiCreditCard, FiAlertCircle } from 'react-icons/fi'
+import { FiDollarSign, FiCreditCard, FiAlertCircle, FiDownload } from 'react-icons/fi'
 import type { CashierDaily } from '@/app/lib/cashier/types'
+import { exportDailyToPdf } from '@/app/lib/cashier/exportDailyPdf'
+import { toast } from 'react-hot-toast'
 
 interface DaySummarySidebarProps {
   daily: CashierDaily
   selectedDate: string
+  activeShiftType: string
   onCloseDay: () => void
   onReopenDay: () => void
 }
@@ -15,10 +19,12 @@ interface DaySummarySidebarProps {
 export default function DaySummarySidebar({
   daily,
   selectedDate,
+  activeShiftType,
   onCloseDay,
   onReopenDay,
 }: DaySummarySidebarProps) {
   const t = useTranslations('cashier')
+  const [isExporting, setIsExporting] = useState(false)
   const totalCash = parseFloat(daily.total_cash || '0')
   const totalCard = parseFloat(daily.total_card || '0')
   const totalBacs = parseFloat(daily.total_bacs || '0')
@@ -29,6 +35,56 @@ export default function DaySummarySidebar({
   const activeVouchers = parseFloat(daily.active_vouchers_total || '0')
 
   const electronicPayments = totalCard + totalBacs + totalWebPayment + totalTransfer + totalOther
+
+  const handleExportPdf = async () => {
+    setIsExporting(true)
+    try {
+      await exportDailyToPdf(
+        daily,
+        selectedDate,
+        {
+          title: t('export.title'),
+          date: t('export.date'),
+          status: t('export.status'),
+          open: t('summary.open'),
+          closed: t('summary.closed'),
+          grandTotal: t('summary.grandTotal'),
+          cash: t('summary.cash'),
+          electronic: t('summary.electronic'),
+          card: t('closeDay.card'),
+          bacs: t('closeDay.bacs'),
+          webPayment: t('closeDay.webPayment'),
+          transfer: t('closeDay.transfer'),
+          other: t('closeDay.others'),
+          activeVouchers: t('summary.activeVouchers'),
+          shift: t('export.shift'),
+          shifts: {
+            night: t('shifts.nightFull'),
+            morning: t('shifts.morningFull'),
+            afternoon: t('shifts.afternoonFull'),
+            closing: t('shifts.closingFull'),
+          },
+          initialFund: t('export.initialFund'),
+          income: t('export.income'),
+          cashCounted: t('export.cashCounted'),
+          difference: t('export.difference'),
+          users: t('export.users'),
+          denominations: t('export.denominations'),
+          payments: t('export.payments'),
+          vouchers: t('export.vouchers'),
+          noData: t('export.noData'),
+          generatedAt: t('export.generatedAt'),
+        },
+        activeShiftType
+      )
+      toast.success('PDF exported successfully')
+    } catch (error) {
+      console.error('Error exporting PDF:', error)
+      toast.error('Error exporting PDF')
+    } finally {
+      setIsExporting(false)
+    }
+  }
 
   return (
     <div className="sticky top-4 space-y-3">
@@ -148,6 +204,16 @@ export default function DaySummarySidebar({
 
       {/* Acciones */}
       <div className="pt-2 space-y-2">
+        {/* Export PDF */}
+        <button
+          onClick={handleExportPdf}
+          disabled={isExporting}
+          className="w-full px-3 py-2 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded-lg font-medium transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
+        >
+          <FiDownload className={`w-3.5 h-3.5 ${isExporting ? 'animate-bounce' : ''}`} />
+          {isExporting ? t('export.exporting') : t('export.button')}
+        </button>
+
         {daily.can_close && (
           <button
             onClick={onCloseDay}

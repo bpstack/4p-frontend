@@ -82,6 +82,15 @@
     "reopenShift": "Reopen shift to correct data",
     "shiftReopened": "Shift reopened successfully"
   },
+  "shiftUsers": {
+    "addUser": "Add responsible",
+    "remove": "Remove responsible",
+    "userAdded": "Responsible added successfully",
+    "userRemoved": "Responsible removed successfully",
+    "errorAdding": "Error adding responsible",
+    "errorRemoving": "Error removing responsible",
+    "noUsersAvailable": "No users available"
+  },
   "calendar": {
     "today": "Today",
     "user": "User",
@@ -338,5 +347,23 @@
     "delete": "Delete",
     "close": "Close",
     "required": "*"
+  },
+  "export": {
+    "button": "Export PDF",
+    "exporting": "Exporting...",
+    "title": "Daily Cash Report",
+    "date": "Date",
+    "status": "Status",
+    "shift": "Shift",
+    "users": "Users",
+    "denominations": "Denominations",
+    "payments": "Payments",
+    "vouchers": "Vouchers",
+    "noData": "No shift data",
+    "generatedAt": "Generated at",
+    "initialFund": "Initial Fund",
+    "income": "Income",
+    "cashCounted": "Cash Counted",
+    "difference": "Difference"
   }
 }

@@ -82,6 +82,15 @@
     "reopenShift": "Reabrir turno para corregir datos",
     "shiftReopened": "Turno reabierto correctamente"
   },
+  "shiftUsers": {
+    "addUser": "Agregar responsable",
+    "remove": "Quitar responsable",
+    "userAdded": "Responsable agregado correctamente",
+    "userRemoved": "Responsable quitado correctamente",
+    "errorAdding": "Error al agregar responsable",
+    "errorRemoving": "Error al quitar responsable",
+    "noUsersAvailable": "No hay usuarios disponibles"
+  },
   "calendar": {
     "today": "Hoy",
     "user": "Usuario",
@@ -338,5 +347,23 @@
     "delete": "Eliminar",
     "close": "Cerrar",
     "required": "*"
+  },
+  "export": {
+    "button": "Exportar PDF",
+    "exporting": "Exportando...",
+    "title": "Reporte Diario de Caja",
+    "date": "Fecha",
+    "status": "Estado",
+    "shift": "Turno",
+    "users": "Usuarios",
+    "denominations": "Denominaciones",
+    "payments": "Pagos",
+    "vouchers": "Vales",
+    "noData": "Sin datos de turnos",
+    "generatedAt": "Generado el",
+    "initialFund": "Fondo Inicial",
+    "income": "Ingresos",
+    "cashCounted": "Efectivo Contado",
+    "difference": "Diferencia"
   }
 }
