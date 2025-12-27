@@ -3,15 +3,7 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
-import {
-  FiDollarSign,
-  FiUsers,
-  FiEdit2,
-  FiSave,
-  FiX,
-  FiCheckCircle,
-  FiRotateCcw,
-} from 'react-icons/fi'
+import { FiDollarSign, FiEdit2, FiSave, FiX, FiCheckCircle, FiRotateCcw } from 'react-icons/fi'
 import {
   useShiftDetails,
   useUpdateShift,
@@ -20,7 +12,6 @@ import {
 } from '@/app/lib/cashier/queries'
 import type {
   ShiftType,
-  CashierShiftUser,
   CashierVoucher,
   CashierDenomination,
   CashierPayment,
@@ -30,6 +21,7 @@ import DenominationForm from './DenominationForm'
 import PaymentForm from './PaymentForm'
 import CreateVoucherModal from './CreateVoucherModal'
 import VoucherList from './VoucherList'
+import ShiftUsersManager from './ShiftUsersManager'
 import { useJustifyVoucher } from '@/app/lib/cashier/queries'
 import CloseShiftModal from './CloseShiftModal'
 
@@ -189,25 +181,11 @@ export default function ShiftCard({ shiftId, shiftType }: ShiftCardProps) {
         </div>
 
         {shift.users && shift.users.length > 0 && (
-          <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-            <FiUsers className="w-4 h-4" />
-            <span className="font-medium">{t('shiftCard.responsible')}:</span>
-            <div className="flex items-center gap-2">
-              {shift.users.map((user: CashierShiftUser) => (
-                <span
-                  key={user.user_id}
-                  className={`px-2 py-0.5 rounded text-xs ${
-                    user.is_primary === 1
-                      ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 font-medium'
-                      : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
-                  }`}
-                >
-                  {user.username}
-                  {user.is_primary === 1 && ` (${t('shiftCard.primary')})`}
-                </span>
-              ))}
-            </div>
-          </div>
+          <ShiftUsersManager
+            shiftId={shiftId}
+            users={shift.users}
+            isEditable={shift.status === 'open'}
+          />
         )}
       </div>
 

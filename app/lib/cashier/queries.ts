@@ -28,11 +28,31 @@ export const cashierKeys = {
   shift: (id: number) => ['cashier', 'shift', id] as const,
   vouchers: () => ['cashier', 'vouchers'] as const,
   voucherStats: () => ['cashier', 'vouchers', 'stats'] as const,
+  users: () => ['users', 'all'] as const,
 }
 
 // ═══════════════════════════════════════════════════════
 // QUERIES - DAILY
 // ═══════════════════════════════════════════════════════
+
+interface User {
+  id: string
+  username: string
+  email: string
+  role_id: number
+  is_active: number
+}
+
+export function useUsers() {
+  return useQuery<User[]>({
+    queryKey: cashierKeys.users(),
+    queryFn: async () => {
+      const response = await apiClient.get(`${API_BASE}/api/users`)
+      return response as User[]
+    },
+    staleTime: 5 * 60 * 1000, // 5 minutos
+  })
+}
 
 export function useDailyDetails(date: string) {
   return useQuery<CashierDaily | null>({
@@ -209,6 +229,30 @@ export function useUpdatePayments() {
     },
     onError: (error) => {
       console.error('❌ [Mutation] Error:', error) // ✅ LOG
+    },
+  })
+}
+
+export function useUpdateShiftUsers() {
+  const queryClient = useQueryClient()
+
+  return useMutation({
+    mutationFn: ({
+      shiftId,
+      primaryUserId,
+      secondaryUserIds,
+    }: {
+      shiftId: number
+      primaryUserId: string
+      secondaryUserIds: string[]
+    }) =>
+      apiClient.put(`${API_BASE}/api/cashier/shifts/${shiftId}/users`, {
+        primary_user_id: primaryUserId,
+        secondary_user_ids: secondaryUserIds,
+      }),
+    onSuccess: (_, { shiftId }) => {
+      queryClient.invalidateQueries({ queryKey: cashierKeys.shift(shiftId) })
+      queryClient.invalidateQueries({ queryKey: ['cashier', 'daily'] })
     },
   })
 }

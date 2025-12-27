@@ -203,6 +203,7 @@ export default function CashierPage() {
           <DaySummarySidebar
             daily={dailyData}
             selectedDate={selectedDate}
+            activeShiftType={activeTab}
             onCloseDay={() => openModal('closeDay')}
             onReopenDay={() => openModal('reopenDay')}
           />
