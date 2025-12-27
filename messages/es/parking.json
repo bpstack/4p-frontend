@@ -387,6 +387,7 @@
     "register": "Registrar Pago"
   },
   "spotTypes": {
+    "normal": "Normal",
     "standard": "Estándar",
     "large": "Grande",
     "mas_ancha": "Más Ancha",

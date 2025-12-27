@@ -4,10 +4,10 @@
 
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
-import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import SideNav from '@/app/ui/dashboard/sidenav'
-import { FiSearch, FiMenu, FiX, FiChevronRight, FiHome } from 'react-icons/fi'
+import { FiMenu, FiX, FiChevronRight, FiHome } from 'react-icons/fi'
+import { GlobalSearch } from '@/app/components/search/GlobalSearch'
 import { SimpleThemeButton } from '@/app/components/theme/SetThemeButton'
 import { useAuth } from '@/app/lib/auth/useAuth'
 import ProfileDropdown from '@/app/components/layout/ProfileDropdown'
@@ -61,7 +61,6 @@ const routeIcons: Record<string, IconType | React.ComponentType<{ className?: st
 }
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
-  const t = useTranslations('common')
   const { user, loading } = useAuth()
   const pathname = usePathname()
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -210,14 +209,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <div className="flex items-center gap-1 md:gap-3 flex-shrink-0">
             {/* Search Bar - Hidden on mobile, visible on md+ */}
             <div className="hidden md:block">
-              <div className="relative">
-                <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
-                <input
-                  type="text"
-                  placeholder={t('actions.searchPlaceholder')}
-                  className="w-48 lg:w-64 pl-9 pr-3 py-1.5 text-sm bg-gray-100 dark:bg-[#010409] border-gray-200 dark:border-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all"
-                />
-              </div>
+              <GlobalSearch />
             </div>
 
             {/* Theme Toggle */}
