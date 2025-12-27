@@ -1,0 +1,525 @@
+{
+  "title": "Back Office",
+  "subtitle": "Invoice and supplier management",
+  "stats": {
+    "pendingInvoices": "Pending Invoices",
+    "pendingTotal": "Total Pending",
+    "overdue": "Overdue",
+    "paidMonth": "Paid (Month)",
+    "paidTotal": "Total Paid",
+    "suppliers": "Suppliers"
+  },
+  "tabs": {
+    "pending": "Pending",
+    "paid": "Paid",
+    "suppliers": "Suppliers",
+    "settings": "Settings"
+  },
+  "filters": {
+    "search": "Search...",
+    "searchSupplier": "Search supplier...",
+    "allCategories": "All categories",
+    "allPayments": "All payments",
+    "allPeriodicities": "All periodicities",
+    "transfer": "Transfer",
+    "directDebit": "Direct Debit",
+    "byMonth": "By Month",
+    "lastQuarter": "Last quarter",
+    "lastYear": "Last year",
+    "allHistory": "All history"
+  },
+  "periodicity": {
+    "monthly": "Monthly",
+    "bimonthly": "Bimonthly",
+    "quarterly": "Quarterly",
+    "annual": "Annual",
+    "onDemand": "On demand"
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "actions": {
+    "newInvoice": "New Invoice",
+    "closeMonth": "Close Month",
+    "validate": "Validate",
+    "exportZip": "Export ZIP",
+    "excel": "Excel",
+    "pdf": "PDF",
+    "csv": "CSV",
+    "zip": "ZIP",
+    "newSupplier": "New Supplier",
+    "reopenMonth": "Reopen Month",
+    "edit": "Edit",
+    "delete": "Delete",
+    "viewPdf": "View PDF",
+    "uploadPdf": "Upload PDF",
+    "viewInvoices": "View Invoices",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "retry": "Retry",
+    "previous": "Previous",
+    "next": "Next",
+    "download": "Download",
+    "downloading": "Downloading...",
+    "uploading": "Uploading...",
+    "processing": "Processing...",
+    "saving": "Saving..."
+  },
+  "table": {
+    "supplier": "Supplier",
+    "invoiceNumber": "Invoice No.",
+    "date": "Date",
+    "invoiceDate": "Invoice Date",
+    "paymentDate": "Payment Date",
+    "withoutVat": "Without VAT",
+    "withVat": "With VAT",
+    "amount": "Amount",
+    "status": "Status",
+    "category": "Category",
+    "actions": "Actions",
+    "periodicity": "Periodicity",
+    "department": "Department",
+    "totalYtd": "Total YTD",
+    "invoices": "Invoices",
+    "method": "Method"
+  },
+  "status": {
+    "pending": "Pending",
+    "validated": "Validated",
+    "paid": "Paid"
+  },
+  "empty": {
+    "noInvoices": "No invoices found",
+    "noPaidInvoices": "No paid invoices found",
+    "noSuppliers": "No suppliers found",
+    "selectSupplier": "Select a supplier to view its details",
+    "noInvoicesForSupplier": "No invoices for this supplier"
+  },
+  "pagination": {
+    "showing": "Showing {count} of {total} invoices",
+    "showingSuppliers": "Showing {count} of {total} suppliers",
+    "page": "Page {current} of {total}"
+  },
+  "selection": {
+    "selected": "{count} selected - Total: {amount}"
+  },
+  "pending": {
+    "summary": {
+      "totalFiltered": "Total Filtered",
+      "totalMonth": "Total {month}",
+      "directDebits": "Direct Debits",
+      "transfers": "Transfers"
+    },
+    "validateWithStamp": "Validate with stamp/signature",
+    "revertValidation": "Revert validation",
+    "noPdf": "No PDF"
+  },
+  "paid": {
+    "summary": {
+      "totalFiltered": "Total Filtered",
+      "totalMonth": "Total {month}",
+      "directDebits": "Direct Debits",
+      "transfers": "Transfers"
+    }
+  },
+  "suppliers": {
+    "summary": {
+      "suppliers": "Suppliers",
+      "directDebits": "Direct Debits",
+      "totalYtd": "Total YTD"
+    },
+    "detail": {
+      "totalYtd": "Total YTD",
+      "invoices": "Invoices",
+      "pending": "Pending:",
+      "paid": "Paid:",
+      "lastInvoice": "Last invoice:",
+      "periodicity": "Periodicity:",
+      "paymentMethod": "Payment method:",
+      "cif": "Tax ID",
+      "bankAccount": "Bank Account",
+      "notes": "Notes",
+      "contact": "Contact",
+      "address": "Address",
+      "noCategory": "No category"
+    },
+    "dom": "DD"
+  },
+  "settings": {
+    "uploadTitle": "Upload new stamp or signature",
+    "type": "Type",
+    "stamp": "Stamp",
+    "signature": "Signature",
+    "name": "Name",
+    "namePlaceholder": {
+      "stamp": "E.g.: Company stamp",
+      "signature": "E.g.: Director's signature"
+    },
+    "image": "Image",
+    "selectFile": "Select PNG or WebP file",
+    "uploadButton": {
+      "stamp": "Upload Stamp",
+      "signature": "Upload Signature"
+    },
+    "recommendation": "Recommended: PNG with transparent background. Max 2MB.",
+    "preview": "Preview",
+    "stamps": "Stamps",
+    "signatures": "Signatures",
+    "default": "Default",
+    "setAsDefault": "Set as default",
+    "noStamps": "No stamps available",
+    "noSignatures": "No signatures available",
+    "uploadHint": "Upload one using the form above",
+    "info": {
+      "title": "Information",
+      "description": "Stamps and signatures are used to validate invoices. When validating an invoice with PDF, you can add these elements over the document. The element marked as \"Default\" will be automatically suggested."
+    }
+  },
+  "modals": {
+    "invoice": {
+      "createTitle": "New Invoice",
+      "editTitle": "Edit Invoice",
+      "fields": {
+        "invoiceNumber": "Invoice No.",
+        "supplier": "Supplier",
+        "category": "Category",
+        "invoiceDate": "Invoice Date",
+        "amountWithoutVat": "Amount without VAT",
+        "vatPercentage": "VAT %",
+        "amountWithVat": "Amount with VAT",
+        "paymentMethod": "Payment Method",
+        "receivedDate": "Received Date",
+        "dueDate": "Due Date",
+        "periodStart": "Period Start",
+        "periodEnd": "Period End",
+        "notes": "Notes"
+      },
+      "placeholders": {
+        "invoiceNumber": "INV-2025-001",
+        "selectSupplier": "Select supplier...",
+        "noCategory": "No category",
+        "selectDate": "Select date",
+        "notes": "Notes..."
+      },
+      "vat": {
+        "general": "21% (Standard)",
+        "reduced": "10% (Reduced)",
+        "superReduced": "4% (Super-reduced)",
+        "exempt": "0% (Exempt)"
+      },
+      "paymentMethods": {
+        "transfer": "Transfer",
+        "directDebit": "Direct Debit"
+      },
+      "validation": {
+        "invoiceNumberRequired": "Invoice number is required",
+        "supplierRequired": "A supplier must be selected",
+        "amountRequired": "Amount must be greater than 0",
+        "dateRequired": "Invoice date is required"
+      },
+      "buttons": {
+        "create": "Create Invoice",
+        "update": "Update"
+      }
+    },
+    "supplier": {
+      "createTitle": "New Supplier",
+      "editTitle": "Edit Supplier",
+      "fields": {
+        "name": "Name",
+        "cif": "Tax ID",
+        "defaultCategory": "Default Category",
+        "periodicity": "Periodicity",
+        "paymentMethod": "Payment Method",
+        "bankAccount": "Bank Account (IBAN)",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "notes": "Notes"
+      },
+      "placeholders": {
+        "name": "Supplier name",
+        "cif": "B12345678",
+        "noCategory": "No category",
+        "bankAccount": "ES12 1234 5678 9012 3456 7890",
+        "email": "supplier@example.com",
+        "phone": "+1 234 567 8901",
+        "address": "Street, number, city, ZIP",
+        "notes": "Notes..."
+      },
+      "validation": {
+        "nameRequired": "Name is required",
+        "cifInvalid": "Invalid format (5-20 alphanumeric characters)",
+        "emailInvalid": "Invalid email format",
+        "ibanInvalid": "Invalid IBAN format (e.g.: ES9121000418450200051332)"
+      },
+      "buttons": {
+        "create": "Create Supplier",
+        "update": "Update"
+      }
+    },
+    "pdfUpload": {
+      "originalTitle": "Upload Original PDF",
+      "validatedTitle": "Upload Validated PDF",
+      "invoice": "Invoice:",
+      "existingWarning": {
+        "original": "An original PDF already exists. Uploading a new one will replace the previous one.",
+        "validated": "A validated PDF already exists. Uploading a new one will replace the previous one."
+      },
+      "dropzone": {
+        "drag": "Drag a PDF file here",
+        "click": "or click to select",
+        "maxSize": "Maximum 10MB"
+      },
+      "errors": {
+        "onlyPdf": "Only PDF files are allowed",
+        "maxSize": "File cannot exceed 10MB",
+        "selectFile": "Select a PDF file"
+      },
+      "buttons": {
+        "upload": "Upload PDF",
+        "remove": "Remove"
+      }
+    },
+    "pdfViewer": {
+      "title": "PDF Viewer",
+      "originalTab": "Original",
+      "validatedTab": "Validated",
+      "originalPdf": "Original PDF",
+      "validatedPdf": "Validated PDF",
+      "validated": "Validated",
+      "openNewTab": "Open in new tab",
+      "newTab": "New tab",
+      "download": "Download",
+      "downloadPdf": "Download PDF",
+      "close": "Close",
+      "loadingInvoice": "Loading invoice data...",
+      "loadingPdf": "Loading PDF...",
+      "errorLoading": "Error loading PDF",
+      "noOriginalAvailable": "No original PDF available",
+      "noValidatedAvailable": "No validated PDF available",
+      "noPdfAvailable": "No PDF available",
+      "retry": "Retry",
+      "pdfDownloaded": "PDF downloaded",
+      "downloadError": "Error downloading PDF"
+    },
+    "confirm": {
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "processing": "Processing..."
+    },
+    "deleteInvoice": {
+      "title": "Delete Invoice",
+      "message": "Are you sure you want to delete invoice \"{number}\"? This action cannot be undone.",
+      "confirmButton": "Delete"
+    },
+    "deleteSupplier": {
+      "title": "Delete Supplier",
+      "messageWithInvoices": "Cannot delete \"{name}\" because it has {count} associated invoice(s). Delete all invoices first from \"View Invoices\".",
+      "messageEmpty": "Are you sure you want to delete supplier \"{name}\"? This action cannot be undone.",
+      "confirmButton": "Delete"
+    },
+    "deleteElement": {
+      "title": "Delete element",
+      "message": "Are you sure you want to delete \"{name}\"? This action cannot be undone.",
+      "confirmButton": "Delete"
+    },
+    "validateInvoice": {
+      "title": "Validate Invoice",
+      "invoice": "Invoice:",
+      "supplier": "Supplier:",
+      "amount": "Amount:",
+      "noPdfWarning": "This invoice has no attached PDF. It will be validated without stamp/signature.",
+      "confirmButton": "Validate"
+    },
+    "batchPayment": {
+      "title": "Close Month - Mark as Paid",
+      "month": "Month:",
+      "validatedInvoices": "Validated invoices:",
+      "totalAmount": "Total amount:",
+      "noInvoices": "No validated invoices for this month.",
+      "description": "This action will mark all validated invoices from {month} as paid. The payment date will be each invoice's date.",
+      "confirmButton": "Mark {count} as Paid"
+    },
+    "revertBatchPayment": {
+      "title": "Reopen Month - Revert Closing",
+      "selectMonth": "Select month to revert",
+      "month": "Month:",
+      "paidInvoices": "Paid invoices:",
+      "totalAmount": "Total amount:",
+      "noInvoices": "No paid invoices for this month.",
+      "description": "This action will revert all paid invoices from {month} to validated status. You can close the month again later.",
+      "confirmButton": "Revert {count} Invoices"
+    },
+    "pdfEditor": {
+      "title": "Validate Invoice",
+      "tools": "Tools",
+      "selectAndMove": "Select and move",
+      "addText": "Add text",
+      "highlight": "Highlight",
+      "textPlaceholder": "Write text...\n(Enter for new line)",
+      "fontSize": "Size:",
+      "clickToAddText": "Click on the PDF to add text",
+      "highlightColor": "Color:",
+      "clickAndDragToHighlight": "Click and drag over text to highlight",
+      "stamps": "Stamps",
+      "noStampsAvailable": "No stamps available. Upload them from the Settings tab.",
+      "signatures": "Signatures",
+      "noSignaturesAvailable": "No signatures available. Upload them from the Settings tab.",
+      "selectedElement": "Selected element",
+      "deleteElement": "Delete",
+      "dragToMove": "Drag to move",
+      "elementsCount": "Elements: {count} | Current page: {pageCount}",
+      "saving": "Saving...",
+      "saveAndValidate": "Save and Validate",
+      "validateWithoutModify": "Validate without modifying",
+      "undo": "Undo",
+      "undoCount": "Undo ({count})",
+      "zoomOut": "Zoom out",
+      "zoomIn": "Zoom in",
+      "page": "Page {current} of {total}",
+      "close": "Close",
+      "loadingPdf": "Loading PDF...",
+      "errorLoadingPdf": "Error loading PDF",
+      "errorDownloadingPdf": "Error downloading PDF: {status}",
+      "errorLoadingEditor": "Error loading editor",
+      "errorRenderingPdf": "Error rendering PDF",
+      "moveAndResize": "Drag | Corners: resize"
+    },
+    "supplierInvoices": {
+      "title": "{name}'s Invoices",
+      "totalInvoices": "{count} invoices in total",
+      "stats": {
+        "totalPaid": "Total Paid",
+        "pending": "Pending",
+        "totalYtd": "Total YTD"
+      },
+      "invoice": "invoice",
+      "invoices": "invoices",
+      "paidDate": "Paid:",
+      "downloadOriginal": "Download Original PDF",
+      "downloadValidated": "Download Validated PDF",
+      "noOriginalPdf": "No Original PDF",
+      "noValidatedPdf": "No Validated PDF",
+      "deleteInvoice": "Delete invoice",
+      "deleteConfirm": {
+        "step1": {
+          "title": "Delete Invoice",
+          "invoice": "Invoice:",
+          "amount": "Amount:",
+          "status": "Status:",
+          "question": "Are you sure you want to delete this invoice?",
+          "confirm": "Yes, delete"
+        },
+        "step2": {
+          "title": "FINAL CONFIRMATION",
+          "warning": "WARNING: This action is PERMANENT and IRREVERSIBLE. Invoice {number} will be completely deleted from the system along with all its history.",
+          "instruction": "Type DELETE to confirm:",
+          "placeholder": "Type DELETE",
+          "confirm": "DELETE PERMANENTLY",
+          "deleting": "Deleting..."
+        }
+      }
+    }
+  },
+  "loading": {
+    "title": "Back Office",
+    "subtitle": "Invoice and supplier management"
+  },
+  "error": {
+    "title": "Back Office",
+    "subtitle": "Invoice and supplier management",
+    "errorTitle": "Error loading data",
+    "errorDescription": "Could not load Back Office data. This may be due to a connection problem with the server.",
+    "errorDetails": "Error details",
+    "retry": "Retry",
+    "backToDashboard": "Back to Dashboard",
+    "helpText": "If the problem persists, verify that the backend server is running correctly or contact the system administrator."
+  },
+  "toast": {
+    "invoiceDeleted": "Invoice deleted",
+    "invoiceDeleteError": "Error deleting invoice",
+    "invoiceValidated": "Invoice validated successfully",
+    "invoicesValidated": "{count} invoice(s) validated",
+    "invoicesValidatedError": "{count} invoice(s) with error",
+    "invoiceValidateError": "Error validating invoice",
+    "validationReverted": "Validation reverted successfully",
+    "validationRevertError": "Error reverting validation",
+    "invoiceCreated": "Invoice created successfully",
+    "invoiceUpdated": "Invoice updated successfully",
+    "invoiceSaveError": "Error saving invoice",
+    "supplierCreated": "Supplier created successfully",
+    "supplierUpdated": "Supplier updated successfully",
+    "supplierDeleted": "Supplier deleted successfully",
+    "supplierSaveError": "Error saving supplier",
+    "supplierDeleteError": "Error deleting supplier",
+    "pdfOriginalUploaded": "Original PDF uploaded successfully",
+    "pdfValidatedUploaded": "Validated PDF uploaded successfully",
+    "pdfUploadError": "Error uploading PDF",
+    "pdfValidatedWithStamp": "Invoice validated with signed PDF",
+    "pdfValidatedSaveError": "Error saving validated PDF",
+    "noPdfAttached": "This invoice has no attached PDF",
+    "selectAtLeastOne": "Select at least one invoice",
+    "maxInvoicesDownload": "Maximum 100 invoices per download",
+    "invoicesNotValidated": "The following invoices are not validated or don't have validated PDF: {names}",
+    "invoicesDownloaded": "{count} invoice(s) downloaded",
+    "downloadError": "Error downloading invoices",
+    "exportError": "Error getting preview",
+    "batchPaymentSuccess": "Invoices marked as paid",
+    "batchPaymentError": "Error executing batch payment",
+    "revertSuccess": "Invoices reverted successfully",
+    "revertError": "Error reverting",
+    "noPaidInvoicesToRevert": "No paid invoices to revert",
+    "noInvoicesToExport": "No invoices to export",
+    "exportFirst50": "Exporting the first 50 invoices. Use filters to reduce selection.",
+    "downloadFirst50": "Downloading the first 50 invoices. Use filters to reduce selection.",
+    "invoicesWithoutPdf": "Invoices without validated PDF: {names}",
+    "invoicesExported": "{count} invoices exported",
+    "invoicesDownloadedZip": "{count} invoice(s) downloaded in ZIP",
+    "excelExported": "Excel exported successfully",
+    "excelExportError": "Error exporting to Excel",
+    "pdfExported": "PDF exported successfully",
+    "pdfExportError": "Error exporting to PDF",
+    "assetCreated": "{type} created successfully",
+    "assetDeleted": "Deleted successfully",
+    "assetDeleteError": "Error deleting",
+    "assetSetDefault": "{name} set as default",
+    "assetSetDefaultError": "Error setting as default",
+    "uploadError": "Error uploading file",
+    "selectFileAndName": "Select a file and enter a name",
+    "onlyPngWebp": "Only PNG or WebP images are allowed",
+    "fileTooLarge": "File is too large. Maximum 2MB",
+    "loadError": "Error loading invoices",
+    "pdfValidatedSuccess": "PDF validated successfully",
+    "pdfSaveError": "Error saving PDF",
+    "previewError": "Error getting preview",
+    "revertPaymentsError": "Error reverting payments",
+    "unknownError": "Unknown error",
+    "downloadPdfError": "Error downloading PDF"
+  },
+  "csvHeaders": {
+    "supplier": "Supplier",
+    "invoiceNumber": "Invoice Number",
+    "invoiceDate": "Invoice Date",
+    "paymentDate": "Payment Date",
+    "amountWithoutVat": "Amount without VAT",
+    "amountWithVat": "Amount with VAT",
+    "vatPercentage": "% VAT",
+    "paymentMethod": "Payment Method",
+    "costCenter": "Cost Center",
+    "department": "Department"
+  }
+}

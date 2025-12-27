@@ -1,0 +1,88 @@
+{
+  "required": {
+    "field": "This field is required",
+    "email": "Email is required",
+    "password": "Password is required",
+    "username": "Username is required",
+    "name": "Name is required",
+    "phone": "Phone number is required",
+    "date": "Date is required",
+    "amount": "Amount is required",
+    "description": "Description is required",
+    "selection": "Please make a selection"
+  },
+  "format": {
+    "email": "Please enter a valid email address",
+    "phone": "Please enter a valid phone number",
+    "url": "Please enter a valid URL",
+    "date": "Please enter a valid date",
+    "time": "Please enter a valid time",
+    "number": "Please enter a valid number",
+    "integer": "Please enter a whole number",
+    "decimal": "Please enter a valid decimal number",
+    "currency": "Please enter a valid amount",
+    "postalCode": "Please enter a valid postal code",
+    "creditCard": "Please enter a valid credit card number"
+  },
+  "length": {
+    "min": "Must be at least {min} characters",
+    "max": "Must be no more than {max} characters",
+    "exact": "Must be exactly {length} characters",
+    "between": "Must be between {min} and {max} characters"
+  },
+  "range": {
+    "min": "Must be at least {min}",
+    "max": "Must be no more than {max}",
+    "between": "Must be between {min} and {max}",
+    "positive": "Must be a positive number",
+    "negative": "Must be a negative number",
+    "nonZero": "Cannot be zero"
+  },
+  "date": {
+    "past": "Date must be in the past",
+    "future": "Date must be in the future",
+    "after": "Date must be after {date}",
+    "before": "Date must be before {date}",
+    "between": "Date must be between {start} and {end}",
+    "today": "Date must be today",
+    "notWeekend": "Date cannot be a weekend"
+  },
+  "password": {
+    "tooShort": "Password must be at least {min} characters",
+    "tooWeak": "Password is too weak",
+    "needsUppercase": "Password must contain an uppercase letter",
+    "needsLowercase": "Password must contain a lowercase letter",
+    "needsNumber": "Password must contain a number",
+    "needsSpecial": "Password must contain a special character",
+    "noSpaces": "Password cannot contain spaces",
+    "mismatch": "Passwords do not match"
+  },
+  "username": {
+    "tooShort": "Username must be at least {min} characters",
+    "tooLong": "Username must be no more than {max} characters",
+    "invalidChars": "Username can only contain letters, numbers, and underscores",
+    "startWithLetter": "Username must start with a letter",
+    "alreadyTaken": "This username is already taken"
+  },
+  "file": {
+    "required": "Please select a file",
+    "tooLarge": "File size exceeds {maxSize}",
+    "tooSmall": "File size is below minimum {minSize}",
+    "invalidType": "File type not allowed. Accepted: {types}",
+    "tooMany": "Too many files. Maximum: {max}",
+    "dimensions": "Image dimensions must be {width}x{height}",
+    "minDimensions": "Image must be at least {width}x{height} pixels",
+    "maxDimensions": "Image must be no larger than {width}x{height} pixels"
+  },
+  "array": {
+    "minItems": "Must select at least {min} items",
+    "maxItems": "Cannot select more than {max} items",
+    "unique": "All items must be unique"
+  },
+  "custom": {
+    "plateFormat": "Invalid license plate format",
+    "roomNumber": "Invalid room number format",
+    "bookingCode": "Invalid booking code format",
+    "invoiceNumber": "Invalid invoice number format"
+  }
+}

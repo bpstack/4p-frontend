@@ -1,0 +1,234 @@
+{
+  "title": "Mantenimiento",
+  "subtitle": "Gestión de reportes de mantenimiento",
+  "newReport": "Nuevo Reporte",
+  "loading": "Cargando reportes...",
+  "loadingReport": "Cargando reporte...",
+  "reportNotFound": "Reporte no encontrado",
+  "backToList": "Volver al listado",
+  "status": {
+    "reported": "Reportado",
+    "assigned": "Asignado",
+    "inProgress": "En Progreso",
+    "waiting": "En Espera",
+    "completed": "Completado",
+    "closed": "Cerrado",
+    "canceled": "Cancelado"
+  },
+  "priority": {
+    "low": "Baja",
+    "medium": "Media",
+    "high": "Alta",
+    "urgent": "Urgente"
+  },
+  "locationType": {
+    "room": "Habitación",
+    "commonArea": "Área Común",
+    "exterior": "Exterior",
+    "facilities": "Instalaciones",
+    "other": "Otro"
+  },
+  "filters": {
+    "searchPlaceholder": "Buscar por título, descripción, ubicación, habitación...",
+    "search": "Buscar",
+    "searching": "Buscando...",
+    "allStatuses": "Todos los estados",
+    "allPriorities": "Todas las prioridades",
+    "allLocations": "Todas las ubicaciones",
+    "clearFilters": "Limpiar Filtros"
+  },
+  "table": {
+    "date": "Fecha",
+    "title": "Título",
+    "location": "Ubicación",
+    "priority": "Prioridad",
+    "status": "Estado",
+    "assigned": "Asignado",
+    "noReportsFound": "No se encontraron reportes con esos criterios",
+    "noReports": "No hay reportes registrados",
+    "roomOutOfService": "Habitación fuera de servicio",
+    "assignedUser": "Usuario asignado"
+  },
+  "pagination": {
+    "showing": "Mostrando {from} a {to} de {total} resultados",
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
+  "stats": {
+    "summary": "Resumen",
+    "totalReports": "Total Reportes",
+    "urgent": "Urgentes",
+    "inProgress": "En Progreso",
+    "roomsOutOfService": "Hab. Fuera de Servicio"
+  },
+  "panels": {
+    "create": {
+      "title": "Nuevo Reporte de Mantenimiento",
+      "subtitle": "Completa los datos del reporte de mantenimiento",
+      "submitText": "Crear Reporte",
+      "fields": {
+        "locationType": "Tipo de Ubicación",
+        "roomNumber": "Número de Habitación",
+        "locationDescription": "Descripción de Ubicación",
+        "reportTitle": "Título del Reporte",
+        "description": "Descripción Detallada",
+        "priority": "Prioridad",
+        "roomOutOfService": "Habitación fuera de servicio",
+        "assignment": "Asignación",
+        "companyName": "Nombre de Empresa",
+        "companyContact": "Contacto Empresa",
+        "images": "Imágenes (máx. 5, 5MB cada una)"
+      },
+      "placeholders": {
+        "roomNumber": "Ej: 305",
+        "locationDescription": "Ej: Baño principal, grifo del lavabo",
+        "reportTitle": "Ej: Fuga de agua en grifo",
+        "description": "Describe el problema en detalle...",
+        "companyName": "Ej: Fontanería García S.L.",
+        "companyContact": "Ej: +34 600 123 456 - Juan García"
+      },
+      "assignment": {
+        "unassigned": "Sin asignar",
+        "internal": "Personal interno",
+        "external": "Empresa externa"
+      },
+      "images": {
+        "clickToUpload": "Haz clic para subir",
+        "dragImages": "o arrastra imágenes",
+        "formats": "PNG, JPG, WEBP hasta 5MB"
+      },
+      "toast": {
+        "maxImages": "Máximo 5 imágenes permitidas",
+        "fileTooLarge": "{fileName} excede 5MB",
+        "uploadingImages": "Subiendo imagenes...",
+        "imagesUploaded": "Imagenes subidas correctamente",
+        "imagesUploadError": "Reporte creado pero hubo error al subir imagenes",
+        "reportCreated": "Reporte creado correctamente",
+        "createError": "Error al crear el reporte"
+      }
+    },
+    "edit": {
+      "title": "Editar Reporte",
+      "submitText": "Guardar Cambios",
+      "currentImages": "Imágenes actuales ({count})",
+      "addImages": "Añadir imágenes ({current}/{max})",
+      "newImages": "Nuevas imágenes ({count})",
+      "newBadge": "Nueva",
+      "imageLimitReached": "Límite de imágenes alcanzado",
+      "deleteImageTooltip": "Eliminar imagen",
+      "toast": {
+        "maxImages": "Máximo {max} imágenes permitidas",
+        "fileTooLarge": "{fileName} excede 5MB",
+        "uploadingImages": "Subiendo imágenes...",
+        "imagesUploaded": "Imágenes subidas correctamente",
+        "imagesUploadError": "Reporte actualizado pero hubo error al subir imágenes",
+        "imageDeleted": "Imagen eliminada",
+        "imageDeleteError": "Error al eliminar la imagen",
+        "reportUpdated": "Reporte actualizado correctamente",
+        "updateError": "Error al actualizar el reporte"
+      }
+    }
+  },
+  "error": {
+    "loadingReport": "Error al cargar el reporte",
+    "unknown": "Error desconocido",
+    "title": "Error"
+  },
+  "detail": {
+    "backToList": "Volver al listado",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "reported": "Reportado:",
+    "room": "Habitación",
+    "roomOutOfServiceWarning": "Habitación fuera de servicio",
+    "loadingDetails": "Cargando detalles...",
+    "loadError": "No se pudo cargar el reporte",
+    "loadErrorDescription": "Intenta recargar la página",
+    "sections": {
+      "status": "Estado",
+      "priority": "Prioridad",
+      "reportInfo": "Información del Reporte",
+      "location": "Ubicación",
+      "assignment": "Asignación",
+      "dates": "Fechas",
+      "resolutionNotes": "Notas de Resolución",
+      "systemInfo": "Información del Sistema",
+      "images": "Imágenes"
+    },
+    "labels": {
+      "title": "Título",
+      "description": "Descripción",
+      "type": "Tipo",
+      "room": "Habitación",
+      "roomOutOfService": "Habitación fuera de servicio",
+      "internalStaff": "Personal Interno",
+      "externalCompany": "Empresa Externa",
+      "contact": "Contacto",
+      "notAssigned": "Sin asignar",
+      "assignedUser": "Usuario asignado",
+      "reported": "Reportado",
+      "started": "Iniciado",
+      "resolved": "Resuelto",
+      "closed": "Cerrado",
+      "createdBy": "Creado por",
+      "createdAt": "Fecha creación",
+      "reportId": "ID Reporte",
+      "lastUpdate": "Última actualización"
+    },
+    "resolutionNotes": {
+      "placeholder": "Describe cómo se resolvió el problema...",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "add": "Añadir Notas de Resolución",
+      "emptyError": "Escribe las notas de resolución"
+    },
+    "images": {
+      "title": "Imágenes ({count})",
+      "titleNoCount": "Imágenes",
+      "noImages": "Sin imágenes adjuntas",
+      "expanded": "Imagen ampliada"
+    },
+    "toast": {
+      "statusUpdated": "Estado actualizado",
+      "statusError": "Error al actualizar estado",
+      "priorityUpdated": "Prioridad actualizada",
+      "priorityError": "Error al actualizar prioridad",
+      "notesSaved": "Notas guardadas",
+      "notesError": "Error al guardar notas",
+      "reportDeleted": "Reporte eliminado correctamente",
+      "deleteError": "Error al eliminar el reporte"
+    },
+    "loadingReport": "Cargando reporte..."
+  },
+  "history": {
+    "title": "Historial de Cambios",
+    "loading": "Cargando historial...",
+    "empty": "Sin historial",
+    "emptyDescription": "Aún no hay cambios registrados en este reporte",
+    "system": "Sistema",
+    "previous": "Anterior:",
+    "new": "Nuevo:",
+    "actions": {
+      "created": "Creado",
+      "statusChanged": "Cambio de Estado",
+      "priorityChanged": "Cambio de Prioridad",
+      "updated": "Actualizado",
+      "assigned": "Asignado",
+      "resolved": "Resuelto",
+      "closed": "Cerrado",
+      "deleted": "Eliminado"
+    }
+  },
+  "tabs": {
+    "detail": "Detalle",
+    "history": "Historial"
+  },
+  "confirm": {
+    "deleteTitle": "Eliminar Reporte",
+    "deleteMessage": "¿Estás seguro de que quieres eliminar el reporte \"{title}\"? Esta acción no se puede deshacer.",
+    "deleteButton": "Eliminar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "processing": "Procesando..."
+  }
+}

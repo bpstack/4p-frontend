@@ -1,0 +1,72 @@
+{
+  "title": "Notificaciones",
+  "panel": {
+    "title": "Notificaciones",
+    "unreadCount": "{count} sin leer",
+    "allRead": "Todas las notificaciones leidas",
+    "markAll": "Marcar todo leido"
+  },
+  "list": {
+    "all": "Todas ({count})",
+    "unread": "Sin leer ({count})",
+    "noUnread": "No hay notificaciones sin leer",
+    "noNotifications": "No hay notificaciones"
+  },
+  "modal": {
+    "title": "Nueva Notificacion",
+    "destinationLink": "Enlace de destino *",
+    "redirectTo": "Al hacer click en la notificacion, se redirigira a:",
+    "titleLabel": "Titulo *",
+    "titlePlaceholder": "Ej: Revision de parking necesaria",
+    "messageLabel": "Mensaje *",
+    "messagePlaceholder": "Describe la notificacion...",
+    "priority": "Prioridad",
+    "scheduling": "Programacion",
+    "sendNow": "Enviar Ahora",
+    "schedule": "Programar",
+    "dateLabel": "Fecha",
+    "timeLabel": "Hora",
+    "selectDate": "Seleccionar fecha",
+    "today": "Hoy",
+    "tomorrow": "Manana",
+    "willSendAt": "Se enviara el {date} a las {time}",
+    "cancel": "Cancelar",
+    "creating": "Creando...",
+    "created": "Creada",
+    "send": "Enviar"
+  },
+  "priority": {
+    "high": "Alta",
+    "medium": "Media",
+    "low": "Baja"
+  },
+  "destinations": {
+    "groups": "Grupos",
+    "parkingBookings": "Parking - Reservas",
+    "parkingStatus": "Parking - Estado",
+    "maintenance": "Mantenimiento",
+    "cashierHotel": "Caja Hotel",
+    "cashierLogs": "Caja - Registros",
+    "cashierReports": "Caja - Reportes",
+    "conciliation": "Conciliacion",
+    "invoices": "Facturas",
+    "profile": "Perfil",
+    "settings": "Configuracion"
+  },
+  "validation": {
+    "selectDate": "Selecciona una fecha",
+    "invalidDateTime": "Fecha/hora invalida",
+    "timeMinFuture": "La hora debe ser al menos 5 minutos en el futuro"
+  },
+  "toast": {
+    "sent": "Notificacion enviada",
+    "scheduled": "Notificacion programada para {date} a las {time}",
+    "sentSuccess": "Notificacion enviada correctamente",
+    "scheduledSuccess": "Notificacion programada correctamente",
+    "error": "Error al crear la notificacion"
+  },
+  "item": {
+    "markAsRead": "Marcar como leida",
+    "delete": "Eliminar"
+  }
+}

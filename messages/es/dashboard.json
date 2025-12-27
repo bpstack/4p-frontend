@@ -1,0 +1,154 @@
+{
+  "header": {
+    "title": "Dashboard",
+    "periods": {
+      "today": "Hoy",
+      "week": "Semana",
+      "month": "Mes"
+    },
+    "dateFormat": {
+      "weekRange": "{startDay} - {endDay} de {month} de {year}",
+      "weekRangeDiffMonth": "{startDay} de {startMonth} - {endDay} de {endMonth} de {year}",
+      "monthRange": "1 - {lastDay} de {month} de {year}"
+    }
+  },
+  "quickActions": {
+    "title": "Acciones Rapidas",
+    "newLogbook": "Nueva Entrada Consigna",
+    "newLogbookShort": "Consigna",
+    "newParking": "Reservar Plaza Parking",
+    "newParkingShort": "Parking",
+    "maintenance": "Mantenimiento",
+    "maintenanceShort": "Manten.",
+    "newGroup": "Reserva Nuevo Grupo",
+    "newGroupShort": "Grupo"
+  },
+  "globalStatus": {
+    "title": "Estatus Global",
+    "parking": "Control de Parking",
+    "groups": "Gestion de Grupos",
+    "blacklist": "Blacklist",
+    "restaurant": "Restaurante",
+    "conciliation": "Conciliacion",
+    "cashier": "Caja Hotel",
+    "messages": "Mensajes",
+    "backoffice": "Back Office"
+  },
+  "contextualHelp": {
+    "title": "Ayuda Contextual",
+    "importantFor": "Importante para {period}!",
+    "periodLabels": {
+      "today": "Hoy",
+      "week": "Esta Semana",
+      "month": "Este Mes"
+    },
+    "periodText": {
+      "today": "del dia de hoy",
+      "week": "de los ultimos 7 dias",
+      "month": "de los ultimos 30 dias"
+    },
+    "description": "Entradas de logbooks con prioridad Alta {periodText}. Muestra tareas pendientes urgentes, solicitudes de mantenimiento prioritarias, quejas de clientes y otros elementos que requieren atencion inmediata.",
+    "scrollHint": "Desplazate para ver todas las entradas.",
+    "periodChange": {
+      "title": "Cambio de Periodo",
+      "description": "Usa los botones en la parte superior (Hoy, Semana, Mes) para filtrar las entradas criticas segun el periodo que necesites revisar."
+    }
+  },
+  "importantLogbooks": {
+    "title": "Importante para {period}!",
+    "viewAll": "Ver todo",
+    "refresh": "Actualizar",
+    "entriesCount": "{count} entrada",
+    "entriesCountPlural": "{count} entradas",
+    "emptyMessage": {
+      "today": "para hoy",
+      "week": "esta semana",
+      "month": "este mes"
+    },
+    "noItems": "No hay items criticos o de alta prioridad {period}",
+    "status": {
+      "resolved": "Resuelto",
+      "pending": "Pendiente"
+    },
+    "priority": {
+      "critical": "Critico",
+      "high": "Alto",
+      "normal": "Normal"
+    },
+    "by": "Por {author}"
+  },
+  "recentActivity": {
+    "title": "Actividad Reciente",
+    "refresh": "Actualizar",
+    "noActivity": "No hay actividad reciente",
+    "time": {
+      "today": "Hoy",
+      "yesterday": "Ayer"
+    },
+    "sources": {
+      "cashier": "Caja",
+      "groups": "Grupos",
+      "logbook": "Consigna",
+      "maintenance": "Mantenimiento"
+    },
+    "actions": {
+      "cashier": {
+        "create": "Turno creado",
+        "created": "Turno creado",
+        "updated": "Turno actualizado",
+        "shift_opened": "Turno abierto",
+        "shift_closed": "Turno cerrado",
+        "status_changed": "Estado cambiado",
+        "day_initialized": "Dia inicializado",
+        "day_closed": "Dia cerrado",
+        "payment_added": "Pago anadido",
+        "payment_deleted": "Pago eliminado",
+        "voucher_created": "Voucher creado",
+        "voucher_deleted": "Voucher eliminado",
+        "denomination_updated": "Denominacion actualizada",
+        "default": "Accion en caja"
+      },
+      "groups": {
+        "create": "Grupo creado",
+        "created": "Grupo creado",
+        "updated": "Grupo actualizado",
+        "deleted": "Grupo eliminado",
+        "status_changed": "Estado cambiado",
+        "contact_added": "Contacto anadido",
+        "room_added": "Habitacion anadida",
+        "payment_added": "Pago registrado",
+        "default": "Accion en grupos"
+      },
+      "logbook": {
+        "create": "Entrada creada",
+        "created": "Entrada creada",
+        "edited": "Entrada editada",
+        "updated": "Entrada editada",
+        "deleted": "Entrada eliminada",
+        "solved": "Marcada resuelta",
+        "solve": "Marcada resuelta",
+        "unsolved": "Marcada pendiente",
+        "unsolve": "Marcada pendiente",
+        "read": "Marcada como leida",
+        "unread": "Marcada como no leida",
+        "reopen": "Entrada reabierta",
+        "comment_added": "Comentario anadido",
+        "comment_edited": "Comentario editado",
+        "default": "Accion en consigna"
+      },
+      "maintenance": {
+        "create": "Reporte creado",
+        "created": "Reporte creado",
+        "updated": "Reporte actualizado",
+        "status_changed": "Estado cambiado",
+        "assigned": "Asignacion cambiada",
+        "resolved": "Reporte resuelto",
+        "closed": "Reporte cerrado",
+        "deleted": "Reporte eliminado",
+        "restored": "Reporte restaurado",
+        "priority_changed": "Prioridad cambiada",
+        "default": "Accion en mantenimiento"
+      }
+    }
+  }
+}

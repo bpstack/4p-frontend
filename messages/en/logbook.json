@@ -1,0 +1,78 @@
+{
+  "title": "Logbook",
+  "subtitle": "Hotel events and communications log",
+  "newEntry": "New Entry",
+  "loading": "Loading entries...",
+  "priority": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "critical": "Urgent"
+  },
+  "status": {
+    "pending": "Pending",
+    "resolved": "Resolved"
+  },
+  "filters": {
+    "searchPlaceholder": "Search in the logbook...",
+    "allDepartments": "All departments",
+    "allPriorities": "All priorities",
+    "allStatuses": "All statuses"
+  },
+  "entry": {
+    "by": "by",
+    "readBy": "Read by {count} person(s)",
+    "notRead": "Not read",
+    "comments": "comment(s)",
+    "noComments": "No comments",
+    "edited": "(edited)"
+  },
+  "actions": {
+    "markAsRead": "Mark as read",
+    "unmarkAsRead": "Unmark as read",
+    "markResolved": "Mark as resolved",
+    "markPending": "Mark as pending",
+    "addComment": "Add comment",
+    "editEntry": "Edit entry",
+    "deleteEntry": "Delete entry"
+  },
+  "toast": {
+    "entryCreated": "Entry created successfully",
+    "entryCreateError": "Error creating the entry",
+    "entryUpdated": "Entry updated successfully",
+    "entryUpdateError": "Error updating the entry",
+    "entryDeleted": "Entry deleted successfully",
+    "entryDeleteError": "Error deleting the entry",
+    "statusChangedTo": "Status changed to {status}",
+    "statusResolved": "resolved",
+    "statusPending": "pending",
+    "statusChangeError": "Error changing status",
+    "markedAsRead": "Marked as read",
+    "unmarkedAsRead": "Unmarked as read",
+    "readStatusError": "Error changing read status",
+    "commentAdded": "Comment added successfully",
+    "commentAddError": "Error creating the comment",
+    "commentUpdated": "Comment updated successfully",
+    "commentUpdateError": "Error updating the comment",
+    "commentDeleted": "Comment deleted successfully",
+    "commentDeleteError": "Error deleting the comment"
+  },
+  "empty": {
+    "title": "No entries",
+    "description": "No entries registered for this date"
+  },
+  "confirm": {
+    "deleteEntry": "Are you sure you want to delete this entry?",
+    "deleteComment": "Are you sure you want to delete this comment?"
+  },
+  "form": {
+    "department": "Department",
+    "selectDepartment": "Select a department",
+    "priority": "Priority",
+    "selectPriority": "Select priority",
+    "message": "Message",
+    "messagePlaceholder": "Write the logbook message...",
+    "comment": "Comment",
+    "commentPlaceholder": "Write your comment..."
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "page": {
+    "unableToLoad": "No se pudo cargar el perfil",
+    "selectOption": "Selecciona una opción",
+    "useLeftMenu": "Usa el menú de la izquierda para navegar"
+  },
+  "sidebar": {
+    "username": {
+      "label": "Username",
+      "editTitle": "Editar username",
+      "newUsername": "Nuevo nombre de usuario",
+      "currentPasswordConfirm": "Contraseña actual (para confirmar)",
+      "placeholder": "Nuevo username",
+      "passwordPlaceholder": "Tu contraseña actual"
+    },
+    "password": {
+      "label": "Password",
+      "changeTitle": "Cambiar contraseña",
+      "current": "Contraseña actual",
+      "new": "Nueva contraseña",
+      "confirm": "Confirmar nueva contraseña",
+      "minChars": "Mínimo 6 caracteres",
+      "repeatPlaceholder": "Repite la nueva contraseña",
+      "currentPlaceholder": "Contraseña actual",
+      "warning": "Al cambiar tu contraseña, se cerrará tu sesión y deberás iniciar sesión nuevamente."
+    },
+    "avatar": {
+      "changePhoto": "Cambiar foto",
+      "uploadPhoto": "Subir foto",
+      "deletePhoto": "Eliminar foto",
+      "allowedTypes": "Solo se permiten imágenes JPEG, PNG, WebP o GIF",
+      "maxSize": "La imagen no puede superar los 2MB"
+    },
+    "navigation": {
+      "messages": "Mensajes",
+      "messagesDesc": "Comunicaciones internas",
+      "notifications": "Notificaciones",
+      "notificationsDesc": "Ver tus notificaciones",
+      "settings": "Configuración",
+      "settingsDesc": "Ajustes de cuenta"
+    },
+    "validation": {
+      "usernameRequired": "El nombre de usuario es requerido",
+      "usernameMinLength": "El nombre de usuario debe tener al menos 3 caracteres",
+      "usernameChars": "Solo se permiten letras, números y guiones bajos",
+      "enterCurrentPassword": "Ingresa tu contraseña actual para confirmar",
+      "enterPassword": "Ingresa tu contraseña actual",
+      "enterNewPassword": "Ingresa la nueva contraseña",
+      "passwordMinLength": "La nueva contraseña debe tener al menos 6 caracteres",
+      "passwordsNoMatch": "Las contraseñas no coinciden",
+      "passwordMustDiffer": "La nueva contraseña debe ser diferente a la actual"
+    },
+    "success": {
+      "usernameUpdated": "Nombre de usuario actualizado correctamente"
+    },
+    "errors": {
+      "updateUsername": "Error al actualizar el nombre de usuario",
+      "updatePassword": "Error al actualizar la contraseña",
+      "uploadImage": "Error al subir la imagen",
+      "deleteImage": "Error al eliminar la imagen"
+    },
+    "buttons": {
+      "save": "Guardar",
+      "saving": "Guardando...",
+      "cancel": "Cancelar",
+      "update": "Actualizar",
+      "updating": "Actualizando..."
+    },
+    "noEmail": "Sin email"
+  },
+  "settings": {
+    "title": "Configuración",
+    "subtitle": "Gestiona tu cuenta y preferencias del sistema",
+    "selectSection": "Seleccionar sección",
+    "tabs": {
+      "users": "Usuarios",
+      "departments": "Departamentos",
+      "notifications": "Notificaciones",
+      "security": "Seguridad",
+      "reports": "Reportes"
+    },
+    "users": {
+      "title": "Gestión de Usuarios",
+      "subtitle": "Administra usuarios y roles del sistema",
+      "new": "Nuevo",
+      "noUsers": "No hay usuarios",
+      "confirmDelete": "¿Estás seguro de que deseas eliminar este usuario?",
+      "allFieldsRequired": "Todos los campos son requeridos",
+      "errorDeleting": "Error al eliminar usuario",
+      "errorUpdating": "Error al actualizar usuario",
+      "errorLoading": "Error al cargar usuarios"
+    },
+    "departments": {
+      "title": "Gestión de Departamentos",
+      "subtitle": "Administra los departamentos del hotel",
+      "total": "total",
+      "new": "Nuevo",
+      "noDepartments": "No hay departamentos",
+      "confirmDelete": "¿Eliminar el departamento \"{name}\"?",
+      "deleted": "Departamento eliminado",
+      "created": "Departamento creado",
+      "updated": "Departamento actualizado",
+      "errorLoading": "Error al cargar departamentos",
+      "errorDeleting": "Error al eliminar",
+      "errorCreating": "Error al crear departamento",
+      "errorUpdating": "Error al actualizar",
+      "newDepartment": "Nuevo Departamento",
+      "editDepartment": "Editar Departamento",
+      "departmentName": "Nombre del Departamento",
+      "nameMinLength": "El nombre debe tener al menos 2 caracteres",
+      "saveHint": "Se guardará en minúsculas. Ejemplo: \"backoffice\" se mostrará como \"Back Office\"",
+      "editHint": "Se guardará en minúsculas para consistencia",
+      "placeholder": "Ej: Recursos Humanos",
+      "create": "Crear"
+    },
+    "notifications": {
+      "title": "Notificaciones",
+      "subtitle": "Configura cómo recibes las notificaciones",
+      "createNotification": "Crear Notificación",
+      "emailNotifications": "Notificaciones por email",
+      "emailDesc": "Recibir actualizaciones vía email",
+      "pushNotifications": "Push notifications",
+      "pushDesc": "Verificar y enviar pendientes",
+      "checking": "Verificando...",
+      "systemAlerts": "Alertas del sistema",
+      "systemAlertsDesc": "Actualizaciones importantes",
+      "verified": "Verificados",
+      "sent": "Enviados",
+      "failed": "Fallidos",
+      "errorChecking": "Error al verificar notificaciones"
+    },
+    "security": {
+      "title": "Seguridad",
+      "subtitle": "Gestiona la seguridad de tu cuenta",
+      "twoFactor": "Autenticación de dos factores",
+      "twoFactorDesc": "Añade una capa extra de seguridad",
+      "passwordRotation": "Rotación de contraseña",
+      "passwordRotationDesc": "Requerir cambio cada 90 días",
+      "loginAlerts": "Alertas de inicio de sesión",
+      "loginAlertsDesc": "Notificar nuevos dispositivos",
+      "activeSessions": "Sesiones activas",
+      "active": "Activa"
+    },
+    "roles": {
+      "admin": "Administrador",
+      "groupAdmin": "Admin de Grupos",
+      "receptionist": "Recepcionista",
+      "maintenance": "Mantenimiento"
+    }
+  },
+  "messages": {
+    "header": {
+      "title": "Mensajes",
+      "unread": "sin leer",
+      "allRead": "Todas las conversaciones leídas",
+      "new": "Nuevo",
+      "backToProfile": "Volver al perfil"
+    },
+    "conversations": {
+      "noConversations": "No hay conversaciones",
+      "startNew": "Iniciar una nueva",
+      "searchPlaceholder": "Buscar conversación...",
+      "noMessages": "Sin mensajes",
+      "groupNoName": "Grupo sin nombre"
+    },
+    "chat": {
+      "selectConversation": "Selecciona una conversación",
+      "chooseContact": "Elige un contacto para ver los mensajes",
+      "loadPrevious": "Cargar mensajes anteriores",
+      "loading": "Cargando...",
+      "edited": "editado",
+      "participants": "participantes",
+      "writeMessage": "Escribe un mensaje...",
+      "urgentNotification": "Los destinatarios recibirán una notificación urgente",
+      "notificationActive": "Notificación activada",
+      "activateNotification": "Activar notificación urgente"
+    },
+    "newConversation": {
+      "title": "Nueva conversación",
+      "searchUsers": "Buscar usuarios...",
+      "noUsersFound": "No se encontraron usuarios",
+      "groupName": "Nombre del grupo...",
+      "groupNeedsName": "Los grupos necesitan un nombre",
+      "createGroup": "Crear grupo",
+      "startChat": "Iniciar chat",
+      "creating": "Creando...",
+      "existingChat": "Chat existente"
+    },
+    "participants": {
+      "title": "Participantes",
+      "you": "tú",
+      "admin": "Admin"
+    },
+    "actions": {
+      "deleteMessage": "¿Eliminar este mensaje?",
+      "deleteConversation": "¿Eliminar esta conversación? Se borrarán todos los mensajes permanentemente.",
+      "noPermission": "No tienes permisos para eliminar esta conversación",
+      "leaveGroup": "¿Salir de esta conversación?",
+      "leaveGroupButton": "Salir del grupo",
+      "deleteConversationButton": "Eliminar conversación"
+    },
+    "time": {
+      "now": "Ahora"
+    }
+  },
+  "reports": {
+    "title": "System Reports",
+    "subtitle": "Logs y actividad del sistema",
+    "adminOnly": "Solo visible para admins",
+    "refresh": "Refresh",
+    "loadingSection": "Cargando sección...",
+    "sections": {
+      "overview": "Actividad General",
+      "overviewDesc": "Vista unificada de toda la actividad",
+      "logbooks": "Logbooks",
+      "logbooksDesc": "Historial de partes y comentarios",
+      "maintenance": "Mantenimiento",
+      "maintenanceDesc": "Reportes e historial de incidencias",
+      "groups": "Grupos",
+      "groupsDesc": "Historial de grupos y pagos",
+      "cashier": "Caja",
+      "cashierDesc": "Turnos, vales y cierres diarios"
+    },
+    "overview": {
+      "title": "Actividad del Sistema",
+      "description": "Vista unificada de los últimos {count} registros de actividad del sistema.",
+      "loadActivity": "Cargar Actividad",
+      "sources": {
+        "all": "Todas las fuentes",
+        "cashier": "Caja",
+        "groups": "Grupos",
+        "logbook": "Logbook",
+        "maintenance": "Mantenimiento"
+      },
+      "actions": {
+        "created": "Creado",
+        "updated": "Actualizado",
+        "deleted": "Eliminado",
+        "statusChanged": "Estado cambiado",
+        "paymentUpdated": "Pago actualizado",
+        "read": "Leído",
+        "unread": "Marcado no leído",
+        "solve": "Resuelto",
+        "reopen": "Reabierto",
+        "adjustment": "Ajuste",
+        "voucherCreated": "Vale creado",
+        "voucherRepaid": "Vale devuelto",
+        "dailyClosed": "Cierre diario",
+        "dailyReopened": "Reapertura diario",
+        "assigned": "Asignado",
+        "resolved": "Resuelto",
+        "closed": "Cerrado",
+        "restored": "Restaurado",
+        "create": "Creado",
+        "update": "Actualizado",
+        "delete": "Eliminado"
+      },
+      "table": {
+        "source": "Fuente",
+        "action": "Acción",
+        "user": "Usuario",
+        "record": "Registro",
+        "date": "Fecha"
+      },
+      "dateFilter": "Fecha actividad",
+      "noActivity": "No hay actividad registrada",
+      "showing": "Mostrando {count} registros (máx. {max})",
+      "errorLoading": "Error cargando actividad"
+    },
+    "logbooks": {
+      "title": "Historial de Logbooks",
+      "description": "Consulta logbooks históricos incluyendo eliminados.",
+      "loadHistory": "Cargar Historial",
+      "priority": {
+        "all": "Todas prioridades",
+        "low": "Baja",
+        "medium": "Media",
+        "high": "Alta",
+        "urgent": "Urgente"
+      },
+      "status": {
+        "all": "Todos",
+        "resolved": "Resuelto",
+        "deleted": "Eliminado"
+      },
+      "filters": {
+        "deleted": "Eliminados"
+      },
+      "table": {
+        "id": "ID",
+        "guest": "Huésped",
+        "issue": "Asunto",
+        "priority": "Prioridad",
+        "status": "Estado",
+        "createdBy": "Creado por",
+        "date": "Fecha"
+      },
+      "noData": "No se encontraron logbooks",
+      "showing": "Mostrando {count} registros"
+    },
+    "maintenance": {
+      "title": "Historial de Mantenimiento",
+      "description": "Consulta tickets de mantenimiento históricos incluyendo eliminados.",
+      "loadHistory": "Cargar Historial",
+      "priority": {
+        "all": "Todas prioridades",
+        "low": "Baja",
+        "medium": "Media",
+        "high": "Alta",
+        "urgent": "Urgente"
+      },
+      "status": {
+        "all": "Todos estados",
+        "reported": "Reportado",
+        "pending": "Pendiente",
+        "in_progress": "En Progreso",
+        "resolved": "Resuelto",
+        "closed": "Cerrado"
+      },
+      "filters": {
+        "deleted": "Eliminados"
+      },
+      "table": {
+        "id": "ID",
+        "location": "Ubicación",
+        "issue": "Problema",
+        "priority": "Prioridad",
+        "status": "Estado",
+        "reportedBy": "Reportado por",
+        "date": "Fecha"
+      },
+      "noData": "No se encontraron tickets de mantenimiento",
+      "showing": "Mostrando {count} registros"
+    },
+    "groups": {
+      "title": "Historial de Grupos",
+      "description": "Consulta los últimos {count} grupos o filtra por fecha de llegada.",
+      "loadHistory": "Cargar Grupos",
+      "errorLoading": "Error cargando grupos",
+      "notFound": "Grupo #{id} no encontrado",
+      "arrivalDate": "Fecha llegada",
+      "status": {
+        "all": "Todos estados",
+        "confirmed": "Confirmado",
+        "pending": "Pendiente",
+        "tentative": "Tentativo",
+        "cancelled": "Cancelado",
+        "completed": "Completado"
+      },
+      "stats": {
+        "total": "Total Grupos",
+        "confirmed": "Confirmados",
+        "pending": "Pendientes",
+        "shown": "Mostrados"
+      },
+      "viewAll": "Ver todos",
+      "searchId": "Buscar ID...",
+      "table": {
+        "id": "ID",
+        "name": "Nombre",
+        "dates": "Fechas",
+        "rooms": "Habitaciones",
+        "status": "Estado",
+        "total": "Total"
+      },
+      "history": {
+        "title": "Historial",
+        "changes": "Historial de cambios",
+        "by": "por",
+        "noHistory": "No hay historial disponible"
+      },
+      "noData": "No se encontraron grupos",
+      "showing": "Mostrando {count} grupos"
+    },
+    "cashier": {
+      "title": "Reportes de Caja",
+      "description": "Consulta el dashboard de caja, historial de vales y actividad del sistema.",
+      "loadDashboard": "Cargar Dashboard",
+      "views": {
+        "dashboard": "Dashboard",
+        "vouchers": "Vales",
+        "history": "Historial"
+      },
+      "dateFilter": "Fecha reporte",
+      "historyDateFilter": "Filtrar por fecha",
+      "voucherStatus": {
+        "all": "Todos los vales",
+        "pending": "Pendientes",
+        "justified": "Justificados",
+        "cancelled": "Cancelados"
+      },
+      "shiftTypes": {
+        "morning": "Mañana",
+        "afternoon": "Tarde",
+        "night": "Noche",
+        "audit": "Auditoría"
+      },
+      "dashboard": {
+        "today": "Hoy",
+        "closed": "Cerrado",
+        "totalIncome": "Total Ingresos",
+        "cash": "Efectivo",
+        "otherPayments": "Otros Pagos",
+        "openShifts": "Turnos Abiertos",
+        "totalShifts": "Total Turnos",
+        "shifts": "Turnos",
+        "shiftsClosed": "{count} cerrados",
+        "vouchers": "Vales"
+      },
+      "vouchersSummary": {
+        "title": "Resumen de Vales",
+        "activeVouchers": "Vales Activos",
+        "pendingAmount": "Monto Pendiente",
+        "totalJustified": "Total Justificado",
+        "pendingAlert": "{count} vales pendientes",
+        "viewVouchers": "Ver vales"
+      },
+      "difference": {
+        "title": "Diferencia",
+        "surplus": "Sobrante en caja",
+        "shortage": "Faltante en caja"
+      },
+      "shiftDetail": {
+        "title": "Detalle por Turno",
+        "shift": "Turno",
+        "income": "Ingresos",
+        "inBox": "En Caja",
+        "status": "Estado",
+        "balanced": "Cuadrado",
+        "unbalanced": "Descuadre"
+      },
+      "voucher": {
+        "for": "Para",
+        "shift": "Turno",
+        "justified": "Justificado"
+      },
+      "historyTable": {
+        "action": "Acción",
+        "table": "Tabla",
+        "field": "Campo",
+        "user": "Usuario",
+        "date": "Fecha"
+      },
+      "empty": {
+        "noVouchers": "No hay vales",
+        "noVouchersWithStatus": "No hay vales con estado \"{status}\"",
+        "noHistory": "No hay historial disponible"
+      },
+      "showing": "Mostrando {count} {type} (máx. {max})",
+      "voucher_plural": "vales",
+      "record_plural": "registros",
+      "errorLoading": "Error cargando datos de caja"
+    },
+    "common": {
+      "filterByDate": "Filtrar por fecha"
+    }
+  }
+}

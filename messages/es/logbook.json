@@ -1,0 +1,78 @@
+{
+  "title": "Libro de Consignas",
+  "subtitle": "Registro de eventos y comunicaciones del hotel",
+  "newEntry": "Nueva Entrada",
+  "loading": "Cargando entradas...",
+  "priority": {
+    "low": "Baja",
+    "medium": "Media",
+    "high": "Alta",
+    "critical": "Urgente"
+  },
+  "status": {
+    "pending": "Pendiente",
+    "resolved": "Resuelto"
+  },
+  "filters": {
+    "searchPlaceholder": "Buscar en el libro de consignas...",
+    "allDepartments": "Todos los departamentos",
+    "allPriorities": "Todas las prioridades",
+    "allStatuses": "Todos los estados"
+  },
+  "entry": {
+    "by": "por",
+    "readBy": "Leído por {count} persona(s)",
+    "notRead": "Sin lecturas",
+    "comments": "comentario(s)",
+    "noComments": "Sin comentarios",
+    "edited": "(editado)"
+  },
+  "actions": {
+    "markAsRead": "Marcar como leído",
+    "unmarkAsRead": "Desmarcar como leído",
+    "markResolved": "Marcar como resuelto",
+    "markPending": "Marcar como pendiente",
+    "addComment": "Añadir comentario",
+    "editEntry": "Editar entrada",
+    "deleteEntry": "Eliminar entrada"
+  },
+  "toast": {
+    "entryCreated": "Entrada creada correctamente",
+    "entryCreateError": "Error al crear la entrada",
+    "entryUpdated": "Entrada actualizada correctamente",
+    "entryUpdateError": "Error al actualizar la entrada",
+    "entryDeleted": "Entrada eliminada correctamente",
+    "entryDeleteError": "Error al eliminar la entrada",
+    "statusChangedTo": "Estado cambiado a {status}",
+    "statusResolved": "resuelto",
+    "statusPending": "pendiente",
+    "statusChangeError": "Error al cambiar el estado",
+    "markedAsRead": "Marcado como leído",
+    "unmarkedAsRead": "Desmarcado como leído",
+    "readStatusError": "Error al cambiar el estado de lectura",
+    "commentAdded": "Comentario añadido correctamente",
+    "commentAddError": "Error al crear el comentario",
+    "commentUpdated": "Comentario actualizado correctamente",
+    "commentUpdateError": "Error al actualizar el comentario",
+    "commentDeleted": "Comentario eliminado correctamente",
+    "commentDeleteError": "Error al eliminar el comentario"
+  },
+  "empty": {
+    "title": "Sin entradas",
+    "description": "No hay entradas registradas para esta fecha"
+  },
+  "confirm": {
+    "deleteEntry": "¿Seguro que quieres eliminar esta entrada?",
+    "deleteComment": "¿Seguro que quieres eliminar este comentario?"
+  },
+  "form": {
+    "department": "Departamento",
+    "selectDepartment": "Selecciona un departamento",
+    "priority": "Prioridad",
+    "selectPriority": "Selecciona la prioridad",
+    "message": "Mensaje",
+    "messagePlaceholder": "Escribe el mensaje de la consigna...",
+    "comment": "Comentario",
+    "commentPlaceholder": "Escribe tu comentario..."
+  }
+}

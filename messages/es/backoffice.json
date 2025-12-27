@@ -1,0 +1,525 @@
+{
+  "title": "Back Office",
+  "subtitle": "Gestion de facturas y proveedores",
+  "stats": {
+    "pendingInvoices": "Facturas Pendientes",
+    "pendingTotal": "Total Pendiente",
+    "overdue": "Vencidas",
+    "paidMonth": "Pagadas (Mes)",
+    "paidTotal": "Total Pagado",
+    "suppliers": "Proveedores"
+  },
+  "tabs": {
+    "pending": "Pendientes",
+    "paid": "Pagadas",
+    "suppliers": "Proveedores",
+    "settings": "Configuracion"
+  },
+  "filters": {
+    "search": "Buscar...",
+    "searchSupplier": "Buscar proveedor...",
+    "allCategories": "Todas las categorias",
+    "allPayments": "Todos los pagos",
+    "allPeriodicities": "Todas las periodicidades",
+    "transfer": "Transferencia",
+    "directDebit": "Domiciliacion",
+    "byMonth": "Por Mes",
+    "lastQuarter": "Ultimo trimestre",
+    "lastYear": "Ultimo ano",
+    "allHistory": "Todo el historico"
+  },
+  "periodicity": {
+    "monthly": "Mensual",
+    "bimonthly": "Bimestral",
+    "quarterly": "Trimestral",
+    "annual": "Anual",
+    "onDemand": "Bajo demanda"
+  },
+  "months": {
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril",
+    "may": "Mayo",
+    "june": "Junio",
+    "july": "Julio",
+    "august": "Agosto",
+    "september": "Septiembre",
+    "october": "Octubre",
+    "november": "Noviembre",
+    "december": "Diciembre"
+  },
+  "actions": {
+    "newInvoice": "Nueva Factura",
+    "closeMonth": "Cerrar Mes",
+    "validate": "Validar",
+    "exportZip": "Exportar ZIP",
+    "excel": "Excel",
+    "pdf": "PDF",
+    "csv": "CSV",
+    "zip": "ZIP",
+    "newSupplier": "Nuevo Proveedor",
+    "reopenMonth": "Reabrir Mes",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "viewPdf": "Ver PDF",
+    "uploadPdf": "Subir PDF",
+    "viewInvoices": "Ver Facturas",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "close": "Cerrar",
+    "retry": "Reintentar",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "download": "Descargar",
+    "downloading": "Descargando...",
+    "uploading": "Subiendo...",
+    "processing": "Procesando...",
+    "saving": "Guardando..."
+  },
+  "table": {
+    "supplier": "Proveedor",
+    "invoiceNumber": "N Factura",
+    "date": "Fecha",
+    "invoiceDate": "Fecha Factura",
+    "paymentDate": "Fecha Pago",
+    "withoutVat": "Sin IVA",
+    "withVat": "Con IVA",
+    "amount": "Importe",
+    "status": "Estado",
+    "category": "Categoria",
+    "actions": "Acciones",
+    "periodicity": "Periodicidad",
+    "department": "Departamento",
+    "totalYtd": "Total YTD",
+    "invoices": "Facturas",
+    "method": "Metodo"
+  },
+  "status": {
+    "pending": "Pendiente",
+    "validated": "Validada",
+    "paid": "Pagada"
+  },
+  "empty": {
+    "noInvoices": "No se encontraron facturas",
+    "noPaidInvoices": "No se encontraron facturas pagadas",
+    "noSuppliers": "No se encontraron proveedores",
+    "selectSupplier": "Selecciona un proveedor para ver sus detalles",
+    "noInvoicesForSupplier": "No hay facturas para este proveedor"
+  },
+  "pagination": {
+    "showing": "Mostrando {count} de {total} facturas",
+    "showingSuppliers": "Mostrando {count} de {total} proveedores",
+    "page": "Pagina {current} de {total}"
+  },
+  "selection": {
+    "selected": "{count} seleccionada(s) - Total: {amount}"
+  },
+  "pending": {
+    "summary": {
+      "totalFiltered": "Total Filtrado",
+      "totalMonth": "Total {month}",
+      "directDebits": "Domiciliadas",
+      "transfers": "Transferencias"
+    },
+    "validateWithStamp": "Validar con sello/firma",
+    "revertValidation": "Revertir validacion",
+    "noPdf": "Sin PDF"
+  },
+  "paid": {
+    "summary": {
+      "totalFiltered": "Total Filtrado",
+      "totalMonth": "Total {month}",
+      "directDebits": "Domiciliadas",
+      "transfers": "Transferencias"
+    }
+  },
+  "suppliers": {
+    "summary": {
+      "suppliers": "Proveedores",
+      "directDebits": "Domiciliados",
+      "totalYtd": "Total YTD"
+    },
+    "detail": {
+      "totalYtd": "Total YTD",
+      "invoices": "Facturas",
+      "pending": "Pendientes:",
+      "paid": "Pagadas:",
+      "lastInvoice": "Ultima factura:",
+      "periodicity": "Periodicidad:",
+      "paymentMethod": "Forma de pago:",
+      "cif": "CIF",
+      "bankAccount": "Cuenta Bancaria",
+      "notes": "Observaciones",
+      "contact": "Contacto",
+      "address": "Direccion",
+      "noCategory": "Sin categoria"
+    },
+    "dom": "DOM"
+  },
+  "settings": {
+    "uploadTitle": "Subir nuevo sello o firma",
+    "type": "Tipo",
+    "stamp": "Sello",
+    "signature": "Firma",
+    "name": "Nombre",
+    "namePlaceholder": {
+      "stamp": "Ej: Sello empresa",
+      "signature": "Ej: Firma Director"
+    },
+    "image": "Imagen",
+    "selectFile": "Seleccionar archivo PNG o WebP",
+    "uploadButton": {
+      "stamp": "Subir Sello",
+      "signature": "Subir Firma"
+    },
+    "recommendation": "Recomendado: PNG con fondo transparente. Max 2MB.",
+    "preview": "Vista previa",
+    "stamps": "Sellos",
+    "signatures": "Firmas",
+    "default": "Default",
+    "setAsDefault": "Establecer como predeterminado",
+    "noStamps": "No hay sellos disponibles",
+    "noSignatures": "No hay firmas disponibles",
+    "uploadHint": "Sube uno usando el formulario de arriba",
+    "info": {
+      "title": "Informacion",
+      "description": "Los sellos y firmas se utilizan para validar facturas. Al validar una factura con PDF, podras anadir estos elementos sobre el documento. El elemento marcado como \"Default\" sera sugerido automaticamente."
+    }
+  },
+  "modals": {
+    "invoice": {
+      "createTitle": "Nueva Factura",
+      "editTitle": "Editar Factura",
+      "fields": {
+        "invoiceNumber": "N Factura",
+        "supplier": "Proveedor",
+        "category": "Categoria",
+        "invoiceDate": "Fecha Factura",
+        "amountWithoutVat": "Importe sin IVA",
+        "vatPercentage": "% IVA",
+        "amountWithVat": "Importe con IVA",
+        "paymentMethod": "Metodo de Pago",
+        "receivedDate": "Fecha Recepcion",
+        "dueDate": "Fecha Vencimiento",
+        "periodStart": "Periodo Inicio",
+        "periodEnd": "Periodo Fin",
+        "notes": "Notas"
+      },
+      "placeholders": {
+        "invoiceNumber": "FV-2025-001",
+        "selectSupplier": "Seleccionar proveedor...",
+        "noCategory": "Sin categoria",
+        "selectDate": "Seleccionar fecha",
+        "notes": "Observaciones..."
+      },
+      "vat": {
+        "general": "21% (General)",
+        "reduced": "10% (Reducido)",
+        "superReduced": "4% (Superreducido)",
+        "exempt": "0% (Exento)"
+      },
+      "paymentMethods": {
+        "transfer": "Transferencia",
+        "directDebit": "Domiciliado"
+      },
+      "validation": {
+        "invoiceNumberRequired": "El numero de factura es requerido",
+        "supplierRequired": "Debe seleccionar un proveedor",
+        "amountRequired": "El importe debe ser mayor a 0",
+        "dateRequired": "La fecha de factura es requerida"
+      },
+      "buttons": {
+        "create": "Crear Factura",
+        "update": "Actualizar"
+      }
+    },
+    "supplier": {
+      "createTitle": "Nuevo Proveedor",
+      "editTitle": "Editar Proveedor",
+      "fields": {
+        "name": "Nombre",
+        "cif": "CIF",
+        "defaultCategory": "Categoria por Defecto",
+        "periodicity": "Periodicidad",
+        "paymentMethod": "Metodo de Pago",
+        "bankAccount": "Cuenta Bancaria (IBAN)",
+        "email": "Email",
+        "phone": "Telefono",
+        "address": "Direccion",
+        "notes": "Notas"
+      },
+      "placeholders": {
+        "name": "Nombre del proveedor",
+        "cif": "B12345678",
+        "noCategory": "Sin categoria",
+        "bankAccount": "ES12 1234 5678 9012 3456 7890",
+        "email": "proveedor@ejemplo.com",
+        "phone": "+34 912 345 678",
+        "address": "Calle, numero, ciudad, CP",
+        "notes": "Observaciones..."
+      },
+      "validation": {
+        "nameRequired": "El nombre es requerido",
+        "cifInvalid": "Formato invalido (5-20 caracteres alfanumericos)",
+        "emailInvalid": "Formato de email invalido",
+        "ibanInvalid": "Formato de IBAN invalido (ej: ES9121000418450200051332)"
+      },
+      "buttons": {
+        "create": "Crear Proveedor",
+        "update": "Actualizar"
+      }
+    },
+    "pdfUpload": {
+      "originalTitle": "Subir PDF Original",
+      "validatedTitle": "Subir PDF Validado",
+      "invoice": "Factura:",
+      "existingWarning": {
+        "original": "Ya existe un PDF original. Subir uno nuevo reemplazara el anterior.",
+        "validated": "Ya existe un PDF validado. Subir uno nuevo reemplazara el anterior."
+      },
+      "dropzone": {
+        "drag": "Arrastra un archivo PDF aqui",
+        "click": "o haz clic para seleccionar",
+        "maxSize": "Maximo 10MB"
+      },
+      "errors": {
+        "onlyPdf": "Solo se permiten archivos PDF",
+        "maxSize": "El archivo no puede superar 10MB",
+        "selectFile": "Selecciona un archivo PDF"
+      },
+      "buttons": {
+        "upload": "Subir PDF",
+        "remove": "Eliminar"
+      }
+    },
+    "pdfViewer": {
+      "title": "Visor de PDF",
+      "originalTab": "Original",
+      "validatedTab": "Validado",
+      "originalPdf": "PDF Original",
+      "validatedPdf": "PDF Validado",
+      "validated": "Validado",
+      "openNewTab": "Abrir en nueva pestana",
+      "newTab": "Nueva pestana",
+      "download": "Descargar",
+      "downloadPdf": "Descargar PDF",
+      "close": "Cerrar",
+      "loadingInvoice": "Cargando datos de factura...",
+      "loadingPdf": "Cargando PDF...",
+      "errorLoading": "Error al cargar el PDF",
+      "noOriginalAvailable": "No hay PDF original disponible",
+      "noValidatedAvailable": "No hay PDF validado disponible",
+      "noPdfAvailable": "No hay PDF disponible",
+      "retry": "Reintentar",
+      "pdfDownloaded": "PDF descargado",
+      "downloadError": "Error al descargar el PDF"
+    },
+    "confirm": {
+      "cancel": "Cancelar",
+      "confirm": "Confirmar",
+      "processing": "Procesando..."
+    },
+    "deleteInvoice": {
+      "title": "Eliminar Factura",
+      "message": "Seguro que deseas eliminar la factura \"{number}\"? Esta accion no se puede deshacer.",
+      "confirmButton": "Eliminar"
+    },
+    "deleteSupplier": {
+      "title": "Eliminar Proveedor",
+      "messageWithInvoices": "No se puede eliminar \"{name}\" porque tiene {count} factura(s) asociada(s). Elimina primero todas las facturas desde \"Ver Facturas\".",
+      "messageEmpty": "Estas seguro de que quieres eliminar el proveedor \"{name}\"? Esta accion no se puede deshacer.",
+      "confirmButton": "Eliminar"
+    },
+    "deleteElement": {
+      "title": "Eliminar elemento",
+      "message": "Estas seguro de que quieres eliminar \"{name}\"? Esta accion no se puede deshacer.",
+      "confirmButton": "Eliminar"
+    },
+    "validateInvoice": {
+      "title": "Validar Factura",
+      "invoice": "Factura:",
+      "supplier": "Proveedor:",
+      "amount": "Importe:",
+      "noPdfWarning": "Esta factura no tiene PDF adjunto. Se validara sin sello/firma.",
+      "confirmButton": "Validar"
+    },
+    "batchPayment": {
+      "title": "Cerrar Mes - Marcar como Pagadas",
+      "month": "Mes:",
+      "validatedInvoices": "Facturas validadas:",
+      "totalAmount": "Importe total:",
+      "noInvoices": "No hay facturas validadas para este mes.",
+      "description": "Esta accion marcara todas las facturas validadas de {month} como pagadas. La fecha de pago sera la fecha de cada factura.",
+      "confirmButton": "Marcar {count} como Pagadas"
+    },
+    "revertBatchPayment": {
+      "title": "Reabrir Mes - Revertir Cierre",
+      "selectMonth": "Seleccionar mes a revertir",
+      "month": "Mes:",
+      "paidInvoices": "Facturas pagadas:",
+      "totalAmount": "Importe total:",
+      "noInvoices": "No hay facturas pagadas para este mes.",
+      "description": "Esta accion revertira todas las facturas pagadas de {month} a estado validado. Podras volver a cerrar el mes posteriormente.",
+      "confirmButton": "Revertir {count} Facturas"
+    },
+    "pdfEditor": {
+      "title": "Validar Factura",
+      "tools": "Herramientas",
+      "selectAndMove": "Seleccionar y mover",
+      "addText": "Anadir texto",
+      "highlight": "Subrayar",
+      "textPlaceholder": "Escribe el texto...\n(Enter para nueva linea)",
+      "fontSize": "Tamano:",
+      "clickToAddText": "Haz clic en el PDF para anadir el texto",
+      "highlightColor": "Color:",
+      "clickAndDragToHighlight": "Click y arrastra sobre el texto para subrayar",
+      "stamps": "Sellos",
+      "noStampsAvailable": "No hay sellos disponibles. Subelos desde la pestana Configuracion.",
+      "signatures": "Firmas",
+      "noSignaturesAvailable": "No hay firmas disponibles. Subelas desde la pestana Configuracion.",
+      "selectedElement": "Elemento seleccionado",
+      "deleteElement": "Eliminar",
+      "dragToMove": "Arrastra para mover",
+      "elementsCount": "Elementos: {count} | Pagina actual: {pageCount}",
+      "saving": "Guardando...",
+      "saveAndValidate": "Guardar y Validar",
+      "validateWithoutModify": "Validar sin modificar",
+      "undo": "Deshacer",
+      "undoCount": "Deshacer ({count})",
+      "zoomOut": "Alejar",
+      "zoomIn": "Acercar",
+      "page": "Pagina {current} de {total}",
+      "close": "Cerrar",
+      "loadingPdf": "Cargando PDF...",
+      "errorLoadingPdf": "Error al cargar el PDF",
+      "errorDownloadingPdf": "Error al descargar el PDF: {status}",
+      "errorLoadingEditor": "Error al cargar el editor",
+      "errorRenderingPdf": "Error al renderizar el PDF",
+      "moveAndResize": "Arrastra | Esquinas: redimensionar"
+    },
+    "supplierInvoices": {
+      "title": "Facturas de {name}",
+      "totalInvoices": "{count} facturas en total",
+      "stats": {
+        "totalPaid": "Total Pagado",
+        "pending": "Pendiente",
+        "totalYtd": "Total YTD"
+      },
+      "invoice": "factura",
+      "invoices": "facturas",
+      "paidDate": "Pagada:",
+      "downloadOriginal": "Descargar PDF Original",
+      "downloadValidated": "Descargar PDF Validado",
+      "noOriginalPdf": "Sin PDF Original",
+      "noValidatedPdf": "Sin PDF Validado",
+      "deleteInvoice": "Eliminar factura",
+      "deleteConfirm": {
+        "step1": {
+          "title": "Eliminar Factura",
+          "invoice": "Factura:",
+          "amount": "Importe:",
+          "status": "Estado:",
+          "question": "Estas seguro de que quieres eliminar esta factura?",
+          "confirm": "Si, eliminar"
+        },
+        "step2": {
+          "title": "CONFIRMACION FINAL",
+          "warning": "ATENCION: Esta accion es PERMANENTE e IRREVERSIBLE. La factura {number} sera eliminada completamente del sistema junto con todo su historial.",
+          "instruction": "Escribe ELIMINAR para confirmar:",
+          "placeholder": "Escribe ELIMINAR",
+          "confirm": "ELIMINAR PERMANENTEMENTE",
+          "deleting": "Eliminando..."
+        }
+      }
+    }
+  },
+  "loading": {
+    "title": "Back Office",
+    "subtitle": "Gestion de facturas y proveedores"
+  },
+  "error": {
+    "title": "Back Office",
+    "subtitle": "Gestion de facturas y proveedores",
+    "errorTitle": "Error al cargar datos",
+    "errorDescription": "No se pudieron cargar los datos del Back Office. Esto puede deberse a un problema de conexion con el servidor.",
+    "errorDetails": "Detalles del error",
+    "retry": "Reintentar",
+    "backToDashboard": "Volver al Dashboard",
+    "helpText": "Si el problema persiste, verifica que el servidor backend este funcionando correctamente o contacta al administrador del sistema."
+  },
+  "toast": {
+    "invoiceDeleted": "Factura eliminada",
+    "invoiceDeleteError": "Error al eliminar la factura",
+    "invoiceValidated": "Factura validada correctamente",
+    "invoicesValidated": "{count} factura(s) validada(s)",
+    "invoicesValidatedError": "{count} factura(s) con error",
+    "invoiceValidateError": "Error al validar la factura",
+    "validationReverted": "Validacion revertida correctamente",
+    "validationRevertError": "Error al revertir la validacion",
+    "invoiceCreated": "Factura creada correctamente",
+    "invoiceUpdated": "Factura actualizada correctamente",
+    "invoiceSaveError": "Error al guardar la factura",
+    "supplierCreated": "Proveedor creado correctamente",
+    "supplierUpdated": "Proveedor actualizado correctamente",
+    "supplierDeleted": "Proveedor eliminado correctamente",
+    "supplierSaveError": "Error al guardar el proveedor",
+    "supplierDeleteError": "Error al eliminar el proveedor",
+    "pdfOriginalUploaded": "PDF original subido correctamente",
+    "pdfValidatedUploaded": "PDF validado subido correctamente",
+    "pdfUploadError": "Error al subir el PDF",
+    "pdfValidatedWithStamp": "Factura validada con PDF firmado",
+    "pdfValidatedSaveError": "Error al guardar el PDF validado",
+    "noPdfAttached": "Esta factura no tiene PDF adjunto",
+    "selectAtLeastOne": "Selecciona al menos una factura",
+    "maxInvoicesDownload": "Maximo 100 facturas por descarga",
+    "invoicesNotValidated": "Las siguientes facturas no estan validadas o no tienen PDF validado: {names}",
+    "invoicesDownloaded": "{count} factura(s) descargada(s)",
+    "downloadError": "Error al descargar las facturas",
+    "exportError": "Error al obtener preview",
+    "batchPaymentSuccess": "Facturas marcadas como pagadas",
+    "batchPaymentError": "Error al ejecutar batch payment",
+    "revertSuccess": "Facturas revertidas correctamente",
+    "revertError": "Error al revertir",
+    "noPaidInvoicesToRevert": "No hay facturas pagadas para revertir",
+    "noInvoicesToExport": "No hay facturas para exportar",
+    "exportFirst50": "Exportando las primeras 50 facturas. Usa filtros para reducir la seleccion.",
+    "downloadFirst50": "Descargando las primeras 50 facturas. Usa filtros para reducir la seleccion.",
+    "invoicesWithoutPdf": "Facturas sin PDF validado: {names}",
+    "invoicesExported": "{count} facturas exportadas",
+    "invoicesDownloadedZip": "{count} factura(s) descargada(s) en ZIP",
+    "excelExported": "Excel exportado correctamente",
+    "excelExportError": "Error al exportar a Excel",
+    "pdfExported": "PDF exportado correctamente",
+    "pdfExportError": "Error al exportar a PDF",
+    "assetCreated": "{type} creado correctamente",
+    "assetDeleted": "Eliminado correctamente",
+    "assetDeleteError": "Error al eliminar",
+    "assetSetDefault": "{name} establecido como predeterminado",
+    "assetSetDefaultError": "Error al establecer como predeterminado",
+    "uploadError": "Error al subir el archivo",
+    "selectFileAndName": "Selecciona un archivo y escribe un nombre",
+    "onlyPngWebp": "Solo se permiten imagenes PNG o WebP",
+    "fileTooLarge": "El archivo es demasiado grande. Maximo 2MB",
+    "loadError": "Error al cargar las facturas",
+    "pdfValidatedSuccess": "PDF validado correctamente",
+    "pdfSaveError": "Error al guardar el PDF",
+    "previewError": "Error al obtener preview",
+    "revertPaymentsError": "Error al revertir pagos",
+    "unknownError": "Error desconocido",
+    "downloadPdfError": "Error al descargar PDF"
+  },
+  "csvHeaders": {
+    "supplier": "Proveedor",
+    "invoiceNumber": "N Factura",
+    "invoiceDate": "Fecha Factura",
+    "paymentDate": "Fecha Pago",
+    "amountWithoutVat": "Importe sin IVA",
+    "amountWithVat": "Importe con IVA",
+    "vatPercentage": "% IVA",
+    "paymentMethod": "Metodo de Pago",
+    "costCenter": "Centro de Coste",
+    "department": "Departamento"
+  }
+}

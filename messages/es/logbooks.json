@@ -1,0 +1,190 @@
+{
+  "title": "Bitácoras",
+  "container": {
+    "today": "Hoy",
+    "dailyEntries": "Entradas diarias: {count}",
+    "newEntry": "Nueva entrada",
+    "lastUpdate": "Actualizado"
+  },
+  "list": {
+    "loading": "Cargando...",
+    "empty": "No hay registros para este día.",
+    "emptyState": "Aún no hay entradas para este día.",
+    "unknownUser": "Desconocido",
+    "headerTitle": "Libro de Consignas",
+    "lastUpdate": "Última actualización: {date}",
+    "columns": {
+      "timeAuthor": "Hora/Autor",
+      "entries": "Entradas",
+      "department": "Departamento",
+      "priority": "Prioridad",
+      "readBy": "Leído por",
+      "actions": "Acciones"
+    },
+    "readers": {
+      "label": "Leído por:",
+      "none": "Nadie aún",
+      "moreTemplate": "+__count__ más",
+      "mark": "Marcar",
+      "unmark": "Desmarcar"
+    },
+    "comment": {
+      "byAuthor": "Por {author}",
+      "edited": "editado",
+      "editedTooltip": "Editado el {date}"
+    },
+    "actions": {
+      "edit": "Editar",
+      "comment": "Comentar",
+      "delete": "Eliminar",
+      "resolved": "Resuelto",
+      "pending": "Pendiente",
+      "mark": "Marcar",
+      "unmark": "Desmarcar"
+    },
+    "confirm": {
+      "deleteEntry": "¿Estás seguro de que quieres eliminar esta entrada?",
+      "deleteComment": "¿Estás seguro de que quieres eliminar este comentario?",
+      "toggleStatus": {
+        "toResolved": "Marcar como resuelto",
+        "toPending": "Marcar como pendiente"
+      }
+    },
+    "alerts": {
+      "entryAuthorOnly": "Solo el autor puede editar esta entrada",
+      "commentAuthorOnly": "Solo el autor puede editar este comentario",
+      "unauthenticated": "Usuario no autenticado"
+    },
+    "badges": {
+      "lastEdited": "Editado: {date}",
+      "lastEditedTooltip": "Editado el {date}"
+    },
+    "tooltips": {
+      "editComment": "Editar comentario",
+      "deleteComment": "Eliminar comentario",
+      "deleteEntry": "Eliminar entrada",
+      "editEntry": "Editar entrada"
+    }
+  },
+  "modals": {
+    "common": {
+      "loading": "Cargando...",
+      "noDepartments": "Sin departamentos"
+    },
+    "newEntry": {
+      "title": "Nueva entrada de bitácora",
+      "subtitle": "Crea una nueva entrada para el libro de consignas",
+      "errors": {
+        "requiredMessage": "El mensaje es obligatorio",
+        "minChars": "El mensaje debe tener al menos 3 caracteres",
+        "department": "Debes seleccionar un departamento",
+        "generic": "Error al crear la entrada"
+      },
+      "fields": {
+        "message": "Mensaje",
+        "date": "Fecha",
+        "priority": "Prioridad",
+        "department": "Departamento",
+        "today": "Hoy"
+      },
+      "placeholders": {
+        "message": "Describe el incidente o evento...",
+        "date": "Selecciona una fecha..."
+      },
+      "departmentPlaceholder": "Elegir departamento...",
+      "footer": {
+        "cancel": "Cancelar",
+        "submit": "Guardar entrada"
+      }
+    },
+    "newComment": {
+      "title": "Agregar comentario",
+      "subtitle": "Añade un comentario a esta entrada",
+      "fields": {
+        "comment": "Comentario",
+        "priority": "Prioridad",
+        "department": "Departamento"
+      },
+      "placeholders": {
+        "comment": "Escribe tu comentario..."
+      },
+      "departmentPlaceholder": "Elegir departamento...",
+      "footer": {
+        "cancel": "Cancelar",
+        "submit": "Agregar comentario"
+      }
+    },
+    "editEntry": {
+      "title": "Editar entrada de bitácora",
+      "fields": {
+        "message": "Mensaje",
+        "priority": "Prioridad",
+        "department": "Departamento"
+      },
+      "placeholders": {
+        "message": "Edita tu mensaje..."
+      },
+      "hint": "Mínimo 3 caracteres",
+      "footer": {
+        "cancel": "Cancelar",
+        "submit": "Guardar cambios"
+      }
+    },
+    "editComment": {
+      "title": "Editar comentario",
+      "fields": {
+        "comment": "Comentario",
+        "priority": "Prioridad",
+        "department": "Departamento"
+      },
+      "placeholders": {
+        "comment": "Edita tu comentario..."
+      },
+      "hint": "Mínimo 3 caracteres",
+      "footer": {
+        "cancel": "Cancelar",
+        "submit": "Guardar cambios"
+      }
+    }
+  },
+  "priorities": {
+    "critical": "Crítica",
+    "high": "Alta",
+    "medium": "Media",
+    "low": "Baja"
+  },
+  "departments": {
+    "reception": "Recepción",
+    "housekeeping": "Housekeeping",
+    "maintenance": "Mantenimiento"
+  },
+  "dashboardCard": {
+    "title": "¡Importante para {period}!",
+    "refresh": "Actualizar",
+    "viewAll": "Ver todo",
+    "entryCount": "{count, plural, one {# entrada {periodRange}} other {# entradas {periodRange}}}",
+    "empty": "No hay elementos críticos o de alta prioridad {periodRange}",
+    "status": {
+      "resolved": "Resuelto",
+      "pending": "Pendiente"
+    },
+    "priority": {
+      "critical": "Crítica",
+      "high": "Alta",
+      "normal": "Normal"
+    },
+    "byAuthor": "Por {author}",
+    "period": {
+      "label": {
+        "today": "Hoy",
+        "week": "Esta semana",
+        "month": "Este mes"
+      },
+      "range": {
+        "today": "para hoy",
+        "week": "esta semana",
+        "month": "este mes"
+      }
+    }
+  }
+}

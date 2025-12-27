@@ -1,0 +1,75 @@
+{
+  "inbox": {
+    "title": "Mensajes",
+    "subtitle": "Comunicación interna",
+    "empty": "Sin mensajes",
+    "emptyDescription": "No tienes mensajes todavía",
+    "newMessage": "Nuevo Mensaje",
+    "markAsRead": "Marcar como leído",
+    "markAsUnread": "Marcar como no leído",
+    "delete": "Eliminar",
+    "deleteConfirm": "¿Estás seguro de que deseas eliminar este mensaje?",
+    "search": "Buscar mensajes...",
+    "filter": {
+      "all": "Todos",
+      "unread": "No leídos",
+      "read": "Leídos",
+      "sent": "Enviados"
+    }
+  },
+  "conversation": {
+    "title": "Conversación",
+    "reply": "Responder",
+    "replyPlaceholder": "Escribe tu respuesta...",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "attachFile": "Adjuntar archivo",
+    "noMessages": "No hay mensajes en esta conversación",
+    "loadMore": "Cargar más mensajes",
+    "typing": "{user} está escribiendo...",
+    "delivered": "Entregado",
+    "read": "Leído",
+    "failed": "Error al enviar"
+  },
+  "compose": {
+    "title": "Nuevo Mensaje",
+    "to": "Para",
+    "toPlaceholder": "Seleccionar destinatario",
+    "subject": "Asunto",
+    "subjectPlaceholder": "Ingresa el asunto",
+    "message": "Mensaje",
+    "messagePlaceholder": "Escribe tu mensaje...",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "cancel": "Cancelar",
+    "draft": "Guardar borrador",
+    "discard": "Descartar",
+    "discardConfirm": "¿Descartar este mensaje?",
+    "attachments": "Adjuntos",
+    "addAttachment": "Agregar adjunto",
+    "removeAttachment": "Eliminar"
+  },
+  "recipients": {
+    "search": "Buscar usuarios...",
+    "noResults": "No se encontraron usuarios",
+    "recentContacts": "Contactos recientes",
+    "allUsers": "Todos los usuarios",
+    "departments": "Por departamento"
+  },
+  "notifications": {
+    "newMessage": "Nuevo mensaje de {sender}",
+    "messageReceived": "Tienes un nuevo mensaje",
+    "messageSent": "Mensaje enviado exitosamente",
+    "messageDeleted": "Mensaje eliminado",
+    "error": "Error al enviar mensaje"
+  },
+  "time": {
+    "justNow": "Ahora mismo",
+    "minutesAgo": "hace {count} min",
+    "hoursAgo": "hace {count}h",
+    "daysAgo": "hace {count}d",
+    "yesterday": "Ayer",
+    "thisWeek": "Esta semana",
+    "older": "Anteriores"
+  }
+}

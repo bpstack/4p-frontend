@@ -1,0 +1,57 @@
+/* ui/home.module.css */
+
+/* Contenedor del triángulo + icono */
+.shape-container {
+  position: relative;
+  width: 150;
+  height: 20;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Triángulo visible que rota */
+.shape {
+  width: 0;
+  height: 0;
+  border-left: 60 solid transparent;
+  border-right: 60 solid transparent;
+  border-bottom: 35 solid white; /* color del triángulo */
+  transition: transform 0.3s;
+}
+
+/* Rota el triángulo al hover del contenedor */
+.shape-container:hover .shape {
+  transform: rotate(180deg);
+}
+
+/* Icono centrado dentro del triángulo */
+.shape-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px; /* ancho */
+  height: 24px; /* alto */
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-48%, -50%) rotate(-5deg);
+  }
+  50% {
+    transform: translate(-52%, -50%) rotate(5deg);
+  }
+  75% {
+    transform: translate(-48%, -50%) rotate(-5deg);
+  }
+}
+
+.shape-icon:hover {
+  animation: shake 0.3s ease-in-out;
+}

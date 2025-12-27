@@ -1,0 +1,72 @@
+{
+  "title": "Notifications",
+  "panel": {
+    "title": "Notifications",
+    "unreadCount": "{count} unread",
+    "allRead": "All notifications read",
+    "markAll": "Mark all read"
+  },
+  "list": {
+    "all": "All ({count})",
+    "unread": "Unread ({count})",
+    "noUnread": "No unread notifications",
+    "noNotifications": "No notifications"
+  },
+  "modal": {
+    "title": "New Notification",
+    "destinationLink": "Destination link *",
+    "redirectTo": "Clicking the notification will redirect to:",
+    "titleLabel": "Title *",
+    "titlePlaceholder": "E.g.: Parking review needed",
+    "messageLabel": "Message *",
+    "messagePlaceholder": "Describe the notification...",
+    "priority": "Priority",
+    "scheduling": "Scheduling",
+    "sendNow": "Send Now",
+    "schedule": "Schedule",
+    "dateLabel": "Date",
+    "timeLabel": "Time",
+    "selectDate": "Select date",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "willSendAt": "Will be sent on {date} at {time}",
+    "cancel": "Cancel",
+    "creating": "Creating...",
+    "created": "Created",
+    "send": "Send"
+  },
+  "priority": {
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "destinations": {
+    "groups": "Groups",
+    "parkingBookings": "Parking - Bookings",
+    "parkingStatus": "Parking - Status",
+    "maintenance": "Maintenance",
+    "cashierHotel": "Hotel Cashier",
+    "cashierLogs": "Cashier - Logs",
+    "cashierReports": "Cashier - Reports",
+    "conciliation": "Conciliation",
+    "invoices": "Invoices",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "validation": {
+    "selectDate": "Select a date",
+    "invalidDateTime": "Invalid date/time",
+    "timeMinFuture": "Time must be at least 5 minutes in the future"
+  },
+  "toast": {
+    "sent": "Notification sent",
+    "scheduled": "Notification scheduled for {date} at {time}",
+    "sentSuccess": "Notification sent successfully",
+    "scheduledSuccess": "Notification scheduled successfully",
+    "error": "Error creating notification"
+  },
+  "item": {
+    "markAsRead": "Mark as read",
+    "delete": "Delete"
+  }
+}

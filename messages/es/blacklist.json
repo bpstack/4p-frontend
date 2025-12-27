@@ -1,0 +1,251 @@
+{
+  "title": "Blacklist",
+  "page": {
+    "title": "Blacklist de Huespedes",
+    "subtitle": "Gestion de huespedes con mala conducta",
+    "newEntry": "Nuevo Registro",
+    "loading": "Cargando registros..."
+  },
+  "stats": {
+    "summary": "Resumen",
+    "totalEntries": "Total Registros",
+    "critical": "Criticos",
+    "highRisk": "Alto Riesgo",
+    "active": "Activos"
+  },
+  "filters": {
+    "searchPlaceholder": "Buscar por nombre, documento...",
+    "severity": "Gravedad",
+    "allStatuses": "Todos",
+    "active": "Activos",
+    "deleted": "Eliminados",
+    "filters": "Filtros",
+    "clear": "Limpiar",
+    "applyFilters": "Aplicar filtros",
+    "document": "Documento",
+    "documentPlaceholder": "DNI, Pasaporte...",
+    "status": "Estado",
+    "dateFrom": "Fecha desde",
+    "dateTo": "Fecha hasta",
+    "all": "Todas",
+    "noResults": "No se encontraron resultados",
+    "resultsSingle": "{count} resultado encontrado",
+    "resultsPlural": "{count} resultados encontrados"
+  },
+  "table": {
+    "guest": "Huesped",
+    "document": "Documento",
+    "dates": "Fechas",
+    "severity": "Gravedad",
+    "status": "Estado",
+    "registeredBy": "Registrado",
+    "actions": "Acciones",
+    "noResultsSearch": "No se encontraron registros con esos criterios",
+    "noEntries": "No hay registros en la blacklist"
+  },
+  "severity": {
+    "low": "Bajo",
+    "medium": "Medio",
+    "high": "Alto",
+    "critical": "Critico"
+  },
+  "status": {
+    "active": "Activo",
+    "deleted": "Eliminado"
+  },
+  "detail": {
+    "backToList": "Volver a la lista",
+    "edit": "Editar",
+    "summaryTitle": "Resumen del Registro",
+    "severityLevel": "Nivel de Gravedad",
+    "checkInDate": "Fecha de Entrada",
+    "checkOutDate": "Fecha de Salida",
+    "stay": "Estancia",
+    "day": "dia",
+    "days": "dias",
+    "registeredBy": "Registrado por",
+    "unknown": "Desconocido",
+    "registrationDate": "Fecha de registro",
+    "lastModification": "Ultima modificacion",
+    "deletionDate": "Fecha de eliminacion",
+    "recordStatus": "Estado del Registro",
+    "documentInfo": "Informacion del documento",
+    "documentType": "Tipo de documento",
+    "documentNumber": "Numero de documento",
+    "stayDates": "Fechas de hospedaje",
+    "entry": "Entrada",
+    "exit": "Salida",
+    "incidentReason": "Motivo del incidente",
+    "additionalComments": "Comentarios adicionales",
+    "photoEvidence": "Evidencia fotografica",
+    "recordInfo": "Informacion del registro",
+    "changeHistory": "Historial de cambios"
+  },
+  "form": {
+    "guestInfo": "Informacion del huesped",
+    "fullName": "Nombre completo",
+    "fullNamePlaceholder": "Nombre y apellidos del huesped",
+    "documentType": "Tipo de documento",
+    "documentNumber": "Numero de documento",
+    "documentPlaceholder": "12345678A",
+    "stayDates": "Fechas de hospedaje",
+    "checkInDate": "Fecha de entrada",
+    "checkOutDate": "Fecha de salida",
+    "selectDate": "Selecciona fecha",
+    "incidentDetails": "Detalles del incidente",
+    "severityLevel": "Nivel de gravedad",
+    "inclusionReason": "Motivo de inclusion",
+    "inclusionReasonFull": "Motivo de inclusion en blacklist",
+    "inclusionReasonPlaceholder": "Describe el motivo por el cual se incluye al huesped en la lista negra...",
+    "additionalComments": "Comentarios adicionales",
+    "additionalCommentsReceptionist": "Comentarios adicionales del recepcionista",
+    "additionalCommentsPlaceholder": "Agrega cualquier informacion adicional relevante...",
+    "photoEvidence": "Evidencia fotografica",
+    "uploadImages": "Subir imagenes",
+    "addNewImages": "Agregar nuevas imagenes",
+    "uploadHint": "Sube entre 1 y 5 imagenes como evidencia del incidente (max. 5MB cada una)",
+    "uploadHintEdit": "Puedes agregar mas imagenes al registro existente",
+    "currentImages": "Imagenes actuales",
+    "maxImages": "Maximo 5 imagenes permitidas",
+    "maxImagesEdit": "Maximo 5 imagenes en total. Ya tienes {count} imagenes.",
+    "imageHint": "Maximo 5 imagenes (PNG, JPG, WEBP - max 5MB c/u)",
+    "imageHintEdit": "Maximo {count} mas (PNG, JPG, WEBP - max 5MB c/u)",
+    "clickToUpload": "Click para subir",
+    "dragImages": "o arrastra las imagenes",
+    "imagesSelected": "{count} imagen(es) seleccionada(s):",
+    "newImagesSelected": "{count} imagen(es) nueva(s):",
+    "cancel": "Cancelar",
+    "cancelConfirm": "Estas seguro de cancelar? Se perderan los cambios no guardados.",
+    "createEntry": "Crear registro",
+    "saveChanges": "Guardar cambios",
+    "uploadingImages": "Subiendo imagenes...",
+    "saving": "Guardando..."
+  },
+  "panels": {
+    "createTitle": "Nuevo Registro Blacklist",
+    "createSubtitle": "Registra un nuevo huesped en la lista negra",
+    "createButton": "Crear Registro",
+    "editTitle": "Editar Registro Blacklist",
+    "editSubtitle": "Actualiza la informacion del registro",
+    "updateButton": "Actualizar Registro",
+    "updating": "Actualizando..."
+  },
+  "delete": {
+    "button": "Eliminar",
+    "deleteEntry": "Eliminar registro",
+    "confirmTitle": "Seguro que quieres eliminar este registro?",
+    "confirmMessage": "Estas seguro de eliminar este registro? Esta accion marcara el registro como eliminado pero podra ser restaurado posteriormente.",
+    "deleting": "Eliminando registro...",
+    "success": "Registro eliminado correctamente",
+    "error": "Error al eliminar el registro",
+    "genericError": "Error al eliminar",
+    "yes": "Si",
+    "no": "No"
+  },
+  "restore": {
+    "confirm": "Deseas restaurar este registro?",
+    "restoring": "Restaurando registro...",
+    "success": "Registro restaurado correctamente",
+    "error": "Error al restaurar el registro",
+    "genericError": "Error al restaurar"
+  },
+  "audit": {
+    "noHistory": "No hay historial de cambios disponible",
+    "by": "Por:",
+    "fieldsModified": "Campos modificados:",
+    "before": "Antes:",
+    "after": "Despues:",
+    "actions": {
+      "create": "Registro creado",
+      "update": "Registro actualizado",
+      "delete": "Registro eliminado",
+      "restore": "Registro restaurado",
+      "unknown": "Accion desconocida"
+    },
+    "fields": {
+      "guest_name": "Nombre del huesped",
+      "document_type": "Tipo de documento",
+      "document_number": "Numero de documento",
+      "check_in_date": "Fecha de entrada",
+      "check_out_date": "Fecha de salida",
+      "reason": "Motivo",
+      "severity": "Gravedad",
+      "comments": "Comentarios",
+      "images": "Imagenes",
+      "status": "Estado"
+    },
+    "values": {
+      "empty": "(vacio)",
+      "yes": "Si",
+      "no": "No",
+      "elements": "{count} elementos"
+    }
+  },
+  "messages": {
+    "uploadingImages": "Subiendo imagenes...",
+    "imagesUploaded": "{count} imagenes subidas correctamente",
+    "newImagesUploaded": "{count} nuevas imagenes subidas",
+    "creatingEntry": "Creando registro...",
+    "updatingEntry": "Actualizando registro...",
+    "createSuccess": "Registro creado exitosamente",
+    "updateSuccess": "Registro actualizado exitosamente",
+    "saveError": "Error al guardar el registro",
+    "formError": "Error al procesar el formulario"
+  },
+  "notFound": {
+    "pageTitle": "Pagina no encontrada",
+    "pageDescription": "La pagina que estas buscando no existe o ha sido movida. Verifica la URL o regresa a la lista de registros.",
+    "error404": "Error 404",
+    "backToBlacklist": "Volver a Blacklist",
+    "goToDashboard": "Ir al dashboard",
+    "entryTitle": "Registro no encontrado",
+    "entryDescription": "El registro que estas buscando no existe, fue eliminado permanentemente, o no tienes permisos para verlo.",
+    "needHelp": "Necesitas ayuda?",
+    "contactSupport": "Contacta con soporte"
+  },
+  "newPage": {
+    "backToList": "Volver a la lista",
+    "title": "Nuevo Registro en Blacklist",
+    "subtitle": "Completa todos los campos para registrar un huesped con mala conducta"
+  },
+  "editPage": {
+    "backToDetail": "Volver al detalle",
+    "title": "Editar Registro"
+  },
+  "documentTypes": {
+    "DNI": "DNI",
+    "PASSPORT": "Pasaporte",
+    "NIE": "NIE",
+    "OTHER": "Otro"
+  },
+  "modal": {
+    "title": "Detalles del registro",
+    "tabs": {
+      "details": "Detalles",
+      "images": "Imagenes",
+      "history": "Historial"
+    },
+    "close": "Cerrar",
+    "edit": "Editar",
+    "restore": "Restaurar"
+  },
+  "ui": {
+    "loading": "Cargando...",
+    "noImages": "No hay imagenes disponibles",
+    "imageOf": "Imagen {current} de {total}",
+    "downloadImage": "Descargar imagen",
+    "closeEsc": "Cerrar (ESC)",
+    "previousArrow": "Anterior",
+    "nextArrow": "Siguiente",
+    "keyboardNav": "Use las flechas para navegar - ESC para cerrar",
+    "imageUploader": {
+      "formatNotAllowed": "{fileName}: Formato no permitido. Solo JPG, PNG o WebP.",
+      "exceedsMaxSize": "{fileName}: Excede el tamaño maximo de {maxSize}MB ({actualSize}MB).",
+      "maxImagesError": "Solo puedes subir un maximo de {maxFiles} imagenes.",
+      "dropImagesHere": "Suelta las imagenes aqui",
+      "dragOrClick": "Arrastra imagenes o haz click para seleccionar",
+      "maxPerFile": "Max. {maxSize}MB por archivo",
+      "imagesCount": "{current} de {max} imagenes"
+    }
+  }
+}

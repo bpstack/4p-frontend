@@ -1,0 +1,124 @@
+{
+  "language": {
+    "label": "Idioma",
+    "spanish": "Español",
+    "english": "English",
+    "switchTo": "Cambiar a {language}"
+  },
+  "navigation": {
+    "dashboard": "Panel",
+    "parking": "Parking",
+    "logbooks": "Libro de Consignas",
+    "groups": "Grupos",
+    "cashier": "Caja",
+    "maintenance": "Mantenimiento",
+    "blacklist": "blacklist",
+    "backoffice": "Backoffice",
+    "messages": "Mensajes",
+    "profile": "Perfil",
+    "settings": "Configuración",
+    "notifications": "Notificaciones",
+    "logout": "Cerrar Sesión",
+    "restaurant": "Restaurante",
+    "conciliation": "Conciliación",
+    "backofficeTasks": "Tareas de backoffice",
+    "hotelCashier": "Caja Hotel",
+    "cashierReports": "Reportes de Caja",
+    "cashierLogs": "Registros de Caja"
+  },
+  "actions": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Crear",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar...",
+    "filter": "Filtrar",
+    "export": "Exportar",
+    "import": "Importar",
+    "refresh": "Actualizar",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "loading": "Cargando...",
+    "view": "Ver",
+    "download": "Descargar",
+    "print": "Imprimir",
+    "update": "Actualizar",
+    "saving": "Guardando...",
+    "processing": "Procesando...",
+    "deleting": "Eliminando...",
+    "yes": "Si",
+    "no": "No"
+  },
+  "status": {
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "pending": "Pendiente",
+    "completed": "Completado",
+    "cancelled": "Cancelado",
+    "error": "Error",
+    "success": "Éxito"
+  },
+  "table": {
+    "noResults": "No se encontraron resultados",
+    "showing": "Mostrando",
+    "of": "de",
+    "entries": "registros",
+    "rowsPerPage": "Filas por página"
+  },
+  "profile": {
+    "myProfile": "Mi Perfil",
+    "messages": "Mensajes",
+    "notifications": "Notificaciones",
+    "settings": "Configuración",
+    "logout": "Cerrar Sesión"
+  },
+  "time": {
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "tomorrow": "Mañana",
+    "now": "Ahora",
+    "minutes": "minutos",
+    "hours": "horas",
+    "days": "días"
+  },
+  "calendar": {
+    "months": ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+    "monthsShort": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+    "weekdays": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"],
+    "weekdaysShort": ["L", "M", "X", "J", "V", "S", "D"],
+    "selectDate": "Seleccionar fecha",
+    "close": "Cerrar"
+  },
+  "panels": {
+    "closePanel": "Cerrar panel",
+    "deleteConfirm": "¿Seguro que quieres eliminar?"
+  },
+  "errors": {
+    "operationError": "Error en la operación",
+    "loadError": "Error al cargar datos",
+    "saveError": "Error al guardar",
+    "deleteError": "Error al eliminar",
+    "networkError": "Error de conexión"
+  },
+  "pagination": {
+    "showing": "Mostrando",
+    "to": "a",
+    "of": "de",
+    "records": "registros",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "page": "Página",
+    "pageOf": "de"
+  },
+  "skeleton": {
+    "serverStarting": "Iniciando servidor...",
+    "serverMessage": "El backend de esta aplicación está alojado en Render (plan gratuito para demo), el cual entra en modo de reposo tras periodos de inactividad. La primera conexión puede demorar aproximadamente 60 segundos.",
+    "connecting": "Conectando..."
+  }
+}

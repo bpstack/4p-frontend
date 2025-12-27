@@ -1,0 +1,484 @@
+{
+  "title": "Parking",
+  "dashboard": {
+    "title": "Parking",
+    "today": "Hoy",
+    "week": "Semana",
+    "month": "Mes",
+    "errorLoading": "Error al cargar datos"
+  },
+  "periods": {
+    "today": "Hoy",
+    "week": "Semana",
+    "month": "Mes",
+    "unknownPeriod": "Periodo desconocido"
+  },
+  "reservations": {
+    "title": "Reservas",
+    "description": "Flujo de vehículos: llegadas, estacionados y salidas.",
+    "arrivals": "Llegadas",
+    "departures": "Salidas",
+    "waiting": "En espera",
+    "inside": "Dentro",
+    "total": "Total",
+    "completed": "Completadas"
+  },
+  "quickActions": {
+    "title": "Acciones Rápidas",
+    "newBooking": "Nueva Reserva",
+    "allBookings": "Todas las Reservas",
+    "parkingControl": "Control de Parking",
+    "searchVehicle": "Buscar Reserva",
+    "checkIns": "Check-Ins",
+    "checkOuts": "Check-Outs"
+  },
+  "control": {
+    "title": "Control de Parking",
+    "currentOccupancy": "Ocupación Actual",
+    "weeklyOccupancy": "Ocupaciones Semanales",
+    "monthlyOccupancy": "Ocupaciones Mensuales",
+    "occupancyRate": "Tasa de Ocupación",
+    "weeklyAvgRate": "Tasa Media Semanal",
+    "monthlyAvgRate": "Tasa Media Mensual",
+    "spotsAvailable": "{count} plazas disponibles",
+    "dailyAvg": "Media diaria: {count} ocupaciones",
+    "average": "promedio",
+    "maxCapacity": "Capacidad máxima {period}: {count} plaza-días",
+    "weekly": "semanal",
+    "monthly": "mensual"
+  },
+  "summary": {
+    "title": "Resumen Diario",
+    "periodTitle": "Resumen del Período",
+    "completed": "Completadas",
+    "canceled": "Canceladas",
+    "noShows": "No-Shows",
+    "totalBookings": "Total Reservas"
+  },
+  "help": {
+    "title": "Ayuda Contextual",
+    "reservations": {
+      "title": "Reservas",
+      "description": "Vista completa del flujo de vehículos. Rastrea vehículos entrantes, estacionados y salientes."
+    },
+    "arrivalsWaiting": {
+      "title": "Llegadas - En espera",
+      "description": "Vehículos con reservas confirmadas pendientes de check-in."
+    },
+    "arrivalsInside": {
+      "title": "Llegadas - Dentro",
+      "description": "Vehículos actualmente estacionados que han completado el check-in."
+    },
+    "departuresWaiting": {
+      "title": "Salidas - En espera",
+      "description": "Vehículos estacionados listos para el procesamiento de check-out."
+    },
+    "parkingControl": {
+      "title": "Control de Parking",
+      "description": "Monitoreo en tiempo real de ocupación y capacidad del parking."
+    }
+  },
+  "bookings": {
+    "title": "Reservas de Parking",
+    "subtitle": "Gestión completa de reservas de estacionamiento",
+    "newBooking": "Nueva Reserva",
+    "backToDashboard": "Volver al Dashboard",
+    "loading": "Cargando reservas...",
+    "noResults": "Sin resultados",
+    "reservation": "reserva",
+    "reservations": "reservas",
+    "page": "pág.",
+    "of": "de"
+  },
+  "filters": {
+    "search": "Buscar por código, cliente, matrícula, plaza...",
+    "quickView": "Vista rápida",
+    "entry": "Entrada",
+    "exit": "Salida",
+    "allStatuses": "Todos los estados",
+    "clear": "Limpiar",
+    "noResultsWithFilters": "No se encontraron reservas con esos criterios",
+    "noBookings": "No hay reservas registradas"
+  },
+  "quickFilters": {
+    "arrivals": "Llegadas",
+    "departures": "Salidas",
+    "arrivalsWaiting": "En espera (hoy)",
+    "arrivalsInside": "Dentro",
+    "arrivalsTotal": "Total llegadas",
+    "departuresWaiting": "En espera (hoy)",
+    "departuresCompleted": "Completadas (hoy)",
+    "departuresTotal": "Total salidas"
+  },
+  "status": {
+    "reserved": "Reservado",
+    "checkedIn": "Ocupado",
+    "completed": "Completado",
+    "canceled": "Cancelado",
+    "noShow": "No presentado"
+  },
+  "table": {
+    "code": "Código",
+    "client": "Cliente",
+    "entry": "Entrada",
+    "exit": "Salida",
+    "status": "Estado",
+    "spot": "Plaza",
+    "actions": "Acciones",
+    "noOwner": "Sin propietario",
+    "noPlate": "Sin matrícula"
+  },
+  "stats": {
+    "totalBookings": "Total Reservas",
+    "reserved": "Reservados",
+    "occupied": "Ocupados",
+    "completed": "Completados",
+    "summary": "Resumen"
+  },
+  "pagination": {
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
+  "modals": {
+    "checkIn": {
+      "title": "Check-in",
+      "dateTime": "Fecha y hora de entrada",
+      "notes": "Notas (opcional)",
+      "notesPlaceholder": "Observaciones del check-in...",
+      "confirm": "Confirmar Check-in"
+    },
+    "checkOut": {
+      "title": "Check-out",
+      "dateTime": "Fecha y hora de salida",
+      "amount": "Importe a cobrar (€)",
+      "paymentMethod": "Método de pago",
+      "reference": "Referencia (opcional)",
+      "referencePlaceholder": "Número de operación...",
+      "notes": "Notas (opcional)",
+      "notesPlaceholder": "Observaciones del check-out...",
+      "confirm": "Confirmar Check-out"
+    },
+    "update": {
+      "title": "Modificar Reserva",
+      "expectedCheckIn": "Check-in esperado",
+      "expectedCheckOut": "Check-out esperado",
+      "totalAmount": "Importe total (€)",
+      "notes": "Notas",
+      "notesPlaceholder": "Notas adicionales...",
+      "save": "Guardar Cambios"
+    },
+    "cancel": "Cancelar",
+    "cancelBooking": {
+      "confirm": "¿Estás seguro de que deseas cancelar esta reserva?",
+      "success": "Reserva cancelada"
+    },
+    "noShow": {
+      "confirm": "¿Marcar esta reserva como No presentado?",
+      "success": "Marcada como No presentado"
+    }
+  },
+  "paymentMethods": {
+    "cash": "Efectivo",
+    "card": "Tarjeta",
+    "transfer": "Transferencia",
+    "other": "Otro"
+  },
+  "messages": {
+    "checkInSuccess": "Check-in realizado correctamente",
+    "checkInError": "Error al realizar check-in",
+    "checkOutSuccess": "Check-out realizado correctamente",
+    "checkOutError": "Error al realizar check-out",
+    "updateSuccess": "Reserva actualizada correctamente",
+    "updateError": "Error al actualizar reserva",
+    "cancelError": "Error al cancelar",
+    "loadError": "Error al cargar reservas"
+  },
+  "statusPage": {
+    "allLevels": "Todas las Plantas",
+    "level": "Planta {level}",
+    "occupancy": "Ocupación",
+    "available": "Disponibles"
+  },
+  "actions": {
+    "title": "Acciones",
+    "checkIn": "Realizar Check-in",
+    "checkOut": "Realizar Check-out",
+    "edit": "Modificar reserva",
+    "cancel": "Cancelar reserva",
+    "noShow": "Marcar como No presentado"
+  },
+  "vehicleSearch": {
+    "placeholder": "Buscar por matrícula o propietario...",
+    "minChars": "Escribe al menos 2 caracteres para buscar",
+    "searchHint": "Busca por matrícula o nombre del propietario",
+    "searching": "Buscando...",
+    "noResults": "No se encontraron vehículos",
+    "tryAnother": "Intenta con otro término de búsqueda",
+    "pressEsc": "Presiona",
+    "toClose": "para cerrar",
+    "plateNumber": "Matrícula",
+    "owner": "Propietario",
+    "model": "Modelo",
+    "registered": "Registrado",
+    "bookingHistory": "Historial de Reservas",
+    "loadingHistory": "Cargando historial...",
+    "noBookings": "No hay reservas registradas para este vehículo",
+    "spot": "Plaza"
+  },
+  "bookingDetail": {
+    "loading": "Cargando reserva...",
+    "notFound": "Reserva no encontrada",
+    "backToBookings": "Volver a reservas",
+    "backToList": "Volver al listado",
+    "spot": "Plaza",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "duration": "Duración",
+    "day": "día",
+    "days": "días",
+    "location": "Ubicación",
+    "spotType": "Tipo de plaza",
+    "parkingSpot": "Plaza de Parking",
+    "vehicle": "Vehículo",
+    "plate": "Matrícula",
+    "owner": "Propietario",
+    "model": "Modelo",
+    "noVehicle": "Sin vehículo asignado",
+    "schedule": "Programación",
+    "expected": "Esperado",
+    "completed": "Realizado",
+    "plannedDays": "Días planeados",
+    "actualDays": "Días reales",
+    "notes": "Notas",
+    "bookingInfo": "Información de Reserva",
+    "source": "Origen",
+    "externalId": "ID Externo",
+    "operator": "Operador",
+    "registry": "Registro",
+    "created": "Creado",
+    "updated": "Actualizado",
+    "by": "por",
+    "payment": {
+      "title": "Pago",
+      "paid": "Pagado",
+      "total": "Total",
+      "pending": "Pendiente",
+      "method": "Método",
+      "reference": "Referencia",
+      "date": "Fecha",
+      "registerPayment": "Registrar Pago",
+      "modifyPayment": "Modificar Pago",
+      "pendingWarning": "Pago pendiente: {amount} EUR"
+    },
+    "actions": {
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "cancel": "Cancelar",
+      "noShow": "No-show"
+    },
+    "confirmations": {
+      "cancel": "¿Seguro que quieres cancelar esta reserva?",
+      "noShow": "¿Marcar esta reserva como no-show?",
+      "delete": "¿ELIMINAR permanentemente esta reserva? Esta acción NO se puede deshacer."
+    },
+    "toasts": {
+      "loadError": "Error al cargar la reserva: {message}",
+      "checkInSuccess": "Check-in realizado correctamente",
+      "checkInError": "Error al hacer check-in: {message}",
+      "checkOutSuccess": "Check-out realizado correctamente",
+      "checkOutError": "Error al hacer check-out: {message}",
+      "updateSuccess": "Reserva actualizada correctamente",
+      "updateError": "Error al actualizar: {message}",
+      "cancelSuccess": "Reserva cancelada",
+      "cancelError": "Error al cancelar: {message}",
+      "noShowSuccess": "Marcado como no-show",
+      "noShowError": "Error: {message}",
+      "deleteSuccess": "Reserva eliminada",
+      "deleteError": "Error al eliminar: {message}",
+      "paymentSuccess": "Pago registrado correctamente",
+      "paymentError": "Error al registrar pago: {message}",
+      "unknownError": "Error desconocido"
+    }
+  },
+  "header": {
+    "backToList": "Volver al listado",
+    "pendingPayment": "Pago pendiente: {amount} EUR"
+  },
+  "checkInModal": {
+    "title": "Check-in",
+    "spot": "Plaza",
+    "dateTime": "Fecha y hora de entrada",
+    "notes": "Notas (opcional)",
+    "notesPlaceholder": "Observaciones del check-in...",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar Check-in"
+  },
+  "checkOutModal": {
+    "title": "Check-out",
+    "paymentSummary": "Resumen de Pago",
+    "totalBooking": "Total reserva",
+    "alreadyPaid": "Ya pagado",
+    "pending": "Pendiente",
+    "dateTime": "Fecha y hora de salida",
+    "amountToCharge": "Importe a cobrar",
+    "paymentMethod": "Método de pago",
+    "reference": "Referencia de pago (opcional)",
+    "referencePlaceholder": "Número de operación, recibo...",
+    "notes": "Notas (opcional)",
+    "notesPlaceholder": "Observaciones...",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar Check-out"
+  },
+  "editModal": {
+    "title": "Editar Reserva",
+    "tabs": {
+      "general": "General",
+      "spot": "Plaza",
+      "vehicle": "Vehículo"
+    },
+    "checkedInWarning": "Esta reserva ya tiene check-in realizado. La fecha de entrada no se puede modificar.",
+    "pastDateWarning": "Fecha en el pasado - no editable",
+    "expectedCheckIn": "Check-in esperado",
+    "expectedCheckOut": "Check-out esperado",
+    "totalAmount": "Importe total",
+    "bookingSource": "Origen de reserva",
+    "externalId": "ID Externo",
+    "externalIdPlaceholder": "BK-123456",
+    "notes": "Notas",
+    "notesPlaceholder": "Notas adicionales...",
+    "currentSpot": "Plaza actual:",
+    "level": "Planta",
+    "levelOption": "Planta {level}",
+    "availableSpots": "Plazas disponibles",
+    "loadingSpots": "(cargando...)",
+    "noSpotsAvailable": "No hay plazas disponibles en estas fechas",
+    "currentVehicle": "Vehículo actual:",
+    "searchVehicle": "Buscar vehículo",
+    "searchVehiclePlaceholder": "Buscar por matrícula o propietario...",
+    "removeVehicle": "Quitar vehículo asignado",
+    "cancel": "Cancelar",
+    "save": "Guardar Cambios"
+  },
+  "paymentModal": {
+    "title": "Registrar Pago",
+    "cannotPay": "No se puede registrar pago",
+    "noPriceSet": "Esta reserva no tiene un precio establecido. Edita la reserva primero para asignar un precio.",
+    "alreadyPaid": "Reserva ya pagada",
+    "canModify": "Puedes modificar el pago si es necesario.",
+    "summary": "Resumen",
+    "totalBooking": "Total reserva",
+    "alreadyPaidAmount": "Ya pagado",
+    "pending": "Pendiente",
+    "amountToRegister": "Importe a registrar",
+    "paymentMethod": "Método de pago",
+    "reference": "Referencia (opcional)",
+    "referencePlaceholder": "Número de operación, recibo...",
+    "cancel": "Cancelar",
+    "register": "Registrar Pago"
+  },
+  "spotTypes": {
+    "standard": "Estándar",
+    "large": "Grande",
+    "mas_ancha": "Más Ancha",
+    "handicapped": "Minusválidos",
+    "motorcycle": "Moto",
+    "electric": "Eléctrico"
+  },
+  "bookingSources": {
+    "direct": "Directo",
+    "booking_com": "Booking.com",
+    "expedia": "Expedia",
+    "airbnb": "Airbnb",
+    "phone": "Teléfono",
+    "email": "Email",
+    "walkin": "Walk-in",
+    "other": "Otro"
+  },
+  "statusPageNav": {
+    "title": "Control de Parking",
+    "loadingCalendar": "Cargando calendario...",
+    "today": "Hoy",
+    "newBooking": "Nueva Reserva",
+    "allLevels": "Todas",
+    "allLevelsMobile": "Todos",
+    "level": "Planta {level}"
+  },
+  "statusPanels": {
+    "total": "Total",
+    "available": "Disponibles",
+    "pending": "Pendientes",
+    "overdue": "Retrasadas",
+    "generalSummary": "Resumen General",
+    "totalSpots": "Total plazas",
+    "reserved": "Reservadas",
+    "occupied": "Ocupadas",
+    "occupancy": "Ocupación",
+    "pendingCheckIns": "Check-Ins Pendientes",
+    "pendingCheckOuts": "Check-Outs Pendientes",
+    "overdueBookings": "Reservas Retrasadas",
+    "entry": "Entrada",
+    "exit": "Salida",
+    "manage": "Gestionar",
+    "noClient": "Sin cliente",
+    "spot": "Plaza",
+    "noPendingCheckIns": "No hay check-ins pendientes",
+    "noPendingCheckOuts": "No hay check-outs pendientes para hoy",
+    "noOverdueBookings": "No hay reservas retrasadas",
+    "delayHours": "{hours}h"
+  },
+  "parkingTable": {
+    "spot": "Plaza",
+    "status": "Estado",
+    "clientVehicle": "Cliente/Vehículo",
+    "entry": "Entrada",
+    "exit": "Salida",
+    "actions": "Acciones",
+    "noSpotsToShow": "No hay plazas para mostrar",
+    "level": "Planta {level}",
+    "modify": "Modificar",
+    "cancel": "Cancelar",
+    "checkOut": "Salida",
+    "checkIn": "Entrada",
+    "reserve": "Reservar",
+    "registerPayment": "Registrar Pago"
+  },
+  "statusModals": {
+    "confirmCheckIn": "Confirmar Check-In",
+    "cancel": "Cancelar",
+    "confirmEntry": "Confirmar Entrada",
+    "processing": "Procesando...",
+    "lateCheckIn": "Entrada programada: {date} ({days} {dayWord} de retraso)",
+    "day": "día",
+    "days": "días",
+    "client": "Cliente",
+    "noClient": "Sin cliente",
+    "vehicle": "Vehículo",
+    "spot": "Plaza",
+    "earlyCheckout": "Salida Anticipada",
+    "confirmExit": "Confirmar Salida",
+    "scheduledExitDate": "La fecha de salida programada es el {date}",
+    "cancelBooking": "Cancelar Reserva",
+    "noKeep": "No, mantener",
+    "yesCancel": "Sí, cancelar",
+    "canceling": "Cancelando...",
+    "cannotUndo": "Esta acción no se puede deshacer",
+    "manageOverdue": "Gestionar Reserva Retrasada",
+    "noData": "Sin datos",
+    "noPlate": "Sin matrícula",
+    "delay": "Retraso",
+    "checkOutAction": "Dar Salida",
+    "checkOutDesc": "El cliente se alojó pero falta registrar la salida",
+    "markNoShow": "Marcar No-Show",
+    "markNoShowDesc": "El cliente nunca se presentó",
+    "cancelBookingAction": "Cancelar Reserva",
+    "cancelBookingDesc": "Cancelar la reserva completamente",
+    "deleteBooking": "Eliminar Reserva",
+    "deleteBookingDesc": "Borrar la reserva del sistema"
+  },
+  "spotStatus": {
+    "free": "Libre",
+    "reserved": "Reservado",
+    "checked_in": "Ocupado",
+    "maintenance": "Mantenimiento"
+  }
+}

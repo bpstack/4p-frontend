@@ -1,0 +1,94 @@
+{
+  "page": {
+    "loading": "Cargando...",
+    "selectDay": "Selecciona un dia",
+    "noConciliation": "No hay conciliacion para este dia.",
+    "errorLoading": "Error cargando conciliacion.",
+    "alreadyExists": "Ya existe una conciliacion para esta fecha",
+    "errorCreating": "Error al crear conciliacion"
+  },
+  "header": {
+    "today": "Hoy",
+    "status": "Estado",
+    "newConciliation": "Nueva Conciliacion",
+    "newMobile": "Nueva"
+  },
+  "status": {
+    "draft": "Borrador",
+    "confirmed": "Confirmado",
+    "closed": "Cerrado"
+  },
+  "actions": {
+    "saveDraft": "Guardar borrador",
+    "saving": "Guardando...",
+    "submit": "Enviar/Firmar",
+    "reopen": "Reabrir",
+    "closeDefinitely": "Cerrar definitivamente",
+    "closedReadOnly": "Conciliacion cerrada - Solo lectura"
+  },
+  "alerts": {
+    "maxRooms": "Maximo 15 habitaciones",
+    "maxNoteLength": "La nota no puede superar 200 caracteres",
+    "maxNotes": "Maximo 10 notas",
+    "onlyAuthorCanDelete": "Solo el autor puede eliminar esta nota",
+    "errorSaving": "Error al guardar",
+    "errorConfirming": "Error al confirmar",
+    "errorReopening": "Error al reabrir",
+    "errorClosing": "Error al cerrar",
+    "confirmClose": "Cerrar conciliacion? No se podra modificar despues."
+  },
+  "table": {
+    "concept": "Concepto",
+    "value": "Valor",
+    "roomNumber": "No Hab",
+    "notes": "Notas",
+    "result": "Resultado",
+    "total": "Total",
+    "reception": "Recepcion",
+    "housekeeping": "Housekeeping",
+    "add": "Anadir",
+    "rooms": "hab."
+  },
+  "totals": {
+    "title": "Totales",
+    "reception": "Recepcion",
+    "housekeeping": "Housekeeping",
+    "discrepancy": "Descuadre"
+  },
+  "generalNotes": {
+    "title": "Notas Generales",
+    "placeholder": "Anadir observacion general...",
+    "addNote": "Anadir nota",
+    "deleteNote": "Eliminar nota",
+    "noNotes": "No hay notas generales"
+  },
+  "roomPopover": {
+    "title": "Habitaciones",
+    "placeholder": "Anadir habitacion (ej: 107)",
+    "pressEnter": "Presiona Enter para anadir",
+    "noRooms": "No hay habitaciones"
+  },
+  "notePopover": {
+    "title": "Notas",
+    "placeholder": "Anadir nota (max. 200 caracteres)",
+    "pressEnter": "Presiona Enter para anadir",
+    "noNotes": "No hay notas"
+  },
+  "daySummary": {
+    "dayInfo": "Informacion del Dia",
+    "monthlySummary": "Resumen Mensual",
+    "signatureReception": "Firma Recepcion",
+    "date": "Fecha",
+    "billingDay": "FACTURACION DIA",
+    "totalRooms": "Total {count} habitaciones",
+    "loadingSummary": "Cargando resumen...",
+    "couldNotLoad": "No se pudo cargar el resumen mensual",
+    "period": "Periodo",
+    "days": "Dias",
+    "missingDays": "Faltan {count} dia(s)",
+    "totalReception": "Total Recepcion",
+    "totalHousekeeping": "Total Housekeeping",
+    "totalDiscrepancy": "Descuadre Total",
+    "cannotCloseMonth": "No se puede cerrar el mes:"
+  }
+}

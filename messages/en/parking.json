@@ -1,0 +1,484 @@
+{
+  "title": "Parking",
+  "dashboard": {
+    "title": "Parking",
+    "today": "Today",
+    "week": "Week",
+    "month": "Month",
+    "errorLoading": "Error loading data"
+  },
+  "periods": {
+    "today": "Today",
+    "week": "Week",
+    "month": "Month",
+    "unknownPeriod": "Unknown period"
+  },
+  "reservations": {
+    "title": "Reservations",
+    "description": "Vehicle flow: arrivals, parked, and departures.",
+    "arrivals": "Arrivals",
+    "departures": "Departures",
+    "waiting": "Waiting",
+    "inside": "Inside",
+    "total": "Total",
+    "completed": "Completed"
+  },
+  "quickActions": {
+    "title": "Quick Actions",
+    "newBooking": "New Booking",
+    "allBookings": "All Bookings",
+    "parkingControl": "Parking Control",
+    "searchVehicle": "Search Boooking",
+    "checkIns": "Check-Ins",
+    "checkOuts": "Check-Outs"
+  },
+  "control": {
+    "title": "Parking Control",
+    "currentOccupancy": "Current Occupancy",
+    "weeklyOccupancy": "Weekly Occupancy",
+    "monthlyOccupancy": "Monthly Occupancy",
+    "occupancyRate": "Occupancy Rate",
+    "weeklyAvgRate": "Weekly Avg Rate",
+    "monthlyAvgRate": "Monthly Avg Rate",
+    "spotsAvailable": "{count} spots available",
+    "dailyAvg": "Daily average: {count} occupancies",
+    "average": "average",
+    "maxCapacity": "Max {period} capacity: {count} spot-days",
+    "weekly": "weekly",
+    "monthly": "monthly"
+  },
+  "summary": {
+    "title": "Daily Summary",
+    "periodTitle": "Period Summary",
+    "completed": "Completed",
+    "canceled": "Canceled",
+    "noShows": "No-Shows",
+    "totalBookings": "Total Bookings"
+  },
+  "help": {
+    "title": "Contextual Help",
+    "reservations": {
+      "title": "Parking Bookings",
+      "description": "Complete view of vehicle flow. Track incoming, parked, and outgoing vehicles."
+    },
+    "arrivalsWaiting": {
+      "title": "Arrivals - Waiting",
+      "description": "Vehicles with confirmed reservations pending check-in."
+    },
+    "arrivalsInside": {
+      "title": "Arrivals - Inside",
+      "description": "Currently parked vehicles that have completed check-in."
+    },
+    "departuresWaiting": {
+      "title": "Departures - Waiting",
+      "description": "Parked vehicles ready for check-out processing."
+    },
+    "parkingControl": {
+      "title": "Parking Control",
+      "description": "Real-time monitoring of parking occupancy and capacity."
+    }
+  },
+  "bookings": {
+    "title": "Parking Bookings",
+    "subtitle": "Complete parking reservation management",
+    "newBooking": "New Booking",
+    "backToDashboard": "Back to Dashboard",
+    "loading": "Loading bookings...",
+    "noResults": "No results",
+    "reservation": "booking",
+    "reservations": "bookings",
+    "page": "page",
+    "of": "of"
+  },
+  "filters": {
+    "search": "Search by code, client, plate, spot...",
+    "quickView": "Quick view",
+    "entry": "Entry",
+    "exit": "Exit",
+    "allStatuses": "All statuses",
+    "clear": "Clear",
+    "noResultsWithFilters": "No bookings found with those criteria",
+    "noBookings": "No bookings registered"
+  },
+  "quickFilters": {
+    "arrivals": "Arrivals",
+    "departures": "Departures",
+    "arrivalsWaiting": "Waiting (today)",
+    "arrivalsInside": "Inside",
+    "arrivalsTotal": "Total arrivals",
+    "departuresWaiting": "Waiting (today)",
+    "departuresCompleted": "Completed (today)",
+    "departuresTotal": "Total departures"
+  },
+  "status": {
+    "reserved": "Reserved",
+    "checkedIn": "Checked In",
+    "completed": "Completed",
+    "canceled": "Canceled",
+    "noShow": "No Show"
+  },
+  "table": {
+    "code": "Code",
+    "client": "Client",
+    "entry": "Entry",
+    "exit": "Exit",
+    "status": "Status",
+    "spot": "Spot",
+    "actions": "Actions",
+    "noOwner": "No owner",
+    "noPlate": "No plate"
+  },
+  "stats": {
+    "totalBookings": "Total Bookings",
+    "reserved": "Reserved",
+    "occupied": "Occupied",
+    "completed": "Completed",
+    "summary": "Summary"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "modals": {
+    "checkIn": {
+      "title": "Check-in",
+      "dateTime": "Entry date and time",
+      "notes": "Notes (optional)",
+      "notesPlaceholder": "Check-in observations...",
+      "confirm": "Confirm Check-in"
+    },
+    "checkOut": {
+      "title": "Check-out",
+      "dateTime": "Exit date and time",
+      "amount": "Amount to charge (€)",
+      "paymentMethod": "Payment method",
+      "reference": "Reference (optional)",
+      "referencePlaceholder": "Transaction number...",
+      "notes": "Notes (optional)",
+      "notesPlaceholder": "Check-out observations...",
+      "confirm": "Confirm Check-out"
+    },
+    "update": {
+      "title": "Edit Booking",
+      "expectedCheckIn": "Expected check-in",
+      "expectedCheckOut": "Expected check-out",
+      "totalAmount": "Total amount (€)",
+      "notes": "Notes",
+      "notesPlaceholder": "Additional notes...",
+      "save": "Save Changes"
+    },
+    "cancel": "Cancel",
+    "cancelBooking": {
+      "confirm": "Are you sure you want to cancel this booking?",
+      "success": "Booking canceled"
+    },
+    "noShow": {
+      "confirm": "Mark this booking as No Show?",
+      "success": "Marked as No Show"
+    }
+  },
+  "paymentMethods": {
+    "cash": "Cash",
+    "card": "Card",
+    "transfer": "Transfer",
+    "other": "Other"
+  },
+  "messages": {
+    "checkInSuccess": "Check-in completed successfully",
+    "checkInError": "Error performing check-in",
+    "checkOutSuccess": "Check-out completed successfully",
+    "checkOutError": "Error performing check-out",
+    "updateSuccess": "Booking updated successfully",
+    "updateError": "Error updating booking",
+    "cancelError": "Error canceling",
+    "loadError": "Error loading bookings"
+  },
+  "statusPage": {
+    "allLevels": "All Levels",
+    "level": "Level {level}",
+    "occupancy": "Occupancy",
+    "available": "Available"
+  },
+  "actions": {
+    "title": "Actions",
+    "checkIn": "Perform Check-in",
+    "checkOut": "Perform Check-out",
+    "edit": "Edit booking",
+    "cancel": "Cancel booking",
+    "noShow": "Mark as No Show"
+  },
+  "vehicleSearch": {
+    "placeholder": "Search by plate or owner...",
+    "minChars": "Type at least 2 characters to search",
+    "searchHint": "Search by plate or owner name",
+    "searching": "Searching...",
+    "noResults": "No vehicles found",
+    "tryAnother": "Try another search term",
+    "pressEsc": "Press",
+    "toClose": "to close",
+    "plateNumber": "Plate Number",
+    "owner": "Owner",
+    "model": "Model",
+    "registered": "Registered",
+    "bookingHistory": "Booking History",
+    "loadingHistory": "Loading history...",
+    "noBookings": "No bookings registered for this vehicle",
+    "spot": "Spot"
+  },
+  "bookingDetail": {
+    "loading": "Loading booking...",
+    "notFound": "Booking not found",
+    "backToBookings": "Back to bookings",
+    "backToList": "Back to list",
+    "spot": "Spot",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "duration": "Duration",
+    "day": "day",
+    "days": "days",
+    "location": "Location",
+    "spotType": "Spot type",
+    "parkingSpot": "Parking Spot",
+    "vehicle": "Vehicle",
+    "plate": "Plate",
+    "owner": "Owner",
+    "model": "Model",
+    "noVehicle": "No vehicle assigned",
+    "schedule": "Schedule",
+    "expected": "Expected",
+    "completed": "Completed",
+    "plannedDays": "Planned days",
+    "actualDays": "Actual days",
+    "notes": "Notes",
+    "bookingInfo": "Booking Information",
+    "source": "Source",
+    "externalId": "External ID",
+    "operator": "Operator",
+    "registry": "Registry",
+    "created": "Created",
+    "updated": "Updated",
+    "by": "by",
+    "payment": {
+      "title": "Payment",
+      "paid": "Paid",
+      "total": "Total",
+      "pending": "Pending",
+      "method": "Method",
+      "reference": "Reference",
+      "date": "Date",
+      "registerPayment": "Register Payment",
+      "modifyPayment": "Modify Payment",
+      "pendingWarning": "Pending payment: {amount} EUR"
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "noShow": "No-show"
+    },
+    "confirmations": {
+      "cancel": "Are you sure you want to cancel this booking?",
+      "noShow": "Mark this booking as no-show?",
+      "delete": "PERMANENTLY DELETE this booking? This action CANNOT be undone."
+    },
+    "toasts": {
+      "loadError": "Error loading booking: {message}",
+      "checkInSuccess": "Check-in completed successfully",
+      "checkInError": "Error performing check-in: {message}",
+      "checkOutSuccess": "Check-out completed successfully",
+      "checkOutError": "Error performing check-out: {message}",
+      "updateSuccess": "Booking updated successfully",
+      "updateError": "Error updating: {message}",
+      "cancelSuccess": "Booking canceled",
+      "cancelError": "Error canceling: {message}",
+      "noShowSuccess": "Marked as no-show",
+      "noShowError": "Error: {message}",
+      "deleteSuccess": "Booking deleted",
+      "deleteError": "Error deleting: {message}",
+      "paymentSuccess": "Payment registered successfully",
+      "paymentError": "Error registering payment: {message}",
+      "unknownError": "Unknown error"
+    }
+  },
+  "header": {
+    "backToList": "Back to list",
+    "pendingPayment": "Pending payment: {amount} EUR"
+  },
+  "checkInModal": {
+    "title": "Check-in",
+    "spot": "Spot",
+    "dateTime": "Entry date and time",
+    "notes": "Notes (optional)",
+    "notesPlaceholder": "Check-in observations...",
+    "cancel": "Cancel",
+    "confirm": "Confirm Check-in"
+  },
+  "checkOutModal": {
+    "title": "Check-out",
+    "paymentSummary": "Payment Summary",
+    "totalBooking": "Total booking",
+    "alreadyPaid": "Already paid",
+    "pending": "Pending",
+    "dateTime": "Exit date and time",
+    "amountToCharge": "Amount to charge",
+    "paymentMethod": "Payment method",
+    "reference": "Payment reference (optional)",
+    "referencePlaceholder": "Transaction number, receipt...",
+    "notes": "Notes (optional)",
+    "notesPlaceholder": "Observations...",
+    "cancel": "Cancel",
+    "confirm": "Confirm Check-out"
+  },
+  "editModal": {
+    "title": "Edit Booking",
+    "tabs": {
+      "general": "General",
+      "spot": "Spot",
+      "vehicle": "Vehicle"
+    },
+    "checkedInWarning": "This booking already has check-in completed. The entry date cannot be modified.",
+    "pastDateWarning": "Date in the past - not editable",
+    "expectedCheckIn": "Expected check-in",
+    "expectedCheckOut": "Expected check-out",
+    "totalAmount": "Total amount",
+    "bookingSource": "Booking source",
+    "externalId": "External ID",
+    "externalIdPlaceholder": "BK-123456",
+    "notes": "Notes",
+    "notesPlaceholder": "Additional notes...",
+    "currentSpot": "Current spot:",
+    "level": "Level",
+    "levelOption": "Level {level}",
+    "availableSpots": "Available spots",
+    "loadingSpots": "(loading...)",
+    "noSpotsAvailable": "No spots available for these dates",
+    "currentVehicle": "Current vehicle:",
+    "searchVehicle": "Search vehicle",
+    "searchVehiclePlaceholder": "Search by plate or owner...",
+    "removeVehicle": "Remove assigned vehicle",
+    "cancel": "Cancel",
+    "save": "Save Changes"
+  },
+  "paymentModal": {
+    "title": "Register Payment",
+    "cannotPay": "Cannot register payment",
+    "noPriceSet": "This booking has no price set. Edit the booking first to assign a price.",
+    "alreadyPaid": "Booking already paid",
+    "canModify": "You can modify the payment if necessary.",
+    "summary": "Summary",
+    "totalBooking": "Total booking",
+    "alreadyPaidAmount": "Already paid",
+    "pending": "Pending",
+    "amountToRegister": "Amount to register",
+    "paymentMethod": "Payment method",
+    "reference": "Reference (optional)",
+    "referencePlaceholder": "Transaction number, receipt...",
+    "cancel": "Cancel",
+    "register": "Register Payment"
+  },
+  "spotTypes": {
+    "standard": "Standard",
+    "large": "Large",
+    "mas_ancha": "Extra Wide",
+    "handicapped": "Handicapped",
+    "motorcycle": "Motorcycle",
+    "electric": "Electric"
+  },
+  "bookingSources": {
+    "direct": "Direct",
+    "booking_com": "Booking.com",
+    "expedia": "Expedia",
+    "airbnb": "Airbnb",
+    "phone": "Phone",
+    "email": "Email",
+    "walkin": "Walk-in",
+    "other": "Other"
+  },
+  "statusPageNav": {
+    "title": "Parking Control",
+    "loadingCalendar": "Loading calendar...",
+    "today": "Today",
+    "newBooking": "New Booking",
+    "allLevels": "All",
+    "allLevelsMobile": "All",
+    "level": "Level {level}"
+  },
+  "statusPanels": {
+    "total": "Total",
+    "available": "Available",
+    "pending": "Pending",
+    "overdue": "Overdue",
+    "generalSummary": "General Summary",
+    "totalSpots": "Total spots",
+    "reserved": "Reserved",
+    "occupied": "Occupied",
+    "occupancy": "Occupancy",
+    "pendingCheckIns": "Pending Check-Ins",
+    "pendingCheckOuts": "Pending Check-Outs",
+    "overdueBookings": "Overdue Bookings",
+    "entry": "Entry",
+    "exit": "Exit",
+    "manage": "Manage",
+    "noClient": "No client",
+    "spot": "Spot",
+    "noPendingCheckIns": "No pending check-ins",
+    "noPendingCheckOuts": "No pending check-outs for today",
+    "noOverdueBookings": "No overdue bookings",
+    "delayHours": "{hours}h"
+  },
+  "parkingTable": {
+    "spot": "Spot",
+    "status": "Status",
+    "clientVehicle": "Client/Vehicle",
+    "entry": "Entry",
+    "exit": "Exit",
+    "actions": "Actions",
+    "noSpotsToShow": "No spots to show",
+    "level": "Level {level}",
+    "modify": "Modify",
+    "cancel": "Cancel",
+    "checkOut": "Check-out",
+    "checkIn": "Check-in",
+    "reserve": "Reserve",
+    "registerPayment": "Register Payment"
+  },
+  "statusModals": {
+    "confirmCheckIn": "Confirm Check-In",
+    "cancel": "Cancel",
+    "confirmEntry": "Confirm Entry",
+    "processing": "Processing...",
+    "lateCheckIn": "Scheduled entry: {date} ({days} {dayWord} late)",
+    "day": "day",
+    "days": "days",
+    "client": "Client",
+    "noClient": "No client",
+    "vehicle": "Vehicle",
+    "spot": "Spot",
+    "earlyCheckout": "Early Checkout",
+    "confirmExit": "Confirm Exit",
+    "scheduledExitDate": "The scheduled exit date is {date}",
+    "cancelBooking": "Cancel Booking",
+    "noKeep": "No, keep it",
+    "yesCancel": "Yes, cancel",
+    "canceling": "Canceling...",
+    "cannotUndo": "This action cannot be undone",
+    "manageOverdue": "Manage Overdue Booking",
+    "noData": "No data",
+    "noPlate": "No plate",
+    "delay": "Delay",
+    "checkOutAction": "Check Out",
+    "checkOutDesc": "The client stayed but checkout was not registered",
+    "markNoShow": "Mark No-Show",
+    "markNoShowDesc": "The client never showed up",
+    "cancelBookingAction": "Cancel Booking",
+    "cancelBookingDesc": "Cancel the booking completely",
+    "deleteBooking": "Delete Booking",
+    "deleteBookingDesc": "Delete the booking from the system"
+  },
+  "spotStatus": {
+    "free": "Free",
+    "reserved": "Reserved",
+    "checked_in": "Occupied",
+    "maintenance": "Maintenance"
+  }
+}
