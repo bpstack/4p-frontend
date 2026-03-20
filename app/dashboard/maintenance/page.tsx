@@ -11,6 +11,8 @@ interface PageProps {
     priority?: string
     location_type?: string
     search?: string
+    date_from?: string
+    date_to?: string
     page?: string
   }>
 }
@@ -25,8 +27,10 @@ export default async function MaintenancePage({ searchParams }: PageProps) {
     priority: params.priority as ReportFilters['priority'],
     location_type: params.location_type as ReportFilters['location_type'],
     search: params.search,
+    date_from: params.date_from,
+    date_to: params.date_to,
     page: params.page ? parseInt(params.page) : 1,
-    limit: 20,
+    limit: 100,
   }
 
   let data

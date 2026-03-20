@@ -46,11 +46,11 @@ const config: Config = {
           '100%': { transform: 'translateX(100%)' },
         },
         'pulse-green': {
-          '0%, 100%': { 
+          '0%, 100%': {
             borderColor: 'rgb(34 197 94)', // green-500
             boxShadow: '0 0 0 0 rgba(34, 197, 94, 0)',
           },
-          '50%': { 
+          '50%': {
             borderColor: 'rgb(22 163 74)', // green-600
             boxShadow: '0 0 8px 2px rgba(34, 197, 94, 0.3)',
           },
@@ -61,7 +61,37 @@ const config: Config = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    function ({ addBase, addComponents }: any) {
+      addBase({
+        // Estilos globales del scrollbar
+        '::-webkit-scrollbar': {
+          width: '8px',
+          height: '8px',
+        },
+        '::-webkit-scrollbar-track': {
+          backgroundColor: 'rgb(243, 244, 246)', // gray-100
+        },
+        '::-webkit-scrollbar-thumb': {
+          backgroundColor: 'rgb(209, 213, 219)', // gray-300
+          borderRadius: '9999px',
+        },
+        '::-webkit-scrollbar-thumb:hover': {
+          backgroundColor: 'rgb(156, 163, 175)', // gray-400
+        },
+        'html.dark ::-webkit-scrollbar-track': {
+          backgroundColor: 'rgb(31, 41, 55)', // gray-800
+        },
+        'html.dark ::-webkit-scrollbar-thumb': {
+          backgroundColor: 'rgb(75, 85, 99)', // gray-600
+        },
+        'html.dark ::-webkit-scrollbar-thumb:hover': {
+          backgroundColor: 'rgb(107, 114, 128)', // gray-500
+        },
+      })
+    },
+  ],
 }
 
 export default config

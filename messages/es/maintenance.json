@@ -45,7 +45,10 @@
     "allStatuses": "Todos los estados",
     "allPriorities": "Todas las prioridades",
     "allLocations": "Todas las ubicaciones",
-    "clearFilters": "Limpiar Filtros"
+    "fromDate": "Desde",
+    "toDate": "Hasta",
+    "clearFilters": "Limpiar Filtros",
+    "clearSearch": "Limpiar búsqueda"
   },
   "table": {
     "date": "Fecha",
@@ -110,9 +113,9 @@
       "toast": {
         "maxImages": "Máximo 5 imágenes permitidas",
         "fileTooLarge": "{fileName} excede 5MB",
-        "uploadingImages": "Subiendo imagenes...",
-        "imagesUploaded": "Imagenes subidas correctamente",
-        "imagesUploadError": "Reporte creado pero hubo error al subir imagenes",
+        "uploadingImages": "Subiendo imágenes...",
+        "imagesUploaded": "Imágenes subidas correctamente",
+        "imagesUploadError": "Reporte creado pero hubo error al subir imágenes",
         "reportCreated": "Reporte creado correctamente",
         "createError": "Error al crear el reporte"
       }
@@ -226,7 +229,8 @@
       "assigned": "Asignado",
       "resolved": "Resuelto",
       "closed": "Cerrado",
-      "deleted": "Eliminado"
+      "deleted": "Eliminado",
+      "restored": "Restaurado"
     }
   },
   "tabs": {

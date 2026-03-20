@@ -5,6 +5,9 @@ import createNextIntlPlugin from 'next-intl/plugin'
 const withNextIntl = createNextIntlPlugin('./app/i18n/request.ts')
 
 const nextConfig: NextConfig = {
+  experimental: {
+    optimizePackageImports: ['react-icons'],
+  },
   images: {
     remotePatterns: [
       {

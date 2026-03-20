@@ -20,7 +20,7 @@ interface SideNavProps {
 
 export default function SideNav({ onClose, collapsed = false, onToggleCollapse }: SideNavProps) {
   const { user } = useAuth()
-  
+
   // Mobile sidebar (when onClose is provided) should always be expanded
   const isMobile = !!onClose
   const isCollapsed = isMobile ? false : collapsed

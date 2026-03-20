@@ -5,6 +5,7 @@ import Providers from './lib/theme/ThemeProvider'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 import { Analytics } from '@vercel/analytics/react'
+import Script from 'next/script'
 import type { Metadata, Viewport } from 'next'
 
 export const metadata: Metadata = {
@@ -83,6 +84,18 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       style={Object.keys(fontVars).length > 0 ? (fontVars as React.CSSProperties) : undefined}
     >
       <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZYSZ6THVDW"
+          strategy="lazyOnload"
+        />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZYSZ6THVDW');
+          `}
+        </Script>
         {(needsPrimaryAlias || needsDisplayAlias) && (
           <style>{`
             :root {

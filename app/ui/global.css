@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Drag-to-select highlight for schedule grid cells */
+button[data-drag-selected='true'] {
+  outline: 2px solid #3b82f6 !important;
+  outline-offset: 1px;
+  transform: scale(1.08) !important;
+  z-index: 1;
+  position: relative;
+}
+
+.dark button[data-drag-selected='true'] {
+  outline-color: #60a5fa !important;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1.5; /* Mejor espaciado para Roboto */
@@ -16,4 +29,20 @@
 main,
 [data-theme] {
   @apply dark:bg-[#010409];
+}
+
+/* DayPicker dark mode overrides (react-day-picker v9) */
+.dark .rdp-root {
+  --rdp-accent-color: #3b82f6;
+  --rdp-accent-background-color: #1d3a5f;
+  --rdp-range_middle-background-color: #1d3a5f;
+  --rdp-range_start-date-background-color: #3b82f6;
+  --rdp-range_end-date-background-color: #3b82f6;
+  --rdp-today-color: #60a5fa;
+  color: #e5e7eb;
+}
+
+.dark .rdp-day_button:hover:not(:disabled) {
+  background-color: #374151;
+  border-radius: var(--rdp-day_button-border-radius);
 }

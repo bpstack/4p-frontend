@@ -117,12 +117,15 @@
         "contact_added": "Contact added",
         "room_added": "Room added",
         "payment_added": "Payment recorded",
+        "payment_updated": "Payment updated",
         "default": "Groups action"
       },
       "logbook": {
         "create": "Entry created",
         "created": "Entry created",
+        "edit": "Entry edited",
         "edited": "Entry edited",
+        "update": "Entry edited",
         "updated": "Entry edited",
         "deleted": "Entry deleted",
         "solved": "Marked resolved",

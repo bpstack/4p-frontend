@@ -2,14 +2,24 @@
 
 'use client'
 
-import { useState, useCallback, useMemo } from 'react'
+import { useState, useCallback, useMemo, useRef } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useTranslations, useLocale } from 'next-intl'
 import type { MaintenanceReport, ReportFilters } from '@/app/lib/maintenance/maintenance'
 import type { MaintenanceListResponse } from '@/app/lib/maintenance/maintenanceApi'
 import { useMaintenanceList, type MaintenanceMessages } from './hooks/useMaintenanceList'
 import { CreateReportPanel } from './panels/CreateReportPanel'
-import { FiPlus, FiSearch, FiAlertCircle, FiTool, FiCheckCircle, FiClock } from 'react-icons/fi'
+import DatePickerInput from '@/app/ui/calendar/DatePickerInput'
+import {
+  FiPlus,
+  FiSearch,
+  FiAlertCircle,
+  FiTool,
+  FiCheckCircle,
+  FiClock,
+  FiX,
+  FiRefreshCw,
+} from 'react-icons/fi'
 
 interface MaintenanceListClientProps {
   initialReports: MaintenanceReport[]
@@ -41,7 +51,6 @@ export function MaintenanceListClient({
     [t, tCommon]
   )
 
-  const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '')
   const [currentPage, setCurrentPage] = useState(1)
   const [filters, setFilters] = useState<ReportFilters>({
     status: (searchParams.get('status') as ReportFilters['status']) || undefined,
@@ -49,13 +58,76 @@ export function MaintenanceListClient({
     location_type:
       (searchParams.get('location_type') as ReportFilters['location_type']) || undefined,
     search: searchParams.get('search') || undefined,
+    date_from: searchParams.get('date_from') || undefined,
+    date_to: searchParams.get('date_to') || undefined,
   })
 
-  // React Query hook
+  // Ref para siempre tener los filtros actuales (evita stale closures)
+  const filtersRef = useRef(filters)
+  filtersRef.current = filters
+
+  // Actualizar URL y estado con filtros (fuente única de verdad)
+  const updateFiltersAndUrl = useCallback(
+    (newFilters: ReportFilters) => {
+      setFilters(newFilters)
+      filtersRef.current = newFilters
+      setCurrentPage(1)
+
+      // Build URL params from filters
+      const params = new URLSearchParams()
+      if (newFilters.status) params.set('status', newFilters.status)
+      if (newFilters.priority) params.set('priority', newFilters.priority)
+      if (newFilters.location_type) params.set('location_type', newFilters.location_type)
+      if (newFilters.search) params.set('search', newFilters.search)
+      if (newFilters.date_from) params.set('date_from', newFilters.date_from)
+      if (newFilters.date_to) params.set('date_to', newFilters.date_to)
+
+      const queryString = params.toString()
+      router.push(queryString ? `?${queryString}` : '/dashboard/maintenance', { scroll: false })
+    },
+    [router]
+  )
+
+  // Search input controlado manualmente (Enter o botón)
+  const [searchInput, setSearchInput] = useState(filters.search || '')
+
+  const executeSearch = useCallback(() => {
+    const currentFilters = filtersRef.current
+    const cleanValue = searchInput.trim() !== '' ? searchInput.trim() : undefined
+    updateFiltersAndUrl({ ...currentFilters, search: cleanValue })
+  }, [searchInput, updateFiltersAndUrl])
+
+  const handleSearchKeyDown = useCallback(
+    (e: React.KeyboardEvent<HTMLInputElement>) => {
+      if (e.key === 'Enter') {
+        executeSearch()
+      }
+    },
+    [executeSearch]
+  )
+
+  const handleClearSearch = useCallback(() => {
+    setSearchInput('')
+    const currentFilters = filtersRef.current
+    updateFiltersAndUrl({ ...currentFilters, search: undefined })
+  }, [updateFiltersAndUrl])
+
+  // React Query hook - clean filters to only include defined values
+  const cleanFilters = useMemo(() => {
+    const cleaned: ReportFilters = {}
+    if (filters.status) cleaned.status = filters.status
+    if (filters.priority) cleaned.priority = filters.priority
+    if (filters.location_type) cleaned.location_type = filters.location_type
+    if (filters.search) cleaned.search = filters.search
+    if (filters.date_from) cleaned.date_from = filters.date_from
+    if (filters.date_to) cleaned.date_to = filters.date_to
+    return cleaned
+  }, [filters])
+
   const { reports, pagination, isLoading, isFetching, refetch } = useMaintenanceList({
-    filters,
+    filters: cleanFilters,
     page: currentPage,
-    limit: 20,
+    limit: 100,
     initialData: initialPagination
       ? { reports: initialReports, pagination: initialPagination }
       : undefined,
@@ -64,36 +136,37 @@ export function MaintenanceListClient({
 
   const loading = isLoading || isFetching
 
-  // Actualizar URL con filtros
-  const updateUrlWithFilters = useCallback(
-    (newFilters: ReportFilters, search?: string) => {
-      const params = new URLSearchParams()
-      if (newFilters.status) params.set('status', newFilters.status)
-      if (newFilters.priority) params.set('priority', newFilters.priority)
-      if (newFilters.location_type) params.set('location_type', newFilters.location_type)
-      if (search) params.set('search', search)
-
-      const queryString = params.toString()
-      router.push(queryString ? `?${queryString}` : '/dashboard/maintenance', { scroll: false })
-    },
-    [router]
-  )
-
-  const handleSearch = useCallback(() => {
-    const newFilters = { ...filters, search: searchTerm || undefined }
-    setFilters(newFilters)
-    setCurrentPage(1)
-    updateUrlWithFilters(filters, searchTerm)
-  }, [filters, searchTerm, updateUrlWithFilters])
-
+  // Cambiar un filtro individual - usa filtersRef para evitar stale closures
   const handleFilterChange = useCallback(
-    (newFilters: ReportFilters) => {
-      setFilters({ ...newFilters, search: searchTerm || undefined })
-      setCurrentPage(1)
-      updateUrlWithFilters(newFilters, searchTerm)
+    (key: keyof ReportFilters, value: string | undefined) => {
+      const currentFilters = filtersRef.current
+      const newFilters = { ...currentFilters, [key]: value }
+      updateFiltersAndUrl(newFilters)
     },
-    [searchTerm, updateUrlWithFilters]
+    [updateFiltersAndUrl]
   )
+
+  // Cambiar rango de fechas
+  const handleDateRangeChange = useCallback(
+    (from: string | undefined, to: string | undefined) => {
+      const currentFilters = filtersRef.current
+      updateFiltersAndUrl({
+        ...currentFilters,
+        date_from: from || undefined,
+        date_to: to || undefined,
+      })
+    },
+    [updateFiltersAndUrl]
+  )
+
+  // Limpiar todos los filtros y recargar datos
+  const handleRefresh = useCallback(() => {
+    setSearchInput('')
+    setFilters({})
+    filtersRef.current = {}
+    setCurrentPage(1)
+    router.push('/dashboard/maintenance', { scroll: false })
+  }, [router])
 
   const handleCreateReport = useCallback(() => {
     const params = new URLSearchParams(searchParams.toString())
@@ -235,13 +308,23 @@ export function MaintenanceListClient({
                   {t('subtitle')}
                 </p>
               </div>
-              <button
-                onClick={handleCreateReport}
-                className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-green-600 dark:bg-green-700 text-white text-xs font-medium rounded-md hover:bg-green-700 dark:hover:bg-green-800 transition-colors"
-              >
-                <FiPlus className="w-3.5 h-3.5" />
-                {t('newReport')}
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handleRefresh}
+                  disabled={loading}
+                  className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs font-medium rounded-md border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-700 disabled:opacity-50 transition-colors"
+                  title={tCommon('actions.refresh') || 'Actualizar'}
+                >
+                  <FiRefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
+                </button>
+                <button
+                  onClick={handleCreateReport}
+                  className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-green-600 dark:bg-green-700 text-white text-xs font-medium rounded-md hover:bg-green-700 dark:hover:bg-green-800 transition-colors"
+                >
+                  <FiPlus className="w-3.5 h-3.5" />
+                  {t('newReport')}
+                </button>
+              </div>
             </div>
           </div>
 
@@ -309,38 +392,45 @@ export function MaintenanceListClient({
               </div>
 
               {/* Filters */}
-              <div className="mb-4 space-y-2">
-                <div className="flex flex-col sm:flex-row gap-2">
-                  <div className="relative flex-1">
-                    <FiSearch className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-400 dark:text-gray-500" />
+              <div className="mb-4 space-y-3">
+                {/* Search Bar */}
+                <div className="relative flex items-center gap-2">
+                  <div className="relative flex-1 flex items-center">
+                    <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 dark:text-gray-500" />
                     <input
                       type="text"
                       placeholder={t('filters.searchPlaceholder')}
-                      value={searchTerm}
-                      onChange={(e) => setSearchTerm(e.target.value)}
-                      onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-                      className="w-full pl-8 pr-3 py-1.5 text-xs border border-gray-300 dark:border-gray-700 dark:bg-[#151b23] dark:text-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent"
+                      value={searchInput}
+                      onChange={(e) => setSearchInput(e.target.value)}
+                      onKeyDown={handleSearchKeyDown}
+                      className="w-full pl-9 pr-9 py-2 text-sm border border-gray-300 dark:border-gray-700 dark:bg-[#151b23] dark:text-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent transition-all"
                     />
+                    {searchInput && (
+                      <button
+                        onClick={handleClearSearch}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                        title={t('filters.clearSearch') || 'Limpiar búsqueda'}
+                      >
+                        <FiX className="w-4 h-4" />
+                      </button>
+                    )}
                   </div>
                   <button
-                    onClick={handleSearch}
+                    onClick={executeSearch}
                     disabled={loading}
-                    className="px-4 py-1.5 bg-blue-600 dark:bg-blue-700 text-white text-xs font-medium rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors disabled:opacity-50"
+                    className="px-4 py-2 text-sm font-medium text-white bg-blue-600 dark:bg-blue-700 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 transition-colors"
                   >
-                    {loading ? t('filters.searching') : t('filters.search')}
+                    <FiSearch className="w-4 h-4" />
                   </button>
                 </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                {/* Filters Row */}
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-[1fr_1fr_1.3fr_1fr_1fr_auto] gap-2 items-end">
+                  {/* Status Filter */}
                   <select
                     value={filters.status || ''}
-                    onChange={(e) =>
-                      handleFilterChange({
-                        ...filters,
-                        status: (e.target.value as ReportFilters['status']) || undefined,
-                      })
-                    }
-                    className="w-full px-3 py-1.5 text-xs border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent bg-white dark:bg-[#151b23] dark:text-gray-200"
+                    onChange={(e) => handleFilterChange('status', e.target.value || undefined)}
+                    className="w-full px-3 py-1.5 text-xs border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent bg-white dark:bg-[#151b23] dark:text-gray-200 hover:border-gray-400 dark:hover:border-gray-600 transition-colors"
                   >
                     <option value="">{t('filters.allStatuses')}</option>
                     <option value="reported">{t('status.reported')}</option>
@@ -352,15 +442,11 @@ export function MaintenanceListClient({
                     <option value="canceled">{t('status.canceled')}</option>
                   </select>
 
+                  {/* Priority Filter */}
                   <select
                     value={filters.priority || ''}
-                    onChange={(e) =>
-                      handleFilterChange({
-                        ...filters,
-                        priority: (e.target.value as ReportFilters['priority']) || undefined,
-                      })
-                    }
-                    className="w-full px-3 py-1.5 text-xs border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent bg-white dark:bg-[#151b23] dark:text-gray-200"
+                    onChange={(e) => handleFilterChange('priority', e.target.value || undefined)}
+                    className="w-full px-3 py-1.5 text-xs border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent bg-white dark:bg-[#151b23] dark:text-gray-200 hover:border-gray-400 dark:hover:border-gray-600 transition-colors"
                   >
                     <option value="">{t('filters.allPriorities')}</option>
                     <option value="low">{t('priority.low')}</option>
@@ -369,16 +455,13 @@ export function MaintenanceListClient({
                     <option value="urgent">{t('priority.urgent')}</option>
                   </select>
 
+                  {/* Location Type Filter */}
                   <select
                     value={filters.location_type || ''}
                     onChange={(e) =>
-                      handleFilterChange({
-                        ...filters,
-                        location_type:
-                          (e.target.value as ReportFilters['location_type']) || undefined,
-                      })
+                      handleFilterChange('location_type', e.target.value || undefined)
                     }
-                    className="w-full px-3 py-1.5 text-xs border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent bg-white dark:bg-[#151b23] dark:text-gray-200"
+                    className="w-full px-3 py-1.5 text-xs border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent bg-white dark:bg-[#151b23] dark:text-gray-200 hover:border-gray-400 dark:hover:border-gray-600 transition-colors"
                   >
                     <option value="">{t('filters.allLocations')}</option>
                     <option value="room">{t('locationType.room')}</option>
@@ -388,17 +471,45 @@ export function MaintenanceListClient({
                     <option value="other">{t('locationType.other')}</option>
                   </select>
 
-                  <button
-                    onClick={() => {
-                      setFilters({})
-                      setSearchTerm('')
-                      setCurrentPage(1)
-                      router.push('/dashboard/maintenance', { scroll: false })
-                    }}
-                    className="px-3 py-1.5 text-xs font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-                  >
-                    {t('filters.clearFilters')}
-                  </button>
+                  {/* Date From Filter */}
+                  <DatePickerInput
+                    value={filters.date_from || undefined}
+                    onChange={(value) => handleDateRangeChange(value, filters.date_to || undefined)}
+                    placeholder={t('filters.fromDate')}
+                    size="sm"
+                    clearable
+                    className="w-full"
+                  />
+
+                  {/* Date To Filter */}
+                  <DatePickerInput
+                    value={filters.date_to || undefined}
+                    onChange={(value) =>
+                      handleDateRangeChange(filters.date_from || undefined, value)
+                    }
+                    placeholder={t('filters.toDate')}
+                    size="sm"
+                    clearable
+                    className="w-full"
+                  />
+
+                  {/* Clear All Filters Button */}
+                  {filters.status ||
+                  filters.priority ||
+                  filters.location_type ||
+                  filters.search ||
+                  filters.date_from ||
+                  filters.date_to ? (
+                    <button
+                      onClick={handleRefresh}
+                      className="w-full px-3 py-1.5 text-xs font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-1.5"
+                    >
+                      <FiX className="w-3.5 h-3.5" />
+                      {t('filters.clearFilters')}
+                    </button>
+                  ) : (
+                    <div />
+                  )}
                 </div>
               </div>
 
@@ -435,8 +546,7 @@ export function MaintenanceListClient({
                             colSpan={6}
                             className="px-3 py-8 text-center text-xs text-gray-500 dark:text-gray-400"
                           >
-                            {searchTerm ||
-                            Object.keys(filters).some((k) => filters[k as keyof ReportFilters])
+                            {Object.keys(filters).some((k) => filters[k as keyof ReportFilters])
                               ? t('table.noReportsFound')
                               : t('table.noReports')}
                           </td>
@@ -535,8 +645,7 @@ export function MaintenanceListClient({
                 {reports.length === 0 ? (
                   <div className="bg-white dark:bg-[#151b23] rounded-md border border-gray-200 dark:border-gray-800 p-6 text-center">
                     <p className="text-xs text-gray-500 dark:text-gray-400">
-                      {searchTerm ||
-                      Object.keys(filters).some((k) => filters[k as keyof ReportFilters])
+                      {Object.keys(filters).some((k) => filters[k as keyof ReportFilters])
                         ? t('table.noReportsFound')
                         : t('table.noReports')}
                     </p>

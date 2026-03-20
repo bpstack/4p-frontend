@@ -584,8 +584,8 @@ export default function LogbooksList({
               </div>
             </div>
 
-            <div className="flex-1 px-4 border-r border-slate-200 dark:border-slate-700">
-              <p className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
+            <div className="flex-1 min-w-0 px-4 border-r border-slate-200 dark:border-slate-700">
+              <p className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-wrap break-all max-h-[700px] overflow-y-auto pr-2">
                 {entry.description}
               </p>
               {entry.comments && entry.comments.length > 0 && (
@@ -605,7 +605,7 @@ export default function LogbooksList({
                             : 'bg-blue-50 dark:bg-blue-900/10 border-blue-100 dark:border-blue-900/30'
                         }`}
                       >
-                        <p className="text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
+                        <p className="text-gray-700 dark:text-gray-300 whitespace-pre-wrap break-all max-h-[300px] overflow-y-auto pr-2">
                           {comment.comment}
                         </p>
                         <div className="flex items-center justify-between gap-2 mt-1">
@@ -689,7 +689,7 @@ export default function LogbooksList({
 
           {/* Mobile Layout */}
           <div className="md:hidden p-4 space-y-3">
-            <p className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
+            <p className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-wrap break-all max-h-[700px] overflow-y-auto pr-2">
               {entry.description}
             </p>
             {entry.comments && entry.comments.length > 0 && (
@@ -709,7 +709,7 @@ export default function LogbooksList({
                           : 'bg-blue-50 dark:bg-blue-900/10 border-blue-100 dark:border-blue-900/30'
                       }`}
                     >
-                      <p className="text-gray-700 dark:text-gray-300 text-xs whitespace-pre-wrap">
+                      <p className="text-gray-700 dark:text-gray-300 text-xs whitespace-pre-wrap break-all max-h-[300px] overflow-y-auto pr-2">
                         {comment.comment}
                       </p>
                       <div className="flex items-center justify-between gap-2 mt-1">

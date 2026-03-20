@@ -12,8 +12,9 @@
     "groups": "Grupos",
     "cashier": "Caja",
     "maintenance": "Mantenimiento",
-    "blacklist": "blacklist",
+    "blacklist": "Lista Negra",
     "backoffice": "Backoffice",
+    "scheduling": "Horarios",
     "messages": "Mensajes",
     "profile": "Perfil",
     "settings": "Configuración",
@@ -53,7 +54,7 @@
     "saving": "Guardando...",
     "processing": "Procesando...",
     "deleting": "Eliminando...",
-    "yes": "Si",
+    "yes": "Sí",
     "no": "No"
   },
   "status": {
@@ -89,8 +90,34 @@
     "days": "días"
   },
   "calendar": {
-    "months": ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-    "monthsShort": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+    "months": [
+      "Enero",
+      "Febrero",
+      "Marzo",
+      "Abril",
+      "Mayo",
+      "Junio",
+      "Julio",
+      "Agosto",
+      "Septiembre",
+      "Octubre",
+      "Noviembre",
+      "Diciembre"
+    ],
+    "monthsShort": [
+      "Ene",
+      "Feb",
+      "Mar",
+      "Abr",
+      "May",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dic"
+    ],
     "weekdays": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"],
     "weekdaysShort": ["L", "M", "X", "J", "V", "S", "D"],
     "selectDate": "Seleccionar fecha",

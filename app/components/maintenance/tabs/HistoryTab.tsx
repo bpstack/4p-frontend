@@ -80,6 +80,11 @@ export function HistoryTab() {
         color: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400',
         label: t('history.actions.deleted'),
       },
+      restored: {
+        icon: <FiClock className="w-4 h-4" />,
+        color: 'bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400',
+        label: t('history.actions.restored'),
+      },
     }
     return configs[action]
   }

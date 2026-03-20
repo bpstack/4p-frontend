@@ -45,7 +45,10 @@
     "allStatuses": "All statuses",
     "allPriorities": "All priorities",
     "allLocations": "All locations",
-    "clearFilters": "Clear Filters"
+    "fromDate": "From",
+    "toDate": "To",
+    "clearFilters": "Clear Filters",
+    "clearSearch": "Clear search"
   },
   "table": {
     "date": "Date",
@@ -226,7 +229,8 @@
       "assigned": "Assigned",
       "resolved": "Resolved",
       "closed": "Closed",
-      "deleted": "Deleted"
+      "deleted": "Deleted",
+      "restored": "Restored"
     }
   },
   "tabs": {

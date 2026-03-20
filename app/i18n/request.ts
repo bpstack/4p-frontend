@@ -106,7 +106,7 @@ async function loadMessages(locale: Locale) {
     'dashboard',
     'parking',
     'logbooks',
-    'logbook', // Singular namespace for LogbooksContainer hook messages
+    'logbook',
     'groups',
     'cashier',
     'maintenance',
@@ -121,6 +121,7 @@ async function loadMessages(locale: Locale) {
     'restaurant',
     'booking',
     'notifications',
+    'scheduling',
   ]
 
   const allMessages: Record<string, Record<string, unknown>> = {}

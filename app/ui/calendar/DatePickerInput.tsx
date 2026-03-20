@@ -2,11 +2,13 @@
 /**
  * Input de fecha con calendario desplegable personalizado
  * Usa SimpleCalendarCompact para una experiencia consistente
+ * El calendario se renderiza via portal para evitar clipping por overflow de contenedores padre
  */
 
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { FiCalendar, FiX } from 'react-icons/fi'
 import SimpleCalendarCompact from './SimpleCalendarCompact'
 import { useTranslations } from 'next-intl'
@@ -40,9 +42,10 @@ export default function DatePickerInput({
 }: DatePickerInputProps) {
   const t = useTranslations('common')
   const [isOpen, setIsOpen] = useState(false)
-  const [alignRight, setAlignRight] = useState(false)
+  const [portalStyle, setPortalStyle] = useState<{ top: number; left: number }>({ top: 0, left: 0 })
   const containerRef = useRef<HTMLDivElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
+  const calendarRef = useRef<HTMLDivElement>(null)
 
   const defaultPlaceholder = placeholder ?? t('calendar.selectDate')
 
@@ -75,26 +78,39 @@ export default function DatePickerInput({
     onChange(undefined)
   }
 
-  // Calcular si el calendario debe alinearse a la derecha
+  // Calcular posición del calendario relativa a la ventana (fixed)
   const handleOpen = () => {
     if (disabled) return
 
     if (buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect()
-      const calendarWidth = 224 // w-56 = 14rem = 224px
-      const spaceOnRight = window.innerWidth - rect.left
+      const calendarWidth = 224 // w-56
+      const calendarHeight = 260 // altura aproximada del calendario
 
-      // Si no hay espacio suficiente a la derecha, alinear a la derecha
-      setAlignRight(spaceOnRight < calendarWidth + 16) // 16px de margen
+      // Determinar si hay espacio abajo o hay que abrir hacia arriba
+      const spaceBelow = window.innerHeight - rect.bottom
+      const openUpward = spaceBelow < calendarHeight + 8 && rect.top > calendarHeight + 8
+
+      // Determinar alineación horizontal
+      const spaceOnRight = window.innerWidth - rect.left
+      const alignRight = spaceOnRight < calendarWidth + 16
+
+      setPortalStyle({
+        top: openUpward ? rect.top - calendarHeight - 4 : rect.bottom + 4,
+        left: alignRight ? rect.right - calendarWidth : rect.left,
+      })
     }
 
-    setIsOpen(!isOpen)
+    setIsOpen((prev) => !prev)
   }
 
-  // Cerrar al hacer clic fuera
+  // Cerrar al hacer clic fuera (tanto del input como del portal del calendario)
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+      const target = event.target as Node
+      const clickedInsideInput = containerRef.current?.contains(target)
+      const clickedInsideCalendar = calendarRef.current?.contains(target)
+      if (!clickedInsideInput && !clickedInsideCalendar) {
         setIsOpen(false)
       }
     }
@@ -105,6 +121,18 @@ export default function DatePickerInput({
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isOpen])
+
+  // Cerrar al hacer scroll o resize para evitar posición incorrecta
+  useEffect(() => {
+    if (!isOpen) return
+    const close = () => setIsOpen(false)
+    window.addEventListener('scroll', close, true)
+    window.addEventListener('resize', close)
+    return () => {
+      window.removeEventListener('scroll', close, true)
+      window.removeEventListener('resize', close)
     }
   }, [isOpen])
 
@@ -124,9 +152,9 @@ export default function DatePickerInput({
           onClick={handleOpen}
           disabled={disabled}
           className={`
-            w-full text-left border rounded-md 
+            w-full text-left border rounded-md
             focus:outline-none focus:ring-2 focus:ring-blue-500
-            bg-white dark:bg-[#151b23] dark:text-gray-200 
+            bg-white dark:bg-[#151b23] dark:text-gray-200
             flex items-center justify-between gap-2
             ${size === 'sm' ? 'px-3 py-1.5 text-xs' : 'px-3 py-2 text-sm'}
             ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
@@ -164,19 +192,30 @@ export default function DatePickerInput({
             />
           </div>
         </button>
+      </div>
 
-        {/* Calendar dropdown */}
-        {isOpen && (
-          <div className={`absolute z-50 mt-1 ${alignRight ? 'right-0' : 'left-0'}`}>
+      {/* Calendar renderizado via portal en document.body para evitar clipping por overflow */}
+      {isOpen &&
+        typeof document !== 'undefined' &&
+        createPortal(
+          <div
+            ref={calendarRef}
+            style={{
+              position: 'fixed',
+              top: portalStyle.top,
+              left: portalStyle.left,
+              zIndex: 9999,
+            }}
+          >
             <SimpleCalendarCompact
               selectedDate={selectedDate}
               onSelect={handleSelect}
               onClose={() => setIsOpen(false)}
               minDate={minDate}
             />
-          </div>
+          </div>,
+          document.body
         )}
-      </div>
 
       {error && <p className="mt-1 text-xs text-red-500">{error}</p>}
     </div>

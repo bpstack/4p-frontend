@@ -20,6 +20,7 @@ export type HistoryAction =
   | 'resolved'
   | 'closed'
   | 'deleted'
+  | 'restored'
 
 export interface MaintenanceReport {
   id: string
@@ -56,6 +57,7 @@ export interface MaintenanceImage {
   file_path: string
   file_size: number
   mime_type: string
+  public_id: string | null
   uploaded_at: string
   uploaded_by: string
   auto_delete_on_close: boolean

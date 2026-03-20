@@ -45,7 +45,7 @@ interface UseMaintenanceListOptions {
 export function useMaintenanceList({
   filters,
   page = 1,
-  limit = 20,
+  limit = 100,
   initialData,
   messages,
 }: UseMaintenanceListOptions) {
@@ -53,12 +53,22 @@ export function useMaintenanceList({
 
   const queryFilters = { ...filters, page, limit }
 
+  // Solo usar initialData cuando no hay filtros activos (carga inicial sin filtros)
+  const hasActiveFilters =
+    !!filters.status ||
+    !!filters.priority ||
+    !!filters.location_type ||
+    !!filters.search ||
+    !!filters.date_from ||
+    !!filters.date_to
+
   // Main list query
   const { data, isLoading, isFetching, error, refetch } = useQuery({
     queryKey: maintenanceKeys.list(queryFilters),
     queryFn: () => maintenanceApi.getAll(queryFilters),
-    initialData,
-    staleTime: 2 * 60 * 1000, // 2 minutes
+    // initialData solo para la query sin filtros (evita usar datos no filtrados para queries filtradas)
+    initialData: hasActiveFilters ? undefined : initialData,
+    staleTime: 30 * 1000, // 30 seconds
     gcTime: 5 * 60 * 1000, // 5 minutes
     refetchOnWindowFocus: false,
   })
