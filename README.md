@@ -2,7 +2,7 @@
 
 Sistema de gestión hotelera (Property Management System) que unifica toda la operativa diaria de un hotel en una sola plataforma: desde el control de caja y logbooks de turno hasta la gestión de grupos, parking, mantenimiento y backoffice.
 
-**Demo en vivo:** [stackbp.es](https://www.four-points.stackbp.es)
+**Demo en vivo:** [stackbp.es](https://four-points.stackbp.es)
 
 ```
 Usuario: demo
