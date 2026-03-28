@@ -1,14 +1,44 @@
-MIT License (Modified - Non-Commercial)
+PROPRIETARY SOFTWARE LICENSE
 
-Copyright (c) 2026 Salvador Perez
+Copyright (c) 2026 Salvador Perez. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software, to use, copy, modify, and learn from it for personal and 
-educational purposes only.
+NOTICE: This software and its source code are the exclusive property of Salvador Perez
+and are protected by copyright law and international treaties.
 
-Commercial use, redistribution, or use in production environments requires 
-explicit written permission from the copyright holder.
+This repository contains a PARTIAL, PUBLIC DEMONSTRATION of the Four Points PMS frontend.
+The complete source code — including but not limited to the backend, business logic,
+database schemas, infrastructure configuration, and any other component not explicitly
+included in this repository — is strictly confidential and proprietary.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+RESTRICTIONS
 
-For inquiries: contact.bpstack@gmail.com
+No license, right, or permission of any kind is granted by this notice or by the act
+of making this code publicly viewable. The following actions are expressly prohibited
+without prior written authorization from the copyright holder:
+
+  1. Copying, reproducing, or downloading any portion of this code.
+  2. Modifying, adapting, translating, or creating derivative works.
+  3. Distributing, publishing, sublicensing, or transferring this code to any third party.
+  4. Using this code, in whole or in part, for any commercial or non-commercial purpose.
+  5. Reverse engineering, decompiling, or disassembling any part of this software.
+  6. Incorporating any portion of this code into other software or products.
+
+DEMONSTRATION PURPOSE
+
+This repository is made available solely for portfolio and demonstration purposes.
+Viewing this code does not grant any implicit license, right of use, or permission
+of any kind. Any use beyond passive viewing is prohibited.
+
+NO WARRANTY
+
+This software is provided "as is", without warranty of any kind, express or implied.
+The copyright holder shall not be liable for any claim, damages, or other liability
+arising from the use or inability to use this software.
+
+ENFORCEMENT
+
+Unauthorized use, reproduction, or distribution of this software, or any portion of it,
+may result in civil and criminal penalties and will be prosecuted to the maximum extent
+possible under applicable intellectual property law.
+
+For licensing inquiries or authorized use requests, contact: contact.bpstack@gmail.com
